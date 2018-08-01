@@ -7,7 +7,7 @@ import animation from './animation.js'
 export default class Navbar extends React.Component {
   render() {
     return (
-      <aside className="menu column is-2-desktop is-3-tablet is-hidden-mobile navbar is-fixed-top" id="navbar">
+      <aside className="custom_scroll menu column is-2-desktop is-3-tablet is-hidden-mobile navbar is-fixed-top" id="navbar">
         <Link to="/" className="logo_wrapper" onClick={animation.spinLogo}>
           <img id="sw_logo" src={logo} alt="scholars_way_logo"/>
         </Link>

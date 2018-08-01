@@ -15,6 +15,9 @@
   background: linear-gradient(135deg, #3b8686 0%,#79bd9a 49%,#a8dba8 99%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b8686', endColorstr='#a8dba8',GradientType=1 );
   height: 100%
+  overflow: scroll
+  overflow-x: hidden
+  overflow-y: auto
 
 hr.nav_hr
   background-color: #ffffff2e
@@ -35,3 +38,13 @@ hr.nav_hr
   background-color: rgba(5, 49, 39, 0.1)
   color: #ffffff
   margin-right: 13px
+
+.custom_scroll::-webkit-scrollbar 
+  width: 0.5em
+
+.custom_scroll::-webkit-scrollbar-track 
+  -webkit-box-shadow: inset 0 0 6px green
+ 
+.custom_scroll::-webkit-scrollbar-thumb 
+  background-color: #009874
+  outline: 1px solid slategrey
