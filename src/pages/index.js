@@ -1,11 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
+import '../css/index.sass'
 
 export default class IndexPage extends React.Component {
   render() {
     return (
-      <section className="section">
+      <section className="section" id="index_page">
         <div className="container">
           Hello World
         </div>
