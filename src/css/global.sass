@@ -1,11 +1,13 @@
 @import "~bulma/sass/utilities/initial-variables"
 
-// Config vars
+// custom vars
 $kaldi-red: #FD461E
 $kaldi-red-invert: #fff
 
+// overrides
 $primary: $kaldi-red
 $primary-invert: $kaldi-red-invert
+$menu-label-color: #fff
 
 .content .taglist
   list-style: none
@@ -39,4 +41,12 @@ $primary-invert: $kaldi-red-invert
 .margin-top-0
   margin-top: 0 !important
 
+#css_testing
+  background-color: $primary  
+
 @import "~bulma"
+
+// import component styles
+@import "./about.sass"
+@import "./navbar.sass"
+
