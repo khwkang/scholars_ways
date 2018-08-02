@@ -20,7 +20,7 @@ export default class MobileNav extends React.Component {
         <div className="container">
           <div className="navbar-brand">
             <Link className="navbar-item" to="/">
-              <img src={logo} alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28"/>
+              <img id="sw_logo_mobile" src={logo} alt="scholars way logo image"/>
             </Link>
             <Link to="" role="button" className={"navbar-burger burger " + this.state.toggle} onClick={this.toggleDropdown.bind(this)} aria-label="menu" aria-expanded="false">
               <span aria-hidden="true"></span>
