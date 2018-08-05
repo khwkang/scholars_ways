@@ -1,19 +1,45 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
-import '../css/index.sass'
+// import '../css/index.sass'
+import Hero from '../components/homepage/Hero'
+import ClinicHero from '../components/homepage/ClinicHero'
 
 export default class IndexPage extends React.Component {
+  
   render() {
     return (
-      <section className="section" id="index_page">
-        <div className="container">
-          Hello World
-        </div>
+      <section id="index_page">
+          <Hero />
+          <ClinicHero />
       </section>
     )
   }
 }
+
+// export const pageQuery = graphql`
+//   query IndexQuery {
+//     allMarkdownRemark(
+//       sort: { order: DESC, fields: [frontmatter___date] },
+//       filter: { frontmatter: { templateKey: { eq: "blog-post" } }}
+//     ) {
+//       edges {
+//         node {
+//           excerpt(pruneLength: 400)
+//           id
+//           fields {
+//             slug
+//           }
+//           frontmatter {
+//             title
+//             templateKey
+//             date(formatString: "MMMM DD, YYYY")
+//           }
+//         }
+//       }
+//     }
+//   }
+// `
 
 //
 // export default class IndexPage extends React.Component {
