@@ -6,11 +6,11 @@ import Navbar from '../components/navigation/Navbar'
 import '../css/global.sass'
 
 const TemplateWrapper = ({ children }) => (
-  <div className="columns is-desktop custom_scroll">
+  <div id="template_wrapper" className="columns is-desktop custom_scroll">
     <Helmet title="Scholars Ways | Daoist Art of Cultivation" />
     <MobileNav />
     <Navbar />  
-    <div className="column is-10 is-offset-2">
+    <div className="children_wrapper column">
       {children()}
     </div>
   </div>

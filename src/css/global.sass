@@ -4,6 +4,24 @@
 $sw-green: #009874
 $kaldi-red-invert: #fff
 
+// media query vars
+$phone_only: 599px
+$portrait_only_min: 600px
+$portrait_only_max: 899px
+$portrait_up: 600px
+$landscape_only_min: 900px
+$landscape_only_max: 1199px
+$landscape_up: 900px
+$desktop_up: 1200px
+
+// @media (max-width: $phone_only) 
+// @media (min-width: $portrait_only_min) and (max-width: $portrait_only_max) 
+// @media (min-width: $portrait_up) 
+// @media (min-width: $landscape_only_min) and (max-width: $landscape_only_max) 
+// @media (min-width: $landscape_up) 
+// @media (min-width: $desktop_up) 
+
+
 // overrides
 $primary: $sw-green
 $primary-invert: $kaldi-red-invert
@@ -18,6 +36,11 @@ body::-webkit-scrollbar-track
 body::-webkit-scrollbar-thumb 
   background-color: #009874
   outline: 1px solid slategrey
+
+#template_wrapper
+  .children_wrapper
+    @media (min-width: 1024px) 
+      margin-left: 16%
 
 .content .taglist
   list-style: none
@@ -59,4 +82,3 @@ body::-webkit-scrollbar-thumb
 // import component styles
 @import "../components/navigation/navbar.sass"
 @import "../components/homepage/hero.sass"
-
