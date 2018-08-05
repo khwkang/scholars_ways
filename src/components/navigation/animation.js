@@ -7,7 +7,7 @@ export default {
     clickCount+=1
     const sw_logo = document.getElementById("sw_logo")
     const tl = new TimelineMax()
-    tl.to('#sw_logo', 0.5, {rotation:"+=360"})
+    tl.to('#sw_logo', 1, {rotation:"+=360"})
     
     if (clickCount == 10) {
       window.alert("feeling dizzy yet?")

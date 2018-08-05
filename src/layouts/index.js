@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import MobileNav from '../components/layout/MobileNav'
-import Navbar from '../components/layout/Navbar'
+import MobileNav from '../components/navigation/MobileNav'
+import Navbar from '../components/navigation/Navbar'
 import '../css/global.sass'
 
 const TemplateWrapper = ({ children }) => (
