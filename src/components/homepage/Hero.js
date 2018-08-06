@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import animation from './animation.js'
+import logo from '../../img/sw_logo.svg'
 
 export default class Hero extends React.Component {
   constructor(props){
@@ -11,13 +12,17 @@ export default class Hero extends React.Component {
     animation.jumpTo(target)
   }
 
+  componentDidMount() {
+    animation.sampleTween()
+  }
+  
   render() {
     return (
       <div id="home_hero" className="hero">
         <div className="hero-body">
           <div className="center">
-            <h1 className="title">Logo Here</h1>
-            <div className="home_hero_title">
+          <img src={logo} alt="" id="home_hero_logo_animate" className="home_hero_logo"/>
+            <div id="home_hero_title_animate" className="home_hero_title">
               Scholars Way
             </div>  
           </div>
