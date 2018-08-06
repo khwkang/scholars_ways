@@ -10,7 +10,7 @@ import ScrollControl from '../components/homepage/ScrollControl'
 export default class IndexPage extends React.Component {
   render() {
     return (
-      <section id="index_page" onWheel={(e) => console.log("i scroll!!")}>
+      <section id="index_page">
           <Hero />
           <ClinicHero />
           <QigongHero />

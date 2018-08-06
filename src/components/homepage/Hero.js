@@ -8,9 +8,9 @@ export default class Hero extends React.Component {
         <div className="hero-body">
           <div className="center">
             <h1 className="title">Logo Here</h1>
-            <div className="title is-1">
-            Scholars Way
-          </div>  
+            <div className="home_hero_title">
+              Scholars Way
+            </div>  
           </div>
         </div>   
       </div>
