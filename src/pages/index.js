@@ -4,7 +4,7 @@ import Link from 'gatsby-link'
 import Hero from '../components/homepage/Hero'
 import ClinicHero from '../components/homepage/ClinicHero'
 import QigongHero from '../components/homepage/QigongHero'
-import ScrollControl from '../components/homepage/ScrollControl'
+import BackToTop from '../components/homepage/BackToTop'
 
 
 export default class IndexPage extends React.Component {
@@ -14,11 +14,13 @@ export default class IndexPage extends React.Component {
           <Hero />
           <ClinicHero />
           <QigongHero />
-          <ScrollControl />
+          <BackToTop />
       </section>
     )
   }
 }
+
+
 
 // export const pageQuery = graphql`
 //   query IndexQuery {

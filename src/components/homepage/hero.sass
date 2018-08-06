@@ -1,5 +1,6 @@
 #home_hero 
-  background-color: #f2f2f2
+  background-image: url("../img/bg_test.jpg")
+  background-size: cover
   @media (min-width: $desktop_up)
       min-height: 100vh  
   .center
@@ -8,25 +9,39 @@
   .hero-body
     align-items: center
     display: flex
-    background-image: url("../img/bg_test.jpg")
-    background-size: cover
   .home_hero_title
     font-size: 5.5rem
     color: white
     font-family: Karla
     margin-bottom: 130px
+  .jump_scroll
+    background-color: #00000033
+    padding: 26px 0
+    display: flex
+    justify-content: flex-end
+    bottom: 1rem
+    z-index: 30
+    width: 100%
+    .menu_sign
+      font-family: Rock Salt
+      color: #ffffff78
+      margin: 8px 21px 0px 0
+    span
+      color: #ffffffd1
+      font-weight: 700
+      font-size: 20px
+      padding: 6px 20px
+      background-color: #ffffff0f
+      margin: 0 8px
 
-.home_hero_container
-  background-color: #f9f9f9
-
-.home_hero_container
+#index_page
   .columns
     padding: 0
     margin-top: 10px
     align-items: center
     @media (min-width: $desktop_up)
       height: 100vh
-  .left
+  .picture_left
     background-image: url("../img/hero_placeholder.jpg")
     background-size: cover
     align-self: stretch
@@ -37,19 +52,22 @@
       padding: 0 20px
     button
       margin-top: 20px
+  #clinic_hero
+    .columns
+      margin-top: 0
+  #qigong_hero
 
-.jump_scroll
-  background-color: #1e1e1e8c
-  padding: 20px 0
-  margin: 0 0 -16px 7px
-  position: fixed
-  display: flex
-  justify-content: center
-  bottom: 1rem
-  z-index: 30
-  width: 84%
-  span
-    color: #f2f2f2d1
-    font-weight: 700
-    font-size: 20px
-    padding: 0 20px
+#back_to_top
+    opacity: 0
+    display: none
+    bottom: 33px
+    right: 34px
+    position: fixed
+    color: #ffffffc4
+    background-color: #00000085
+    padding: 8px 21px
+    border-radius: 42px
+    font-weight: 500
+    cursor: pointer
+
+
