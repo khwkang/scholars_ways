@@ -1,17 +1,20 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
-// import '../css/index.sass'
 import Hero from '../components/homepage/Hero'
 import ClinicHero from '../components/homepage/ClinicHero'
+import QigongHero from '../components/homepage/QigongHero'
+import ScrollControl from '../components/homepage/ScrollControl'
+
 
 export default class IndexPage extends React.Component {
-  
   render() {
     return (
-      <section id="index_page">
+      <section id="index_page" onWheel={(e) => console.log("i scroll!!")}>
           <Hero />
           <ClinicHero />
+          <QigongHero />
+          <ScrollControl />
       </section>
     )
   }

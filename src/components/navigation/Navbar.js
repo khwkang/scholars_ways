@@ -7,7 +7,7 @@ export default class Navbar extends React.Component {
   render() {
     return (
       <aside className="custom_scroll menu column is-2-desktop is-3-tablet is-hidden-touch navbar is-fixed-top" id="navbar">
-        <Link to="/" className="logo_wrapper" onClick={animation.spinLogo}>
+        <Link to="/#home_hero" className="logo_wrapper" onClick={animation.spinLogo}>
           <img id="sw_logo" src={logo} alt="scholars_way_logo"/>
         </Link>
         <hr className="nav_hr"/>

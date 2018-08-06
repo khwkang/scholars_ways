@@ -6,16 +6,20 @@ export default class MobileNav extends React.Component {
   constructor(props){
     super(props)
     this.state = {
-      "toggle":""
+      "toggle": false
     }
   }
 
   toggleDropdown = () => {
-    this.state.toggle === "is-active" ? this.setState({"toggle":""}) : this.setState({"toggle":"is-active"})
+    if (this.state.toggle) {
+      this.setState({"toggle": false})
+    } else {
+      this.setState({"toggle": true})
+    }
   }
 
   toggleDropdownFromLogo = () => {
-    return this.state.toggle != "is-active" ? true : this.setState({"toggle":""})
+    return !this.state.toggle ? true : this.setState({"toggle": false})
   }
   
   render() {
@@ -29,14 +33,14 @@ export default class MobileNav extends React.Component {
             <p className="menu-label logo_font">
               Sholars Ways
             </p>
-            <span role="button" className={"navbar-burger burger " + this.state.toggle} 
+            <span role="button" className={this.state.toggle ? "navbar-burger burger is-active" : "navbar-burger burger"  } 
               onClick={this.toggleDropdown} aria-label="menu" aria-expanded="false">
               <span aria-hidden="true"></span>
               <span aria-hidden="true"></span>
               <span aria-hidden="true"></span>
             </span>
           </div>
-          <div id="mobile_nav_menu" className={"navbar-menu " + this.state.toggle}>
+          <div id="mobile_nav_menu" className={this.state.toggle ? "navbar-menu is-active" : "navbar-menu"  }>
             <div className="navbar-end">
               <hr className="nav_hr"/>
               <p className="menu-label">Clinic</p>

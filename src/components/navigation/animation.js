@@ -1,5 +1,3 @@
-import {TweenMax, TimelineMax} from 'gsap'
-
 let clickCount = 0
 
 export default {
