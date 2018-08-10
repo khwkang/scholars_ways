@@ -6,7 +6,7 @@ export default class ClinicHero extends React.Component {
     return (
       <div id="clinic_hero">       
         <div className="columns">
-          <div className="picture_left column">
+          <div className="picture_left home_clinic_bg column">
             <h1 className="title">picture here</h1>
           </div>
           <div className="content_right column">

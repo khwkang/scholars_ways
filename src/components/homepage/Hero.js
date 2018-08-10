@@ -24,7 +24,10 @@ export default class Hero extends React.Component {
           <img src={logo} alt="" id="home_hero_logo_animate" className="home_hero_logo"/>
             <div id="home_hero_title_animate" className="home_hero_title">
               Scholars Way
-            </div>  
+            </div>
+            <div className="home_hero_sub_title">
+              Healing Arts
+            </div>    
           </div>
         </div>
         <div className="hero-foot">
