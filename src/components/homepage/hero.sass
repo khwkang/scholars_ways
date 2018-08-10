@@ -17,11 +17,15 @@
     font-size: 5.5rem
     color: white
     font-family: fantasy
+    @media (max-width: $phone_only) 
+      font-size: 3rem
   .home_hero_sub_title
     font-size: 3.5rem
     color: white
     font-family: Lora
     margin-bottom: 110px
+    @media (max-width: $phone_only) 
+      font-size: 2.2rem
   .jump_scroll
     background-color: #00000033
     padding: 26px 0
@@ -41,6 +45,8 @@
       padding: 6px 20px
       background-color: #ffffff0f
       margin: 0 8px
+    @media (max-width: $phone_only) 
+      display: none
 
 #index_page
   .columns
@@ -52,6 +58,9 @@
   .picture_left
     background-size: cover
     align-self: stretch
+    height: 400px
+    @media (min-width: $landscape_up)
+      height: inherit
   .content
     @media (min-width: $portrait_up) 
       padding: 0 40px
@@ -67,8 +76,7 @@
   #qigong_hero
     .home_qigong_bg
       background-image: url("../img/home_qigong_filter_su_pu.jpg")
-
-
+  
 #back_to_top
     opacity: 0
     display: none
@@ -83,3 +91,9 @@
     cursor: pointer
 
 
+// @media (max-width: $phone_only) 
+// @media (min-width: $portrait_only_min) and (max-width: $portrait_only_max) 
+// @media (min-width: $portrait_up) 
+// @media (min-width: $landscape_only_min) and (max-width: $landscape_only_max) 
+// @media (min-width: $landscape_up) 
+// @media (min-width: $desktop_up) 

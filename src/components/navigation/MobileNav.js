@@ -45,23 +45,23 @@ export default class MobileNav extends React.Component {
               <hr className="nav_hr"/>
               <p className="menu-label">Clinic</p>
               <ul className="menu-list">
-                <li><Link onClick={this.toggleDropdown} to="/">Practitioners</Link></li>
-                <li><Link onClick={this.toggleDropdown} to="/">Services | Expertise</Link></li>
-                <li><Link onClick={this.toggleDropdown} to="/">Fees</Link></li>
-                <li><Link onClick={this.toggleDropdown} to="/">Appointment</Link></li>
+                <li><Link onClick={this.toggleDropdown} to="/clinic/practitioner">Practitioners</Link></li>
+                <li><Link onClick={this.toggleDropdown} to="/clinic/expertise">Expertise</Link></li>
+                <li><Link onClick={this.toggleDropdown} to="/clinic/appointment">Appointment</Link></li>
               </ul>
               <hr className="nav_hr"/>
-              <p className="menu-label">Class</p>
+              <p className="menu-label">Training</p>
               <ul className="menu-list">
-                <li><Link onClick={this.toggleDropdown} to="/">Current Classes</Link></li>
+                <li><Link onClick={this.toggleDropdown} to="/">Classes</Link></li>
                 <li><Link onClick={this.toggleDropdown} to="/">Schedule</Link></li>
               </ul>
               <hr className="nav_hr"/>
               <ul className="menu-list">
                 <li><Link onClick={this.toggleDropdown} to="/about">About</Link></li>
-                <li><Link onClick={this.toggleDropdown} to="/">Library</Link></li>
+                <li><Link onClick={this.toggleDropdown} to="/blog">Blog</Link></li>
+                <li><Link onClick={this.toggleDropdown} to="/library">Library</Link></li>
+                <li><Link onClick={this.toggleDropdown} to="/">Join Us</Link></li>
                 <li><Link onClick={this.toggleDropdown} to="/products">Products</Link></li>
-                <li><Link onClick={this.toggleDropdown} to="/">Contact Us</Link></li>
               </ul>
             </div>
           </div>

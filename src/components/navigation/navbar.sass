@@ -7,16 +7,13 @@
   width: 70px
   margin: 15px 0 0px 0
 
-#navbar
+#side_nav
   background: #2a2828
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b8686', endColorstr='#a8dba8',GradientType=1 );
   height: 100%
   overflow: scroll
   overflow-x: hidden
   overflow-y: auto
-
-.navbar-brand
-  background: $primary
 
 hr.nav_hr
   background-color: #8787872e
@@ -50,10 +47,25 @@ hr.nav_hr
   outline: 1px solid slategrey
 
 // mobile ver.
+
+#mobile_nav_menu
+  background: #2a2828
+  padding-bottom: 30px
+  .navbar-end
+    padding-left: 30px
+
 #sw_logo_mobile
   max-height: 50px
   width: 50px
   margin: 5px 0 0 0
+.navbar
+  margin-bottom: -13px
+.navbar.column
+  padding: 0
+
+.navbar-brand
+  background: #2a2828
+  padding: 15px 18px 12px 18px
 
 .menu-label.logo_font
   margin-top: 25px
@@ -68,6 +80,7 @@ hr.nav_hr
   width: 4.25rem
   margin-left: auto
   color: #ffffff
+  top: 5px
 
 .navbar-burger span
   width: 26px
@@ -82,9 +95,6 @@ hr.nav_hr
 
 .navbar-burger.is-active span:nth-child(1)
   transform: translateY(9px) rotate(45deg)
-
-#mobile_nav_menu
-  background: $primary
 
 #mobile_nav_menu hr:nth-child(1)
   margin: 0

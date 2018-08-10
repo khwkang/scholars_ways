@@ -6,8 +6,7 @@ export default class ClinicHero extends React.Component {
     return (
       <div id="clinic_hero">       
         <div className="columns">
-          <div className="picture_left home_clinic_bg column">
-            <h1 className="title">picture here</h1>
+          <div className="picture_left home_clinic_bg is-hidden-touch column">
           </div>
           <div className="content_right column">
             <div className="content">
@@ -18,6 +17,8 @@ export default class ClinicHero extends React.Component {
               </Link>
             </div>
           </div>  
+          <div className="picture_left is-hidden-desktop home_clinic_bg column">
+          </div>
         </div>   
       </div>
     )
