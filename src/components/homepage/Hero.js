@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import animation from './animation.js'
-import logo from '../../img/sw_logo.svg'
+import logo from '../../img/sw_logo.png'
 
 export default class Hero extends React.Component {
   constructor(props){

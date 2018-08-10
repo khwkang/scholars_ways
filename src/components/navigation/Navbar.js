@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import logo from '../../img/sw_logo.svg'
+import logo from '../../img/sw_logo.png'
 import animation from './animation.js'
 
 export default class Navbar extends React.Component {
@@ -26,28 +26,24 @@ export default class Navbar extends React.Component {
           Clinic
         </p>
         <ul className="menu-list">
-          <li><Link to="/">Practitioners</Link></li>
-          <li><Link to="/">Services | Expertise</Link></li>
-          <li><Link to="/">Fees</Link></li>
+          <li><Link to="/clinic/practitioner">Practitioners</Link></li>
+          <li><Link to="/clinic/expertise">Expertise</Link></li>
           <li><Link to="/">Appointment</Link></li>
         </ul>
         <hr className="nav_hr"/>
         <p className="menu-label">
-          Class
+          Training
         </p>
         <ul className="menu-list">
-          <li><Link to="/">Current Classes</Link></li>
+          <li><Link to="/">Classes</Link></li>
           <li><Link to="/">Schedule</Link></li>
         </ul>
         <hr className="nav_hr"/>
         <ul className="menu-list">
-          <li><Link to="/">Library</Link></li>
-          <li>
-            <Link to="/products">Products</Link>
-          </li>
-          <li>
-            <Link to="/">Contact Us</Link>
-          </li>
+          <li><Link to="/library">Library</Link></li>
+          <li><Link to="/blog">Blog</Link></li>
+          <li><Link to="/">Join Us</Link></li>
+          <li><Link to="/products">Products</Link></li>
         </ul>
       </aside>
     )

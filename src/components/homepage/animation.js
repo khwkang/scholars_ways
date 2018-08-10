@@ -9,18 +9,16 @@ export default {
     )
   },
   activateBackToTop() {
-    var controller = new ScrollMagic.Controller();
+    var controller = new ScrollMagic.Controller() 
     var scene = new ScrollMagic.Scene({
       triggerElement: "#qigong_hero"
     })
-    .setTween("#back_to_top", 1, {display: "block"})
     .setTween("#back_to_top", 0.5, {display: "block", opacity: 1})
     .addIndicators({name: "1 (duration: 0)"})
     .addTo(controller);
   },
   
   sampleTween() {
-    //scale
     TweenMax.to("#home_hero_logo_animate", 3, {scaleX:1.1, scaleY:1.1, repeat:-1, yoyo:true});
     TweenMax.to("#home_hero_title_animate", 3, {scaleX:1.1, scaleY:1.1, repeat:-1, yoyo:true});
     //tint
