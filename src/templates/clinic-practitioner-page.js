@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Content, { HTMLContent } from '../components/Content'
 
-export const AboutPageTemplate = ({ title, content, contentComponent }) => {
+export const ClinicPractitionerPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content
   
   return (
@@ -23,16 +23,16 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   )
 }
 
-AboutPageTemplate.propTypes = {
+ClinicPractitionerPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
 }
 
-const AboutPage = ({ data }) => {
+const ClinicPractitionerPage = ({ data }) => {
   const { markdownRemark: post } = data
   return (
-    <AboutPageTemplate
+    <ClinicPractitionerPageTemplate
       contentComponent={HTMLContent}
       title={post.frontmatter.title}
       content={post.html}
@@ -40,14 +40,14 @@ const AboutPage = ({ data }) => {
   )
 }
 
-AboutPage.propTypes = {
+ClinicPractitionerPage.propTypes = {
   data: PropTypes.object.isRequired,
 }
 
-export default AboutPage
+export default ClinicPractitionerPage
 
-export const aboutPageQuery = graphql`
-  query AboutPage($id: String!) {
+export const ClinicPractitionerPageQuery = graphql`
+  query ClinicPractitionerPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
