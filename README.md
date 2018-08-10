@@ -1,6 +1,6 @@
-<h1>Community Project for acupuncture clinic, class, PDA program, workshop, retreats, and more</h1>
+<h1>Community Project for acupuncture clinic, qigong and sword class, PDA program, workshop, retreats, and other Daoist art of healing</h1>
 
-<a>https://scholarsways.com</a>
+<a>https://scholarsway.org</a>
 
 # Gatsby + Netlify CMS Starter
 
