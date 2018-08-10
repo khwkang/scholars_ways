@@ -52,15 +52,15 @@ export default class MobileNav extends React.Component {
               <hr className="nav_hr"/>
               <p className="menu-label">Training</p>
               <ul className="menu-list">
-                <li><Link onClick={this.toggleDropdown} to="/">Classes</Link></li>
-                <li><Link onClick={this.toggleDropdown} to="/">Schedule</Link></li>
+                <li><Link onClick={this.toggleDropdown} to="/class">Classes</Link></li>
+                <li><Link onClick={this.toggleDropdown} to="/class/schedule">Schedule</Link></li>
               </ul>
               <hr className="nav_hr"/>
               <ul className="menu-list">
                 <li><Link onClick={this.toggleDropdown} to="/about">About</Link></li>
                 <li><Link onClick={this.toggleDropdown} to="/blog">Blog</Link></li>
                 <li><Link onClick={this.toggleDropdown} to="/library">Library</Link></li>
-                <li><Link onClick={this.toggleDropdown} to="/">Join Us</Link></li>
+                <li><Link onClick={this.toggleDropdown} to="/contact">Join Us</Link></li>
                 <li><Link onClick={this.toggleDropdown} to="/products">Products</Link></li>
               </ul>
             </div>

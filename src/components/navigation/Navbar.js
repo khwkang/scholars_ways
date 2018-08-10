@@ -28,21 +28,21 @@ export default class Navbar extends React.Component {
         <ul className="menu-list">
           <li><Link to="/clinic/practitioner">Practitioners</Link></li>
           <li><Link to="/clinic/expertise">Expertise</Link></li>
-          <li><Link to="/">Appointment</Link></li>
+          <li><Link to="/clinic/appointment">Appointment</Link></li>
         </ul>
         <hr className="nav_hr"/>
         <p className="menu-label">
           Training
         </p>
         <ul className="menu-list">
-          <li><Link to="/">Classes</Link></li>
-          <li><Link to="/">Schedule</Link></li>
+          <li><Link to="/class">Classes</Link></li>
+          <li><Link to="/class/schedule">Schedule</Link></li>
         </ul>
         <hr className="nav_hr"/>
         <ul className="menu-list">
           <li><Link to="/library">Library</Link></li>
           <li><Link to="/blog">Blog</Link></li>
-          <li><Link to="/">Join Us</Link></li>
+          <li><Link to="/contact">Join Us</Link></li>
           <li><Link to="/products">Products</Link></li>
         </ul>
       </aside>
