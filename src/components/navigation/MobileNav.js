@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import logo from '../../img/sw_logo.svg'
+import logo from '../../img/sw_logo.png'
 
 export default class MobileNav extends React.Component {
   constructor(props){
@@ -31,7 +31,7 @@ export default class MobileNav extends React.Component {
               <img id="sw_logo_mobile" src={logo} alt="scholars way logo image"/>
             </Link>
             <p className="menu-label logo_font">
-              Sholars Ways
+              Sholars Way
             </p>
             <span role="button" className={this.state.toggle ? "navbar-burger burger is-active" : "navbar-burger burger"  } 
               onClick={this.toggleDropdown} aria-label="menu" aria-expanded="false">
