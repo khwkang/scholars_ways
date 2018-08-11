@@ -1,32 +1,19 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Content, { HTMLContent } from '../components/Content'
+import ClassModule from '../components/training/ClassModule.js'
 
 export const ClassPageTemplate = ({ title, data }) => {
   const classes = data.classes
-  console.log("xxxx", classes)
   return (
     <section id="" className="section section--gradient">
       <div className="container">
-        <div className="columns">
-          <div className="column is-9 is-offset-1">
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                {title}
-              </h2>
-            <div className="section columns">
-              {classes.map(cls => (
-                <div key={cls.title} 
-                     className="cls_module column" 
-                     style={{ backgroundImage: `url(${cls.image_path})` }}>
-                  <div className="message-body">
-                    <h3 className="cls_title">
-                      {cls.title}
-                    </h3>                
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
+        <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
+          {title}
+        </h2>
+        <div className="section columns">
+          {classes.map(cls => (
+            <ClassModule key={cls.title} classes={cls}/>
+          ))}
         </div>
       </div>
     </section>
