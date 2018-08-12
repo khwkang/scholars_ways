@@ -1,51 +1,69 @@
-import React from 'react'
-import Link from 'gatsby-link'
-import logo from '../../img/sw_logo.png'
-import animation from './animation.js'
+import React from "react";
+import Link from "gatsby-link";
+import logo from "../../img/sw_logo.png";
+import animation from "./animation.js";
+import LinkTrack from "./LinkTrack.js";
 
 export default class Navbar extends React.Component {
   render() {
     return (
-      <aside className="custom_scroll menu column is-2-desktop is-3-tablet is-hidden-touch navbar is-fixed-top" id="side_nav">
-        <Link to="/#home_hero" className="logo_wrapper" onClick={animation.spinLogo}>
-          <img id="sw_logo" src={logo} alt="scholars_way_logo"/>
-        </Link>
-        <hr className="nav_hr"/>
-        <p className="menu-label">
-          Sholars Ways
-        </p>
+      <aside
+        className="custom_scroll menu column is-2-desktop is-3-tablet is-hidden-touch navbar is-fixed-top"
+        id="side_nav"
+      >
+        <LinkTrack
+          to="/#home_hero"
+          className="logo_wrapper"
+          onClick={animation.spinLogo}
+        >
+          <img id="sw_logo" src={logo} alt="scholars_way_logo" />
+        </LinkTrack>
+        <hr className="nav_hr" />
+        <p className="menu-label">Sholars Ways</p>
         <ul className="menu-list">
-          <li>        
-            <Link to="/about">
-              About
-            </Link>
+          <li>
+            <LinkTrack to="/about">About</LinkTrack>
           </li>
         </ul>
-        <hr className="nav_hr"/>
-        <p className="menu-label">
-          Clinic
-        </p>
+        <hr className="nav_hr" />
+        <p className="menu-label">Clinic</p>
         <ul className="menu-list">
-          <li><Link to="/clinic/practitioner">Practitioners</Link></li>
-          <li><Link to="/clinic/expertise">Expertise</Link></li>
-          <li><Link to="/clinic/appointment">Appointment</Link></li>
+          <li>
+            <LinkTrack to="/clinic/practitioner">Practitioners</LinkTrack>
+          </li>
+          <li>
+            <LinkTrack to="/clinic/expertise">Expertise</LinkTrack>
+          </li>
+          <li>
+            <LinkTrack to="/clinic/appointment">Appointment</LinkTrack>
+          </li>
         </ul>
-        <hr className="nav_hr"/>
-        <p className="menu-label">
-          Training
-        </p>
+        <hr className="nav_hr" />
+        <p className="menu-label">Training</p>
         <ul className="menu-list">
-          <li><Link to="/class">Classes</Link></li>
-          <li><Link to="/class/schedule">Schedule</Link></li>
+          <li>
+            <LinkTrack to="/class">Classes</LinkTrack>
+          </li>
+          <li>
+            <LinkTrack to="/class/schedule">Schedule</LinkTrack>
+          </li>
         </ul>
-        <hr className="nav_hr"/>
+        <hr className="nav_hr" />
         <ul className="menu-list">
-          <li><Link to="/library">Library</Link></li>
-          <li><Link to="/blog">Blog</Link></li>
-          <li><Link to="/contact">Join Us</Link></li>
-          <li><Link to="/products">Products</Link></li>
+          <li>
+            <LinkTrack to="/library">Library</LinkTrack>
+          </li>
+          <li>
+            <LinkTrack to="/blog">Blog</LinkTrack>
+          </li>
+          <li>
+            <LinkTrack to="/contact">Join Us</LinkTrack>
+          </li>
+          <li>
+            <LinkTrack to="/products">Products</LinkTrack>
+          </li>
         </ul>
       </aside>
-    )
+    );
   }
 }
