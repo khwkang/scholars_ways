@@ -11,56 +11,56 @@ export default class Navbar extends React.Component {
         className="custom_scroll menu column is-2-desktop is-3-tablet is-hidden-touch navbar is-fixed-top"
         id="side_nav"
       >
-        <Link
+        <LinkTrack
           to="/#home_hero"
           className="logo_wrapper"
           onClick={animation.spinLogo}
         >
           <img id="sw_logo" src={logo} alt="scholars_way_logo" />
-        </Link>
+        </LinkTrack>
         <hr className="nav_hr" />
         <p className="menu-label">Sholars Ways</p>
         <ul className="menu-list">
           <li>
-            <Link to="/about">About</Link>
+            <LinkTrack to="/about">About</LinkTrack>
           </li>
         </ul>
         <hr className="nav_hr" />
         <p className="menu-label">Clinic</p>
         <ul className="menu-list">
           <li>
-            <Link to="/clinic/practitioner">Practitioners</Link>
+            <LinkTrack to="/clinic/practitioner">Practitioners</LinkTrack>
           </li>
           <li>
-            <Link to="/clinic/expertise">Expertise</Link>
+            <LinkTrack to="/clinic/expertise">Expertise</LinkTrack>
           </li>
           <li>
-            <Link to="/clinic/appointment">Appointment</Link>
+            <LinkTrack to="/clinic/appointment">Appointment</LinkTrack>
           </li>
         </ul>
         <hr className="nav_hr" />
         <p className="menu-label">Training</p>
         <ul className="menu-list">
           <li>
-            <Link to="/class">Classes</Link>
+            <LinkTrack to="/class">Classes</LinkTrack>
           </li>
           <li>
-            <Link to="/class/schedule">Schedule</Link>
+            <LinkTrack to="/class/schedule">Schedule</LinkTrack>
           </li>
         </ul>
         <hr className="nav_hr" />
         <ul className="menu-list">
           <li>
-            <Link to="/library">Library</Link>
+            <LinkTrack to="/library">Library</LinkTrack>
           </li>
           <li>
-            <Link to="/blog">Blog</Link>
+            <LinkTrack to="/blog">Blog</LinkTrack>
           </li>
           <li>
-            <Link to="/contact">Join Us</Link>
+            <LinkTrack to="/contact">Join Us</LinkTrack>
           </li>
           <li>
-            <Link to="/products">Products</Link>
+            <LinkTrack to="/products">Products</LinkTrack>
           </li>
         </ul>
       </aside>
