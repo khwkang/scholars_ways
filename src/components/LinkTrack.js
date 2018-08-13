@@ -1,9 +1,10 @@
-import React from "react";
-import Link from "gatsby-link";
+import React from 'react';
+import Link from 'gatsby-link';
 
 export default props => {
+  const { to, ...other } = props;
   const track = () => {
-    analytics ? analytics.page() : null;
+    analytics ? analytics.page({ path: to }) : null;
   };
-  return <Link {...props} onClick={track} />;
+  return <Link to={to} {...props} onClick={track} />;
 };
