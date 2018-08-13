@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default class ClassQigong extends React.Component {
+export default class ClassInstance extends React.Component {
   render() {
     const cls = this.props.data
     return (

@@ -1,10 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import ClassQigong from '../components/training/ClassQigong.js'
+import ClassInstance from '../components/training/ClassInstance.js'
 
-export const ClassQigongPageTemplate = ({ title, data }) => {
+export const ClassInstancePageTemplate = ({ title, data }) => {
   return (
-    <section id="class_page" className="section section--gradient">
+    <section id={title.toLowerCase().replace(/ /g,"_")} className="section section--gradient">
       <div className="container">
         <div className="columns">
           <div className="column is-9 is-offset-1">
@@ -13,7 +13,7 @@ export const ClassQigongPageTemplate = ({ title, data }) => {
               {title}
               </h2>  
                 <div className="content columns">                  
-                  <ClassQigong key={data.title} data={data}/>
+                  <ClassInstance key={data.title} data={data}/>
                 </div>
             </div>
           </div>  
@@ -23,30 +23,29 @@ export const ClassQigongPageTemplate = ({ title, data }) => {
   )
 }
 
-ClassQigongPageTemplate.propTypes = {
+ClassInstancePageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
-  content: PropTypes.string,
-  contentComponent: PropTypes.func,
+  data: PropTypes.object
 }
 
-const ClassQigongPage = ({ data }) => {
+const ClassInstancePage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
   return (
-    <ClassQigongPageTemplate
+    <ClassInstancePageTemplate
       title={frontmatter.title}
       data={frontmatter}
     />
   )
 }
 
-ClassQigongPage.propTypes = {
+ClassInstancePage.propTypes = {
   data: PropTypes.object.isRequired,
 }
 
-export default ClassQigongPage
+export default ClassInstancePage
 
-export const ClassQigongPageQuery = graphql`
-  query ClassQigongPage($id: String!) {
+export const ClassInstancePageQuery = graphql`
+  query ClassInstancePage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
