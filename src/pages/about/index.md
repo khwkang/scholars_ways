@@ -3,11 +3,14 @@ templateKey: 'about-page'
 path: /about
 title: About Scholars Way
 ---
-Aloha,
+ALOHA
 
-**Scholars Way Healing Center** is a place to heal, nourish, and balance the body and mind.
-We are dedicated to heal the hwole being. At Scholars Way Healing Center, we believe that good health care should be supportive of physical and emotional well-being, and should include diet and lifestyle counseling. 
+SCHOLARS WAY HEALING CENTER IS A PLACE TO HEAL, NOURISH, BALANCE THE BODY AND MIND.  DEDICATED TO HEAL THE WHOLE BEING.
 
-The methods of treatment we use include Acupunture, Pulse Diagnosis, Moxibustion, Herbal tonics, Qigong, and Health Consultation. With a personally tailored treatment plan, we strive to heal, fast recover, strengthen, and well being of all our patients and members.
+AT SCHOLARS WAY HEALING CENTER, WE BELIEVE THAT GOOD HEALTH CARE SHOULD BE SUPPORTIVE OF PHYSICAL AND EMOTIONAL WELL-BEING, AND SHOULD INCLUDE DIET AND LIFESTYLE COUNSELING.
 
-Mahalo
+AT SCHOLARS WAY HEALING CENTER, THE METHODS OF TREATMENT WE USE INCLUDE ACUPUNCTURE, PULSE DIAGNOSIS, MOXIBUSTION, HERBAL TONICS, QIGONG AND HEALTH CONSULTATION.
+
+WITH A PERSONALLY TAILORED TREATMENT PLAN, WE STRIVE TO HEAL, FAST RECOVERY, STRENGTHEN AND WELL BEING OF ALL OUR PATIENTS.
+
+MAHALO

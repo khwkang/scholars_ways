@@ -1,12 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Content, { HTMLContent } from '../components/Content'
+import ClinicAppointment from '../components/clinic/ClinicAppointment.js'
 
-export const ClinicAppointmentPageTemplate = ({ title, content, contentComponent }) => {
-  const PageContent = contentComponent || Content
-  
+export const ClinicAppointmentPageTemplate = ({ title, data}) => {
   return (
-    <section id="" className="section section--gradient">
+    <section id="clinic_appointment" className="section section--gradient">
       <div className="container">
         <div className="columns">
           <div className="column is-9 is-offset-1">
@@ -14,7 +12,7 @@ export const ClinicAppointmentPageTemplate = ({ title, content, contentComponent
               <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
                 {title}
               </h2>
-              <PageContent className="content" content={content} />
+              <ClinicAppointment data={data} />
             </div>
           </div>
         </div>
@@ -25,17 +23,15 @@ export const ClinicAppointmentPageTemplate = ({ title, content, contentComponent
 
 ClinicAppointmentPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
-  content: PropTypes.string,
-  contentComponent: PropTypes.func,
+  content: PropTypes.string
 }
 
 const ClinicAppointmentPage = ({ data }) => {
-  const { markdownRemark: post } = data
+  const pageData = data.markdownRemark.frontmatter
   return (
     <ClinicAppointmentPageTemplate
-      contentComponent={HTMLContent}
-      title={post.frontmatter.title}
-      content={post.html}
+      title={pageData.title}
+      data={pageData}
     />
   )
 }
@@ -49,9 +45,12 @@ export default ClinicAppointmentPage
 export const ClinicAppointmentPageQuery = graphql`
   query ClinicAppointmentPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
-      html
       frontmatter {
         title
+        email
+        phone
+        address
+        secondary_address
       }
     }
   }
