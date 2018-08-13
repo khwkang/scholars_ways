@@ -1,8 +1,7 @@
-import React from "react";
-import Link from "gatsby-link";
-import logo from "../../img/sw_logo.png";
-import animation from "./animation.js";
-import LinkTrack from "./LinkTrack.js";
+import React from "react"
+import logo from "../../img/sw_logo.png"
+import animation from "./animation.js"
+import LinkTrack from "../LinkTrack.js"
 
 export default class Navbar extends React.Component {
   render() {
