@@ -4,7 +4,7 @@ import ClinicAppointment from '../components/clinic/ClinicAppointment.js'
 
 export const ClinicAppointmentPageTemplate = ({ title, data}) => {
   return (
-    <section id="clinic_appointment" className="section section--gradient">
+    <section id="clinic_appointment_page" className="section section--gradient">
       <div className="container">
         <div className="columns">
           <div className="column is-9 is-offset-1">
