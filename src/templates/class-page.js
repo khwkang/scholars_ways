@@ -5,15 +5,21 @@ import ClassModule from '../components/training/ClassModule.js'
 export const ClassPageTemplate = ({ title, data }) => {
   const classes = data.classes
   return (
-    <section id="" className="section section--gradient">
+    <section id="class_page" className="section section--gradient">
       <div className="container">
-        <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-          {title}
-        </h2>
-        <div className="section columns">
-          {classes.map(cls => (
-            <ClassModule key={cls.title} classes={cls}/>
-          ))}
+        <div className="columns">
+          <div className="column is-9 is-offset-1">
+            <div className="section">
+              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
+              {title}
+              </h2>  
+                <div className="content columns">
+                  {classes.map(cls => (
+                    <ClassModule key={cls.title} classes={cls}/>
+                  ))}
+                </div>
+            </div>
+          </div>  
         </div>
       </div>
     </section>
@@ -49,6 +55,7 @@ export const ClassPageQuery = graphql`
         title
         classes {
           title
+          link_url
           image_path
           description
           schedule_day
