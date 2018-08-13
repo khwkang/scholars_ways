@@ -14,7 +14,8 @@ export default {
       triggerElement: "#qigong_hero"
     })
     .setTween("#back_to_top", 0.5, {display: "block", opacity: 1})
-    .addIndicators({name: "1 (duration: 0)"})
+    // uncomment it for scroll indicator debug tool  
+    // .addIndicators({name: "1 (duration: 0)"})
     .addTo(controller);
   },
   
