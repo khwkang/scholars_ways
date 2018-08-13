@@ -2,13 +2,13 @@ import React from 'react';
 import Link from 'gatsby-link';
 
 export default props => {
-  const { to, onClick: parentOnClick, ...other } = props;
+  const { to: path, onClick: parentOnClick, ...other } = props;
   const track = () => {
-    analytics ? analytics.page({ path: to }) : null;
+    analytics ? analytics.page({ path }) : null;
   };
   const handleClick = () => {
     track();
-    parentOnClick();
+    parentOnClick ? parentOnClick() : null;
   };
-  return <Link to={to} {...props} onClick={handleClick} />;
+  return <Link to={path} {...other} onClick={handleClick} />;
 };
