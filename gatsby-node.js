@@ -27,14 +27,14 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
       result.errors.forEach(e => console.error(e.toString()))
       return Promise.reject(result.errors)
     }
-
     const posts = result.data.allMarkdownRemark.edges
-
     posts.forEach(edge => {
+      const layout = edge.node.frontmatter.templateKey === 'library-page' ? 'library' : 'index'
       const id = edge.node.id
       createPage({
         path: edge.node.fields.slug,
         tags: edge.node.frontmatter.tags,
+        layout: layout,
         component: path.resolve(
           `src/templates/${String(edge.node.frontmatter.templateKey)}.js`
         ),

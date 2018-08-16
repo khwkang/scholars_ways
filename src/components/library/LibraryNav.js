@@ -11,7 +11,7 @@ export default class LibraryNav extends React.Component {
 
   render() {
     return (
-      <div id="library_nav" className="column navbar is-fixed-top">
+      <div id="library_nav" className="navbar">
         <nav className="panel">
           <div className="panel-heading">
             <h1 className="panel_title">Scholars Way</h1>
