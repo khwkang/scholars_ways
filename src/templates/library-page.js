@@ -69,6 +69,10 @@ export const LibraryPageQuery = graphql`
             name
             url
             active
+            child {
+              name
+              url
+            }
           }
         }
       }

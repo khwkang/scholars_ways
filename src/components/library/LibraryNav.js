@@ -1,12 +1,13 @@
 import React from 'react'
 // import animation from './animation.js'
 import Link from '../LinkTrack.js'
+import LibraryChildNav from './LibraryChildNav.js'
 
 export default class LibraryNav extends React.Component {
   constructor(props) {
     super(props)
-    const panelData = this.props.data.panel
-    const panelBlock = this.props.data.panel_block
+    this.panelData = props.data.panel
+    this.panelBlock = props.data.panel_block
   }
 
   render() {
@@ -18,7 +19,7 @@ export default class LibraryNav extends React.Component {
             <h2 className="panel_sub_title">Library</h2>
           </div>
           <p className="panel-tabs">
-            {this.props.data.panel.map(chapter => (
+            {this.panelData.map(chapter => (
               <Link 
                 to={chapter.url} 
                 className={'category_option ' + (chapter.active ? 'is-active' : '')}
@@ -27,14 +28,17 @@ export default class LibraryNav extends React.Component {
               </Link>
             ))}
           </p>
-          {this.props.data.panel_block.map(section => (
+          {this.panelBlock.map(section => (
+              <div>
               <Link 
                 to={section.url} 
                 className={'panel-block ' + (section.active ? 'is-active' : '')}
               >
-                {section.name}
+                {section.name}    
               </Link>
-            ))}          
+              {section.child && <LibraryChildNav items={section.child}/> }                
+              </div>
+          ))}          
           <Link to="/" className="panel-block back_button">
             Leave Library
           </Link>
