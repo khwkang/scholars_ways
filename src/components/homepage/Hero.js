@@ -34,9 +34,8 @@ export default class Hero extends React.Component {
           <div id="scroll_control" className="jump_scroll">
           <p className="menu_sign">Quick Access -></p>
           <span onClick={(e) => this.scrollHandler(e, "#clinic_hero")}>Clinic</span>
-          <span onClick={(e) => this.scrollHandler(e, "#qigong_hero")}>Qigong</span>
-          <span onClick={(e) => this.scrollHandler(e, "#qigong_hero")}>Class</span>
-          <span onClick={(e) => this.scrollHandler(e, "#qigong_hero")}>Events</span>
+          <span onClick={(e) => this.scrollHandler(e, "#training_hero")}>Training</span>
+          <span onClick={(e) => this.scrollHandler(e, "#workshop_hero")}>Workshop</span>
         </div>
         </div>
       </div>

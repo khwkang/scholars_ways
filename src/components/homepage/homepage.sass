@@ -28,7 +28,7 @@
       font-size: 2.2rem
   .jump_scroll
     background-color: #00000033
-    padding: 26px 0
+    padding: 26px 40px 26px 0
     display: flex
     justify-content: flex-end
     bottom: 1rem
@@ -62,21 +62,27 @@
     @media (min-width: $landscape_up)
       height: inherit
   .content
-    @media (min-width: $portrait_up) 
-      padding: 0 40px
+    padding: 50px
     @media (max-width: $phone_only) 
-      padding: 0 20px
+      padding-right: 20px
     button
       margin-top: 20px
-  #clinic_hero
+  #clinic_hero 
     .columns
       margin-top: 0
     .home_clinic_bg
       background-image: url("../img/hero_placeholder.jpg")
-  #qigong_hero
-    .home_qigong_bg
+  #training_hero
+    .content
+      @media (min-width: $desktop_up)
+        padding-left: 80px
+    .home_training_bg
       background-image: url("../img/home_qigong_filter_su_pu.jpg")
-  
+  #workshop_hero
+    margin-top: 12px
+    .home_workshop_bg
+      background-image: url("../img/hero_placeholder.jpg")
+
 #back_to_top
     opacity: 0
     display: none
