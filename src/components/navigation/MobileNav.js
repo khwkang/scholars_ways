@@ -107,11 +107,6 @@ export default class MobileNav extends React.Component {
                   </Link>
                 </li>
                 <li>
-                  <Link onClick={this.toggleDropdown} to="/blog">
-                    Blog
-                  </Link>
-                </li>
-                <li>
                   <Link onClick={this.toggleDropdown} to="/library">
                     Library
                   </Link>
@@ -119,11 +114,6 @@ export default class MobileNav extends React.Component {
                 <li>
                   <Link onClick={this.toggleDropdown} to="/contact">
                     Join Us
-                  </Link>
-                </li>
-                <li>
-                  <Link onClick={this.toggleDropdown} to="/products">
-                    Products
                   </Link>
                 </li>
               </ul>

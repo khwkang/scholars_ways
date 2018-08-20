@@ -53,13 +53,7 @@ export default class Navbar extends React.Component {
             <Link to="/library">Library</Link>
           </li>
           <li>
-            <Link to="/blog">Blog</Link>
-          </li>
-          <li>
             <Link to="/contact">Join Us</Link>
-          </li>
-          <li>
-            <Link to="/products">Products</Link>
           </li>
         </ul>
       </aside>

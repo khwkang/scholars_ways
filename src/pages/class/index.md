@@ -23,7 +23,7 @@ classes:
     schedule_time: 5:45pm - 6:45pm
   - title: Medicinal Movement
     link_url: medicinal-movement
-    image_path: /img/classes/classes_qigong_thumb.jpg
+    image_path: /img/classes/med_move_class_thumb.jpg
     description: 
       Become healthier and feel younger with Medicinal Movement! Life itself is Energy. Everything around us is Energy. The future medicine is Qi (Energy). Free all your joints from stiffness, control your breath and calm your mind to help the flow of Energy to every part of your body. If KoBang Qigong feels too rigorous, please explore this more accessible form of qigong. Rejuvenate yourself!
     description_2:

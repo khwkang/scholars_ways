@@ -17,6 +17,9 @@
     @media (max-width: $phone_only) 
       height: 325px
       width: 325px
+    &:hover
+      .bg_overlay
+        opacity: 0
   .cls_title
     font-size: 2rem
     color: white
@@ -28,3 +31,6 @@
     height: 100%
     background-color: black
     opacity: 0.3
+    @include transition (all, .5s, ease)
+
+  
