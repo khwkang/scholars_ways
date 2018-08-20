@@ -25,7 +25,7 @@ navigation:
       url: /library/what-is-daoism
       active: false
     - name: Cosmology 
-      url: /library/cosmology      
+      url: /library/start-here/cosmology      
       active: false
 ---
 
