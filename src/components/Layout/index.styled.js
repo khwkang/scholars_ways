@@ -7,9 +7,10 @@ export const Layout = styled('div')`
   margin-bottom: 12px;
 `
 export const Container = styled('div')`
-  padding-right: 0
-  @media (min-width: 1024px) 
-    margin-left: 16%
+  padding-right: 0;
+  ${t.mq.l} {
+    margin-left: 16%;
+  }
 `
 
 
