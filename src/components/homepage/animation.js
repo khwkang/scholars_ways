@@ -11,7 +11,7 @@ export default {
   activateBackToTop() {
     var controller = new ScrollMagic.Controller() 
     var scene = new ScrollMagic.Scene({
-      triggerElement: "#qigong_hero"
+      triggerElement: "#clinic_hero"
     })
     .setTween("#back_to_top", 0.5, {display: "block", opacity: 1})
     // uncomment it for scroll indicator debug tool  

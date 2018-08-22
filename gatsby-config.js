@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "Gatsby + Netlify CMS Starter"
+    title: "Scholars Way Daoist Healing Art"
   },
   plugins: [
     "gatsby-plugin-react-helmet",
@@ -25,12 +25,6 @@ module.exports = {
       resolve: "gatsby-transformer-remark",
       options: {
         plugins: []
-      }
-    },
-    {
-      resolve: "gatsby-plugin-netlify-cms",
-      options: {
-        modulePath: `${__dirname}/src/cms/cms.js`
       }
     },
     {
