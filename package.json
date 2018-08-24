@@ -25,7 +25,9 @@
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-emotion": "^9.2.6",
+    "react-hamburger-menu": "^1.1.1",
     "react-helmet": "^5.2.0",
+    "react-powerplug": "^1.0.0-rc.1",
     "sharp": "^0.20.5",
     "uuid": "^3.2.1"
   },
