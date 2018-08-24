@@ -8,16 +8,13 @@ import BackToTop from '../components/homepage/BackToTop'
 import WorkshopHero from '../components/homepage/WorkshopHero';
 
 
-export default class IndexPage extends React.Component {
-  render() {
-    return (
-      <section id="index_page">
-          <Hero />
-          <ClinicHero />
-          <TrainingHero />
-          <WorkshopHero/>
-          <BackToTop />
-      </section>
-    )
-  }
-}
+export const IndexPage = () => (
+  <section id="index_page">
+      <Hero />
+      <ClinicHero />
+      <TrainingHero />
+      <WorkshopHero/>
+      <BackToTop />
+  </section>
+)
+export default IndexPage
