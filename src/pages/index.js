@@ -10,11 +10,11 @@ import WorkshopHero from '../components/homepage/WorkshopHero';
 
 export const IndexPage = () => (
   <section id="index_page">
-      <Hero />
-      <ClinicHero />
-      <TrainingHero />
-      <WorkshopHero/>
-      <BackToTop />
+    <Hero />
+    <ClinicHero />
+    <TrainingHero />
+    <WorkshopHero/>
+    <BackToTop />
   </section>
 )
 export default IndexPage

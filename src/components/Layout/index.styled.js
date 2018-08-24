@@ -9,7 +9,7 @@ export const Layout = styled('div')`
 export const Container = styled('div')`
   padding-right: 0;
   ${t.mq.l} {
-    margin-left: 16%;
+    margin-left: ${t.s(8)};
   }
 `
 
