@@ -1,7 +1,5 @@
 import styled from 'react-emotion'
-import { css } from 'emotion'
 import t from '../../theme'
-import Link from '../LinkTrack.js';
 
 export const Container = styled('div')`
   background: ${t.c.maroon};
