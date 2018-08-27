@@ -4,12 +4,12 @@ import Link from '../LinkTrack.js';
 
 export const NavbarStyled = styled('div')`
   position: fixed;
-  background: #2a2828;
+  background: ${t.c.nav};
   height: 100%;
   overflow: scroll;
   overflow-x: hidden;
   overflow-y: auto;
-  padding-left: 15px;
+  padding-left: 2rem;
   display:none;
   width: ${t.s(8)};
   
@@ -32,7 +32,7 @@ export const NavbarStyled = styled('div')`
 export const NavLogoWrapper = styled(Link)`
   display: flex;
   justify-content: center;
-  margin-left: -15px;
+  margin-left: -2rem;
 `
 
 export const NavLogo = styled('img')`
@@ -47,15 +47,19 @@ export const NavLineBreak = styled('hr')`
 `
 
 export const MenuLabel = styled('p')`
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: 700;
   padding-bottom: 1rem;
+  color: #757575;
+  text-transform: uppercase;
 `
 
 export const MenuItem = styled(Link)`
   display: block;
-  color: white;
-  line-height: 2rem;
+  color: #d1d1d1;
+  font-size: 1.1rem;
+  line-height: 2.2rem;
+  font-weight: 500;
 `
 
 

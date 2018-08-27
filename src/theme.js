@@ -7,15 +7,10 @@ const ssv = f => (...v) => v.map(f).join(' ')
 const theme = {
   colors: {
     gray: '#bebdbd',
-    maroon: '#39292a',
-    maroonDark: '#291d1e',
-    maroonExtraDark: '#1b1112',
-    red: '#c21446',
-    redDark: '#881731',
-    tan: '#776f65',
-    tanLight: '#dfddd7',
-    tanExtraLight: '#f5f5f3',
+    bodygray: '#595959', 
+    black: '#000',
     white: '#fff',
+    nav: '#232323',
   },
   lineHeights: {
     solid: 1,

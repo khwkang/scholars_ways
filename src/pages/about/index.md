@@ -1,16 +1,7 @@
 ---
 templateKey: 'about-page'
 path: /about
-title: About Scholars Way
+title: Welcome to Scholars Way
+text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
 ---
-ALOHA
 
-SCHOLARS WAY HEALING CENTER IS A PLACE TO HEAL, NOURISH, BALANCE THE BODY AND MIND.  DEDICATED TO HEAL THE WHOLE BEING.
-
-AT SCHOLARS WAY HEALING CENTER, WE BELIEVE THAT GOOD HEALTH CARE SHOULD BE SUPPORTIVE OF PHYSICAL AND EMOTIONAL WELL-BEING, AND SHOULD INCLUDE DIET AND LIFESTYLE COUNSELING.
-
-AT SCHOLARS WAY HEALING CENTER, THE METHODS OF TREATMENT WE USE INCLUDE ACUPUNCTURE, PULSE DIAGNOSIS, MOXIBUSTION, HERBAL TONICS, QIGONG AND HEALTH CONSULTATION.
-
-WITH A PERSONALLY TAILORED TREATMENT PLAN, WE STRIVE TO HEAL, FAST RECOVERY, STRENGTHEN AND WELL BEING OF ALL OUR PATIENTS.
-
-MAHALO

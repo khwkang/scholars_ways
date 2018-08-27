@@ -1,6 +1,6 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import animation from './animation.js'
+import styled from 'react-emotion'
 
 export default class BackToTop extends React.Component {
   constructor(props){
@@ -17,13 +17,25 @@ export default class BackToTop extends React.Component {
 
   render() {
     return (
-      <div id="back_to_top">
+      <BackToTopButtonContainer id="back_to_top">
         <span onClick={(e) => this.scrollHandler(e, "#home_hero")}>Back to Top</span>
-      </div>
+      </BackToTopButtonContainer>
     )
   }
 }
 
-
+const BackToTopButtonContainer = styled('div')`
+  opacity: 0;
+  display: none;
+  bottom: 33px;
+  right: 34px;
+  position: fixed;
+  color: #ffffffc4;
+  background-color: #00000085;
+  padding: 8px 21px;
+  border-radius: 42px;
+  font-weight: 500;
+  cursor: pointer;
+`
 
       

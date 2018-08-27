@@ -2,7 +2,7 @@ import styled from 'react-emotion'
 import t from '../../theme'
 
 export const Container = styled('div')`
-  background: ${t.c.maroon};
+  background-color: ${t.c.nav};
 `
 
 export const HamburgerMenuContainer = styled('div')`

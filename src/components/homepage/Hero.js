@@ -1,6 +1,7 @@
 import React from 'react'
 import logo from '../../img/sw_logo.png'
 import {QuickAccessBar} from './QuickAccessBar'
+import animation from './animation.js'
 import { 
   Container, 
   Content, 

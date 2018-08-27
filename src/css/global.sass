@@ -1,9 +1,5 @@
 @import "~bulma/sass/utilities/initial-variables"
 
-// custom vars
-$sw-green: #009874
-$kaldi-red-invert: #fff
-
 // media query vars
 $phone_only: 599px
 $portrait_only_min: 600px
@@ -13,19 +9,6 @@ $landscape_only_min: 900px
 $landscape_only_max: 1199px
 $landscape_up: 900px
 $desktop_up: 1200px
-
-// @media (max-width: $phone_only) 
-// @media (min-width: $portrait_only_min) and (max-width: $portrait_only_max) 
-// @media (min-width: $portrait_up) 
-// @media (min-width: $landscape_only_min) and (max-width: $landscape_only_max) 
-// @media (min-width: $landscape_up) 
-// @media (min-width: $desktop_up) 
-
-
-// overrides
-$primary: $sw-green
-$primary-invert: $kaldi-red-invert
-$menu-label-color: #fff
 
 body::-webkit-scrollbar 
   width: 0.3em
@@ -44,49 +27,9 @@ body::-webkit-scrollbar-thumb
   -o-transition:      $what $time $how
   transition:         $what $time $how
 
-.content .taglist
-  list-style: none
-  margin-bottom: 0
-  margin-left: 0
-  margin-right: 1.5rem
-  margin-top: 1.5rem
-  display: flex
-  flex-wrap: wrap
-  justify-content: left
-  align-items: center
-  li
-    padding: 0 2rem 1rem 0
-    margin-bottom: 1.5rem
-    margin-top: 0
-
-// Helper Classes
-.full-width-image-container
-  width: 100vw
-  height: 400px
-  position: relative
-  left: 50%
-  right: 50%
-  margin: 5em -50vw
-  background-size: cover
-  background-position: bottom
-  display: flex
-  justify-content: center
-  align-items: center
-
-.margin-top-0
-  margin-top: 0 !important
-
-.header-title-margin-fix
-  margin-left: -13px
-
-.text_center
-  text-align: center
-
 @import "~bulma"
 
 // import component styles
-@import "../components/homepage/homepage.sass"
 @import "../components/training/training.sass"
-@import "../components/clinic/clinic.sass"
 @import "../components/library/library.sass"
 

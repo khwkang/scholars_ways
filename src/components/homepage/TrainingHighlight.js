@@ -1,5 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import qigong_highlight_bg from '../../img/qigong_highlight_bg.jpg'
+
 import { 
   Container, 
   Columns, 
@@ -13,9 +15,9 @@ import {
 export default class TrainingHighlight extends React.Component {
   render() {
     return (
-      <Container>
+      <Container id="training_highlight">
         <Columns>
-          <Column className={ColumnBG}/>    
+          <Column bg={qigong_highlight_bg} className={ColumnBG}/>    
           <Column>
             <Content>     
               <Title>
@@ -25,7 +27,7 @@ export default class TrainingHighlight extends React.Component {
                 Qigong is the art of exercising the flow of qi throughout the body’s meridians (energy channels). Qigong combines all the benefits of resistance and stretching exercises. However, unlike other forms of resistance exercises, Scholars Way Qigong stresses the importance of a “push and pull” concept to improve the overall balance of the muscles
               </Text>
               <Link to="/library">
-                <button className="button is-large">Learn More</button>
+                <button>Current Classes</button>
               </Link>            
             </Content>
           </Column>    
