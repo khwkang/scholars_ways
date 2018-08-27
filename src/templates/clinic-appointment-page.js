@@ -1,38 +1,28 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import ClinicAppointment from '../components/clinic/ClinicAppointment.js'
-
-export const ClinicAppointmentPageTemplate = ({ title, data}) => {
-  return (
-    <section id="clinic_appointment_page" className="section section--gradient">
-      <div className="container">
-        <div className="columns">
-          <div className="column is-9 is-offset-1">
-            <div className="section">
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                {title}
-              </h2>
-              <ClinicAppointment data={data} />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  )
-}
-
-ClinicAppointmentPageTemplate.propTypes = {
-  title: PropTypes.string.isRequired,
-  content: PropTypes.string
-}
+import {Appointment} from '../components/clinic/Appointment.js'
+import {Container, PageTitle} from '../components/general.styled.js'
 
 const ClinicAppointmentPage = ({ data }) => {
-  const pageData = data.markdownRemark.frontmatter
+  const { frontmatter: page } = data.markdownRemark
+  const title = page.title
+  const email = page.email
+  const phone = page.phone
+  const address = page.address
+  const secondaryAddress = page.secondaryAddress
+
   return (
-    <ClinicAppointmentPageTemplate
-      title={pageData.title}
-      data={pageData}
-    />
+    <Container>
+      <PageTitle>
+        {title}
+      </PageTitle>
+      <Appointment 
+        email={email}
+        phone={phone}  
+        address={address}
+        secondaryAddress={secondaryAddress}
+      />
+    </Container>
   )
 }
 
@@ -50,7 +40,7 @@ export const ClinicAppointmentPageQuery = graphql`
         email
         phone
         address
-        secondary_address
+        secondaryAddress
       }
     }
   }

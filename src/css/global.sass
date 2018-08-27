@@ -1,4 +1,4 @@
-@import "~bulma/sass/utilities/initial-variables"
+
 
 // media query vars
 $phone_only: 599px
@@ -10,26 +10,8 @@ $landscape_only_max: 1199px
 $landscape_up: 900px
 $desktop_up: 1200px
 
-body::-webkit-scrollbar 
-  width: 0.3em
-
-body::-webkit-scrollbar-track 
-  -webkit-box-shadow: inset 0 0 6px #2a2828
- 
-body::-webkit-scrollbar-thumb 
-  background-color: #2a2828
-  outline: 1px solid slategrey
-
-@mixin transition($what: all, $time: 0.2s, $how: ease-in-out) 
-  -webkit-transition: $what $time $how
-  -moz-transition:    $what $time $how
-  -ms-transition:     $what $time $how
-  -o-transition:      $what $time $how
-  transition:         $what $time $how
-
 @import "~bulma"
 
 // import component styles
-@import "../components/training/training.sass"
 @import "../components/library/library.sass"
 

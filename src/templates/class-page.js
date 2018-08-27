@@ -1,52 +1,29 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import ClassModule from '../components/training/ClassModule.js'
-
-export const ClassPageTemplate = ({ title, data }) => {
-  const classes = data.classes
-  return (
-    <section id="class_page" className="section section--gradient">
-      <div className="container">
-        <div className="columns">
-          <div className="column is-9 is-offset-1">
-            <div className="section">
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-              {title}
-              </h2>  
-                <div className="content columns">
-                  {classes.map(cls => (
-                    <ClassModule key={cls.title} classes={cls}/>
-                  ))}
-                </div>
-            </div>
-          </div>  
-        </div>
-      </div>
-    </section>
-  )
-}
-
-ClassPageTemplate.propTypes = {
-  title: PropTypes.string.isRequired,
-  content: PropTypes.string,
-  contentComponent: PropTypes.func,
-}
+import {Container, PageTitle} from '../components/general.styled.js'
+import {Classes} from '../components/training/classes'
 
 const ClassPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark
+  const { frontmatter: page } = data.markdownRemark
+  const title = page.title
+  const classes = page.classes
   return (
-    <ClassPageTemplate
-      title={frontmatter.title}
-      data={frontmatter}
-    />
+    <Container>
+      <PageTitle>
+        {title}
+      </PageTitle>
+        <Classes
+          classes={classes}
+        />
+    </Container>
   )
 }
+
+export default ClassPage
 
 ClassPage.propTypes = {
   data: PropTypes.object.isRequired,
 }
-
-export default ClassPage
 
 export const ClassPageQuery = graphql`
   query ClassPage($id: String!) {

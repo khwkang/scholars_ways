@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import {Container, PageTitle} from '../components/general.styled.js'
-import {Expertise} from '../components/clinic/expertise'
+import {Expertise} from '../components/clinic/Expertise'
 
 const ClinicExpertisePage = ({ data }) => {
   const { frontmatter: page } = data.markdownRemark

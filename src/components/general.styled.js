@@ -11,7 +11,3 @@ export const Container = styled('div')`
 export const PageTitle = styled('h1')`
   margin-bottom: 1.4rem;
 `
-
-// export const Content = styled('p')`
-
-// `
