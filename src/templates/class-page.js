@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import {Container, PageTitle} from '../components/general.styled.js'
-import {Classes} from '../components/training/classes'
+import {Classes} from '../components/training/Classes'
 
 const ClassPage = ({ data }) => {
   const { frontmatter: page } = data.markdownRemark
