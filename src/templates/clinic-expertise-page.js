@@ -14,7 +14,7 @@ const ClinicExpertisePage = ({ data }) => {
       <PageTitle>
         {title}
       </PageTitle>
-      <Expertise specialties={specialties} expertise={expertise} />
+      <Expertises specialties={specialties} expertise={expertise} />
     </Container>
   )
 }
