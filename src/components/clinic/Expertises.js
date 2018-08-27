@@ -1,9 +1,8 @@
 import React from 'react'
 import { chunk } from 'lodash'
-// import {Content} from '../general.styled'
-import { List, ListContainer, SubTitle } from '../clinic/Expertise.styled'
+import { List, ListContainer, SubTitle } from '../clinic/Expertises.styled'
 
-export const Expertise = ({specialties, expertise}) => {
+export const Expertises = ({specialties, expertise}) => {
   const GroupedSpecialties = chunk(specialties, 3)
   const GroupedExpertise = chunk(expertise, 3)
   console.log(GroupedSpecialties)
