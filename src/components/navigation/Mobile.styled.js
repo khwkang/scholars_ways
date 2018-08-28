@@ -17,8 +17,7 @@ export const HamburgerMenuContainer = styled('div')`
 `
 export const TopBar = styled('div')`
   color: ${t.c.white};
-  postition: fixed;
-  top: 0;
+  position: relative;
   ${t.mq.l} {
     display: none;
   }
@@ -33,7 +32,9 @@ export const TopBarText = styled('p')`
   display: inline-block;
   font-size: 1.5rem;
   position: absolute;
-  top: 20px;
+  top: 1rem;
+  padding-left: 0.7rem;
+  color: ${t.c.white};
 `
 export const MobileNavContainer = styled('div')`
   padding-left: ${t.s(2)};
