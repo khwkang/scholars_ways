@@ -18,7 +18,7 @@ export const Columns = styled('div')`
   }
 `
 export const Column = styled('div')`
-  background-image: url(${p => (p.bg ? p.bg : 'none')});
+  background-image: url(${p => (p.bg ? p.bg : 'initial')});
   display: block;
   padding: 0.75rem;
   ${t.mq.m} {
