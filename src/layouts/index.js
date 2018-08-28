@@ -7,6 +7,8 @@ import {Navbar} from '../components/navigation/Navbar'
 import { injectGlobal } from 'emotion'
 import t from '../theme'
 
+import 'modern-normalize'
+
 import '../css/global.sass'
 
 injectGlobal`
