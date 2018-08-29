@@ -13,6 +13,12 @@ module.exports = {
       }
     },
     {
+      resolve: 'gatsby-plugin-emotion',
+      options: {
+        autoLabel: true,
+      },
+    },
+    {
       resolve: "gatsby-source-filesystem",
       options: {
         path: `${__dirname}/src/img`,
