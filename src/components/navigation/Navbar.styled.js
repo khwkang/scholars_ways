@@ -32,7 +32,7 @@ export const NavbarStyled = styled('div')`
 export const NavLogoWrapper = styled(Link)`
   display: flex;
   justify-content: center;
-  margin-left: -2rem;
+  margin: 0 0 14px -30px;
 `
 
 export const NavLogo = styled('img')`
@@ -42,22 +42,26 @@ export const NavLogo = styled('img')`
 `
 
 export const NavLineBreak = styled('hr')`
-  width: 90%;
-  background-color: #4d4d4d33;
+  width: 85%;
+  background-color: #313131;
+  margin: 15px 0 0 0;
+  border: none;
+  height: 1px;
 `
 
 export const MenuLabel = styled('p')`
   font-size: 1.1rem;
-  font-weight: 700;
-  padding-bottom: 1rem;
-  color: #757575;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #707070;
   text-transform: uppercase;
+  margin-bottom:5px;
 `
 
 export const MenuItem = styled(Link)`
   display: block;
   color: #d1d1d1;
   font-size: 1.1rem;
-  line-height: 2.2rem;
   font-weight: 500;
+  padding: 10px 0;
 `

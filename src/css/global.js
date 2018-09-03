@@ -1,9 +1,8 @@
 import { injectGlobal } from 'emotion'
 import t from '../theme'
 
-injectGlobal`
-  @import url('https://fonts.googleapis.com/css?family=Abhaya+Libre:400|Barlow+Condensed:700,600,400|Lato:300,400');
-
+injectGlobal`  
+  @import url('https://fonts.googleapis.com/css?family=Karla|Nanum+Myeongjo:700,800|Work+Sans:400,600');
   * {
     box-sizing: border-box;
   }
@@ -27,10 +26,13 @@ injectGlobal`
   p {
     color: ${t.c.bodygray};
     font-size: ${t.f(1)};
+    font-family: 'Karla', sans-serif;
+    line-height: 30px;
   }
   h1 {
+    font-family: 'Nanum Myeongjo', sans-serif;
+    font-weight: 800;
     font-size: ${t.f(5)};
-    font-weight: 700;
   }
   h2 {
     font-size: ${t.f(2)};
@@ -49,3 +51,6 @@ injectGlobal`
     letter-spacing: 2px;
   }
 `
+
+// @import url('https://fonts.googleapis.com/css?family=Abhaya+Libre:400|Barlow+Condensed:700,600,400|Lato:300,400');
+// @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
