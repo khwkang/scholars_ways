@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import {Container, PageTitle} from '../components/general.styled.js'
-import {Expertises} from '../components/clinic/Expertises'
+import { Container, PageTitle } from '../components/general.styled.js'
+import { Expertises } from '../components/clinic/Expertises'
 
 const ClinicExpertisePage = ({ data }) => {
   const { frontmatter: page } = data.markdownRemark
@@ -11,9 +11,7 @@ const ClinicExpertisePage = ({ data }) => {
 
   return (
     <Container>
-      <PageTitle>
-        {title}
-      </PageTitle>
+      <PageTitle>{title}</PageTitle>
       <Expertises specialties={specialties} expertise={expertise} />
     </Container>
   )

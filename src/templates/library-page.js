@@ -1,52 +1,26 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import LibraryNav from '../components/library/LibraryNav.js'
-import Content, { HTMLContent } from '../components/Content'
-
-export const LibraryPageTemplate = ({ title, navigation, content, contentComponent }) => {
-  const LibraryContent = contentComponent || Content
-  return (
-    <div id="library_page_template">
-      <LibraryNav data={navigation} />
-      <section id="library_page" className="section section--gradient">
-        <div>
-          <div className="section">
-            <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-            {title}
-            </h2>  
-              <div className="content">                  
-                <LibraryContent content={content}/>
-              </div>
-          </div>
-        </div>
-      </section>
-    </div>  
-  )
-}
-
-LibraryPageTemplate.propTypes = {
-  content: PropTypes.string.isRequired,
-  contentComponent: PropTypes.func,
-  title: PropTypes.string,
-  navigation: PropTypes.object,
-}
+import { LibraryNav } from '../components/library/LibraryNav.js'
+import { LibraryContent } from '../components/library/index.js'
+import { Template } from '../components/library/index.styled.js'
 
 const LibraryPage = ({ data }) => {
-  const {markdownRemark: chapter} = data
+  const { markdownRemark: chapter } = data
   return (
-    <LibraryPageTemplate
-      title={chapter.frontmatter.title}  
-      navigation={chapter.frontmatter.navigation}
-      content={chapter.html}
-      contentComponent={HTMLContent}
-    />
+    <Template>
+      <LibraryNav data={chapter.frontmatter.navigation} />
+      <LibraryContent
+        title={chapter.frontmatter.title}
+        content={chapter.html}
+      />
+    </Template>
   )
 }
 
 LibraryPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.object,
-  })
+  }),
 }
 
 export default LibraryPage

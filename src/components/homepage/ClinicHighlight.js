@@ -2,15 +2,15 @@ import React from 'react'
 import Link from 'gatsby-link'
 import library_highlight_bg from '../../img/library_highlight_bg.jpg'
 
-import { 
-  Container, 
-  Columns, 
-  Column, 
-  ColumnBG, 
-  Content, 
-  Title, 
-  Text 
-} from './Highlight.styled';
+import {
+  Container,
+  Columns,
+  Column,
+  ColumnBG,
+  Content,
+  Title,
+  Text,
+} from './Highlight.styled'
 
 export const ClinicHighlight = () => (
   <Container id='clinic_highlight'>

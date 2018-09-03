@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
+<<<<<<< HEAD
 import {Layout, Container} from '../components/Layout/index.styled'
 import {Mobile} from '../components/navigation/Mobile'
 import {Navbar} from '../components/navigation/Navbar'
@@ -59,15 +60,20 @@ injectGlobal`
     letter-spacing: 2px;
   }
 `
+=======
+import { Layout, Container } from '../components/Layout/index.styled'
+import { Mobile } from '../components/navigation/Mobile'
+import { Navbar } from '../components/navigation/Navbar'
+import 'modern-normalize'
+import '../css/global'
+>>>>>>> 5ed82f82a996ce1b06261c53d1829014b30ab14b
 
 const TemplateWrapper = ({ children }) => (
   <Layout>
     <Helmet title="Scholars Ways | Daoist Art of Cultivation" />
     <Mobile />
-    <Navbar />  
-    <Container>
-      {children()}
-    </Container>
+    <Navbar />
+    <Container>{children()}</Container>
   </Layout>
 )
 

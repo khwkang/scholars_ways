@@ -5,9 +5,7 @@ export default class ClassInstance extends React.Component {
     const cls = this.props.data
     return (
       <div className="container">
-        <div>
-          {cls.description}
-        </div>
+        <div>{cls.description}</div>
       </div>
     )
   }

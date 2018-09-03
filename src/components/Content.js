@@ -5,15 +5,15 @@ export const HTMLContent = ({ content, className }) => (
   <div className={className} dangerouslySetInnerHTML={{ __html: content }} />
 )
 
-const Content = ({ content, className }) => (
+const RawContent = ({ content, className }) => (
   <div className={className}>{content}</div>
 )
 
-Content.propTypes = {
+RawContent.propTypes = {
   content: PropTypes.string,
   className: PropTypes.string,
 }
 
-HTMLContent.propTypes = Content.propTypes
+HTMLContent.propTypes = RawContent.propTypes
 
-export default Content
+export default RawContent

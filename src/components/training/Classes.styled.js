@@ -4,18 +4,16 @@ import qigong_module from '../../img/qigong_module.jpg'
 import stretching from '../../img/stretching_module.jpg'
 import medicinal from '../../img/medmove_module.jpg'
 
-export const Master = styled('div')`
-  
-`
+export const Master = styled('div')``
 
 export const Container = styled('div')`
-  display: flex;  
+  display: flex;
   flex-wrap: wrap;
 `
 
 export const Module = styled('div')`
-  position: relative;  
-  display: flex;  
+  position: relative;
+  display: flex;
   align-items: center;
   justify-content: center;
   background-image: url(${qigong_module});
@@ -37,9 +35,9 @@ export const Overlay = styled('div')`
   width: 100%;
   height: 100%;
   background-color: black;
-  opacity:0.1;
+  opacity: 0.1;
   z-index: 0;
-  @include transition (all, .5s, ease);
+  @include transition(all, 0.5s, ease);
 `
 
 export const ModuleTitle = styled('h2')`

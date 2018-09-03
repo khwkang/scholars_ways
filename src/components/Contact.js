@@ -5,9 +5,7 @@ export default class Contact extends React.Component {
     const data = this.props.data
     return (
       <div className="container">
-        <div>
-          {data.description}
-        </div>
+        <div>{data.description}</div>
       </div>
     )
   }

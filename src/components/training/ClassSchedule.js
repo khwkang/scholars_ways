@@ -5,9 +5,7 @@ export default class ClassSchedule extends React.Component {
     const cls = this.props.data
     return (
       <div className="container">
-        <div>
-          Class schedule in table format
-        </div>
+        <div>Class schedule in table format</div>
       </div>
     )
   }

@@ -1,6 +1,6 @@
 import styled from 'react-emotion'
 import t from '../../theme'
-import Link from '../LinkTrack.js';
+import Link from '../LinkTrack.js'
 
 export const NavbarStyled = styled('div')`
   position: fixed;
@@ -10,10 +10,10 @@ export const NavbarStyled = styled('div')`
   overflow-x: hidden;
   overflow-y: auto;
   padding-left: 2rem;
-  display:none;
+  display: none;
   width: ${t.s(8)};
-  
-  ::-webkit-scrollbar { 
+
+  ::-webkit-scrollbar {
     width: 0.5em;
   }
   ::-webkit-scrollbar-track {
@@ -61,5 +61,3 @@ export const MenuItem = styled(Link)`
   line-height: 2.2rem;
   font-weight: 500;
 `
-
-

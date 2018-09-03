@@ -3,7 +3,7 @@ import animation from './animation.js'
 import styled from 'react-emotion'
 
 export default class BackToTop extends React.Component {
-  constructor(props){
+  constructor(props) {
     super(props)
   }
 
@@ -11,14 +11,16 @@ export default class BackToTop extends React.Component {
     animation.activateBackToTop()
   }
 
-  scrollHandler = (e, target) => {  
+  scrollHandler = (e, target) => {
     animation.jumpTo(target)
   }
 
   render() {
     return (
       <BackToTopButtonContainer id="back_to_top">
-        <span onClick={(e) => this.scrollHandler(e, "#home_hero")}>Back to Top</span>
+        <span onClick={e => this.scrollHandler(e, '#home_hero')}>
+          Back to Top
+        </span>
       </BackToTopButtonContainer>
     )
   }
@@ -37,5 +39,3 @@ const BackToTopButtonContainer = styled('div')`
   font-weight: 500;
   cursor: pointer;
 `
-
-      
