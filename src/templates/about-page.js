@@ -1,16 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import {Container, PageTitle} from '../components/general.styled.js'
-import {About} from '../components/about'
+import { Container, PageTitle } from '../components/general.styled.js'
+import { About } from '../components/about'
 
 const AboutPage = ({ data }) => {
   const title = data.markdownRemark.frontmatter.title
 
   return (
     <Container>
-      <PageTitle>
-        {title}
-      </PageTitle>
+      <PageTitle>{title}</PageTitle>
       <About data={data.markdownRemark.frontmatter} />
     </Container>
   )
@@ -28,7 +26,7 @@ export const AboutPageQuery = graphql`
       html
       frontmatter {
         title
-        text        
+        text
       }
     }
   }

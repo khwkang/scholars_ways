@@ -10,13 +10,13 @@ export const ClassSchedulePageTemplate = ({ title, data }) => {
           <div className="column is-9 is-offset-1">
             <div className="section">
               <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-              {title}
-              </h2>  
-                <div className="content columns">                  
-                  <ClassSchedule key={data.title} data={data}/>
-                </div>
+                {title}
+              </h2>
+              <div className="content columns">
+                <ClassSchedule key={data.title} data={data} />
+              </div>
             </div>
-          </div>  
+          </div>
         </div>
       </div>
     </section>
@@ -25,16 +25,13 @@ export const ClassSchedulePageTemplate = ({ title, data }) => {
 
 ClassSchedulePageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
-  data: PropTypes.object
+  data: PropTypes.object,
 }
 
 const ClassSchedulePage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
   return (
-    <ClassSchedulePageTemplate
-      title={frontmatter.title}
-      data={frontmatter}
-    />
+    <ClassSchedulePageTemplate title={frontmatter.title} data={frontmatter} />
   )
 }
 

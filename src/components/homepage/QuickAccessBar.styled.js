@@ -20,7 +20,7 @@ export const Content = styled('div')`
   width: 100%;
   ${t.mq.l} {
   }
-  p{
+  p {
     font-family: Rock Salt;
     color: #ffffff78;
     margin: 8px 21px 0px 0;

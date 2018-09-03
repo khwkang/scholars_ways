@@ -1,49 +1,42 @@
 import React from 'react'
-// import animation from './animation.js'
 import Link from '../LinkTrack.js'
-import LibraryChildNav from './LibraryChildNav.js'
+import LibraryChildNav from './LibraryChildNav'
+import {
+  Container,
+  Panel,
+  PanelTabs,
+  StyledPanelLink,
+  StyledPanelBlockLink,
+} from './LibraryNav.styled'
 
-export default class LibraryNav extends React.Component {
-  constructor(props) {
-    super(props)
-    this.panelData = props.data.panel
-    this.panelBlock = props.data.panel_block
-  }
-
-  render() {
-    return (
-      <div id="library_nav" className="navbar">
-        <nav className="panel">
-          <div className="panel-heading">
-            <h1 className="panel_title">Scholars Way</h1>
-            <h2 className="panel_sub_title">Library</h2>
-          </div>
-          <p className="panel-tabs">
-            {this.panelData.map(chapter => (
-              <Link 
-                to={chapter.url} 
-                className={'category_option ' + (chapter.active ? 'is-active' : '')}
-              >
-                {chapter.name}
-              </Link>
-            ))}
-          </p>
-          {this.panelBlock.map(section => (
-              <div>
-              <Link 
-                to={section.url} 
-                className={'panel-block ' + (section.active ? 'is-active' : '')}
-              >
-                {section.name}    
-              </Link>
-              {section.child && <LibraryChildNav items={section.child}/> }                
-              </div>
-          ))}          
-          <Link to="/" className="panel-block back_button">
-            Leave Library
-          </Link>
-        </nav>
-      </div>
-    )
-  }
+export const LibraryNav = data => {
+  const panelData = data.data.panel
+  const panelBlock = data.data.panel_block
+  return (
+    <Container id="library_nav">
+      <Panel>
+        <h1>Scholars Way</h1>
+        <h2>Library</h2>
+      </Panel>
+      <PanelTabs>
+        {panelData.map(chapter => (
+          <StyledPanelLink to={chapter.url} active={chapter.active && true}>
+            {chapter.name}
+          </StyledPanelLink>
+        ))}
+      </PanelTabs>
+      {panelBlock.map(section => (
+        <div>
+          <StyledPanelBlockLink
+            to={section.url}
+            active={section.active ? true : false}
+          >
+            {section.name}
+          </StyledPanelBlockLink>
+          {section.child && <LibraryChildNav items={section.child} />}
+        </div>
+      ))}
+      <StyledPanelBlockLink to="/">Leave Library</StyledPanelBlockLink>
+    </Container>
+  )
 }

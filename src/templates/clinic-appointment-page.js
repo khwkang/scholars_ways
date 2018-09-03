@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import {Appointment} from '../components/clinic/Appointment.js'
-import {Container, PageTitle} from '../components/general.styled.js'
+import { Appointment } from '../components/clinic/Appointment.js'
+import { Container, PageTitle } from '../components/general.styled.js'
 
 const ClinicAppointmentPage = ({ data }) => {
   const { frontmatter: page } = data.markdownRemark
@@ -13,12 +13,10 @@ const ClinicAppointmentPage = ({ data }) => {
 
   return (
     <Container>
-      <PageTitle>
-        {title}
-      </PageTitle>
-      <Appointment 
+      <PageTitle>{title}</PageTitle>
+      <Appointment
         email={email}
-        phone={phone}  
+        phone={phone}
         address={address}
         secondaryAddress={secondaryAddress}
       />

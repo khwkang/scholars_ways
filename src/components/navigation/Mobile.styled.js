@@ -40,5 +40,5 @@ export const MobileNavContainer = styled('div')`
   padding-left: ${t.s(2)};
   background: #2a2828;
   padding-bottom: 30px;
-  display: ${p => p.isOpen ? 'block' : 'none'};
+  display: ${p => (p.isOpen ? 'block' : 'none')};
 `

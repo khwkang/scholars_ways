@@ -1,15 +1,17 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Content, { HTMLContent } from '../components/Content'
-import {Container, PageTitle} from '../components/general.styled.js'
+import { Container, PageTitle } from '../components/general.styled.js'
 
-export const ClinicPractitionerPageTemplate = ({ title, content, contentComponent }) => {
+export const ClinicPractitionerPageTemplate = ({
+  title,
+  content,
+  contentComponent,
+}) => {
   const PageContent = contentComponent || Content
   return (
-    <Container>    
-      <PageTitle>
-        {title}
-      </PageTitle>
+    <Container>
+      <PageTitle>{title}</PageTitle>
       <PageContent content={content} />
     </Container>
   )

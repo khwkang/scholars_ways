@@ -1,20 +1,20 @@
 import styled from 'react-emotion'
-import {css} from 'emotion'
+import { css } from 'emotion'
 import t from '../../theme'
 
 export const Container = styled('div')`
-  margin-top:0;
+  margin-top: 0;
 `
 export const Columns = styled('div')`
-  display: flex;  
+  display: flex;
   flex-direction: column;
   align-items: center;
-  ${t.mq.m} {    
-    height: 50vh;  
+  ${t.mq.m} {
+    height: 50vh;
     flex-direction: row;
-  }  
+  }
   ${t.mq.l} {
-    height: 100vh;  
+    height: 100vh;
   }
 `
 export const Column = styled('div')`
@@ -36,7 +36,7 @@ export const ColumnBG = css`
     height: 50vh;
   }
   ${t.mq.l} {
-    height: 100vh;  
+    height: 100vh;
   }
 `
 

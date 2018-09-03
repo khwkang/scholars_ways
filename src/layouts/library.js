@@ -1,15 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import '../css/global.sass'
+import { Layout } from '../components/Layout/index.styled'
 
 const TemplateWrapper = ({ children }) => (
-  <div id="library_template_wrapper">
+  <Layout>
     <Helmet title="Scholars Ways | Daoist Art of Cultivation" />
-    <div className="children_wrapper">
-      {children()}
-    </div>
-  </div>
+    {children()}
+  </Layout>
 )
 
 TemplateWrapper.propTypes = {
