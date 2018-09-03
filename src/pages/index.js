@@ -2,20 +2,12 @@ import React from 'react'
 import styled from 'react-emotion'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
-<<<<<<< HEAD
 import {Hero} from '../components/homepage/Hero'
 import {ClinicHighlight} from '../components/homepage/ClinicHighlight'
 import {TrainingHighlight} from '../components/homepage/TrainingHighlight'
 import BackToTop from '../components/homepage/BackToTop'
 import {LibraryHighlight} from '../components/homepage/LibraryHighlight';
 
-=======
-import { Hero } from '../components/homepage/Hero'
-import ClinicHighlight from '../components/homepage/ClinicHighlight'
-import TrainingHighlight from '../components/homepage/TrainingHighlight'
-import BackToTop from '../components/homepage/BackToTop'
-import LibraryHighlight from '../components/homepage/LibraryHighlight'
->>>>>>> 5ed82f82a996ce1b06261c53d1829014b30ab14b
 
 export const IndexPage = () => (
   <Container id="index_page">
