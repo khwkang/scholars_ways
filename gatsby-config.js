@@ -15,7 +15,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-emotion',
       options: {
-        autoLabel: true,
+        autoLabel: true
       },
     },
     {

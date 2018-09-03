@@ -7,9 +7,9 @@ import {Navbar} from '../components/navigation/Navbar'
 import { injectGlobal } from 'emotion'
 import t from '../theme'
 
-import 'modern-normalize'
+// import 'modern-normalize'
 
-import '../css/global.sass'
+// import '../css/global.sass'
 
 injectGlobal`
   @import url('https://fonts.googleapis.com/css?family=Abhaya+Libre:400|Barlow+Condensed:700,600,400|Lato:300,400');
