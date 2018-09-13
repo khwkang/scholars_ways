@@ -1,12 +1,13 @@
 import React from 'react'
 
-export default class Contact extends React.Component {
-  render() {
-    const data = this.props.data
-    return (
-      <div className="container">
-        <div>{data.description}</div>
-      </div>
-    )
-  }
-}
+export const Contact = ({title}) => (  
+  <div>
+    <h3 style={{"marginTop":"40px"}}>General</h3>
+    <div>infoscholarsway@gmail.com</div>
+    <h3>Clinic Appointment</h3>
+    <p>(808)829-2502</p>
+    <h3>Training Inquiry</h3>
+    <p>infoscholarsway@gmail.com</p>
+  </div>
+)
+  
