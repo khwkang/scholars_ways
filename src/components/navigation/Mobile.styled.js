@@ -32,7 +32,7 @@ export const TopBarText = styled('p')`
   display: inline-block;
   font-size: 1.5rem;
   position: absolute;
-  top: 1rem;
+  top: -5px;
   padding-left: 0.7rem;
   color: ${t.c.white};
 `
