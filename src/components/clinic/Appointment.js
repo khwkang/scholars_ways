@@ -1,16 +1,16 @@
 import React from 'react'
-
-export const Appointment = ({ phone, email, address, secondaryAddress }) => (
-  <div>
-    <h2>We are currently accepting patient by appointment only - Mahalo</h2>
-    <div>
-      <h3>Phone</h3>
+import {Container} from './Appointment.styled'
+export const Appointment = ({ phone, email, primaryAddress, secondaryAddress }) => (
+    <Container>
+      <h3>By Phone</h3>
       <p>{phone}</p>
-      <h3>Email</h3>
+      <h3>By Email</h3>
       <p>{email}</p>
       <h3>Address</h3>
+      <h4>Scholars Way</h4>
+      <p>{primaryAddress}</p>
       <h4>Still and Moving Center</h4>
-      <p>{address}</p>
-    </div>
-  </div>
+      <p>{secondaryAddress}</p>      
+      <span>**we currently accept new patients by phone only | Mahalo</span>
+    </Container>  
 )

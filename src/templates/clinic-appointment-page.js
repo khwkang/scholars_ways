@@ -5,20 +5,15 @@ import { Container, PageTitle } from '../components/general.styled.js'
 
 const ClinicAppointmentPage = ({ data }) => {
   const { frontmatter: page } = data.markdownRemark
-  const title = page.title
-  const email = page.email
-  const phone = page.phone
-  const address = page.address
-  const secondaryAddress = page.secondaryAddress
 
   return (
     <Container>
-      <PageTitle>{title}</PageTitle>
+      <PageTitle>{page.title}</PageTitle>
       <Appointment
-        email={email}
-        phone={phone}
-        address={address}
-        secondaryAddress={secondaryAddress}
+        email={page.email}
+        phone={page.phone}
+        primaryAddress={page.primary_address}
+        secondaryAddress={page.secondary_address}
       />
     </Container>
   )
@@ -37,8 +32,8 @@ export const ClinicAppointmentPageQuery = graphql`
         title
         email
         phone
-        address
-        secondaryAddress
+        primary_address
+        secondary_address
       }
     }
   }
