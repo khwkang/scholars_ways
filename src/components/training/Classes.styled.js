@@ -1,8 +1,5 @@
 import styled from 'react-emotion'
 import t from '../../theme'
-import qigong_module from '../../img/qigong_module.jpg'
-import stretching from '../../img/stretching_module.jpg'
-import medicinal from '../../img/medmove_module.jpg'
 
 export const Master = styled('div')``
 
@@ -16,7 +13,7 @@ export const Module = styled('div')`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(${qigong_module});
+  background-image: url(${p => p.backgroundImageSource});
   background-repeat: no-repeat;
   background-size: contain;
   margin: 0 30px 30px 0;
