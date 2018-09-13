@@ -1,37 +1,18 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import ClassSchedule from '../components/training/ClassSchedule.js'
-
-export const ClassSchedulePageTemplate = ({ title, data }) => {
-  return (
-    <section id="class_schedule_page" className="section section--gradient">
-      <div className="container">
-        <div className="columns">
-          <div className="column is-9 is-offset-1">
-            <div className="section">
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                {title}
-              </h2>
-              <div className="content columns">
-                <ClassSchedule key={data.title} data={data} />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  )
-}
-
-ClassSchedulePageTemplate.propTypes = {
-  title: PropTypes.string.isRequired,
-  data: PropTypes.object,
-}
+import {ClassSchedule} from '../components/training/ClassSchedule.js'
+import { Container, PageTitle } from '../components/general.styled.js'
 
 const ClassSchedulePage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark
+  const { frontmatter: page } = data.markdownRemark
   return (
-    <ClassSchedulePageTemplate title={frontmatter.title} data={frontmatter} />
+    <Container>
+      <PageTitle>{page.title}</PageTitle>
+      <ClassSchedule
+        title={page.title}      
+        classes={page.classes}
+      />
+    </Container>
   )
 }
 
@@ -46,6 +27,11 @@ export const ClassSchedulePageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
+        classes {
+          name
+          day
+          time
+        }
       }
     }
   }
