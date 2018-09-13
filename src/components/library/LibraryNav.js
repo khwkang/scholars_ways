@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from '../LinkTrack.js'
-import LibraryChildNav from './LibraryChildNav'
+import { LibraryChildNav } from './LibraryChildNav'
 import {
   Container,
   Panel,
@@ -13,7 +13,7 @@ export const LibraryNav = data => {
   const panelData = data.data.panel
   const panelBlock = data.data.panel_block
   return (
-    <Container id="library_nav">
+    <Container>
       <Panel>
         <h1>Scholars Way</h1>
         <h2>Library</h2>
@@ -36,7 +36,7 @@ export const LibraryNav = data => {
           {section.child && <LibraryChildNav items={section.child} />}
         </div>
       ))}
-      <StyledPanelBlockLink to="/">Leave Library</StyledPanelBlockLink>
+      <StyledPanelBlockLink style={{"color":"red", "fontWeight": "700"}}to="/">Back to Main Site</StyledPanelBlockLink>
     </Container>
   )
 }

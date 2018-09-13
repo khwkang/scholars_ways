@@ -9,6 +9,7 @@ export const Container = styled('div')`
   z-index: 30;
   padding-left: 0;
   border-right: 1px solid #ececec;
+
   ${t.mq.l} {
     width: 22%;
     position: fixed;
@@ -29,6 +30,7 @@ export const Panel = styled('div')`
     font-size: 1.8rem;
   }
   h2 {
+    margin: 0;
   }
 `
 
@@ -42,20 +44,24 @@ export const PanelTabs = styled('div')`
 `
 
 export const StyledPanelLink = styled(Link)`
-  font-size: 1.2em;
+  font-size: 1.2rem;
+  margin: 10px 0;
+  padding-left: 10px;
   display: block;
   border: none;
-  color: white;
+  color: ${p => p.active ? '#878787' : 'white'};
   text-transform: uppercase;
 `
 
+
 export const StyledPanelBlockLink = styled(Link)`
-  padding: 0.6rem 0 0.6rem 1.5em;
+  padding: 0.8rem 0 0.6rem 1.5em;
+  display: inline-block;
   border: none;
+  font-size: ${t.f(0)};
+  width: 100%;
+  &:hover {
+    background-color: #f4f4f4;  
+  }
 `
 
-export const ChildLink = styled(Link)`
-  display: block;
-  padding: 10px 0 10px 37px;
-  color: #5d5d5d;
-`

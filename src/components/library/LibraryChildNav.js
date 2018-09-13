@@ -1,15 +1,12 @@
 import React from 'react'
-import Link from '../LinkTrack.js'
-import { ChildLink } from './LibraryNav.styled'
+import { ChildLink, StyledList } from './LibraryChildNav.styled'
 
-const LibraryChildNav = ({ items }) => (
+export const LibraryChildNav = ({ items }) => (
   <ul>
     {items.map(item => (
-      <li>
+      <StyledList>
         <ChildLink to={item.url}>{item.name}</ChildLink>
-      </li>
+      </StyledList>
     ))}
   </ul>
 )
-
-export default LibraryChildNav
