@@ -4,10 +4,10 @@ path: /class/schedule
 title: Class Schedule
 classes:
   - name: Qigong 
-    day: Monday & Friday
+    day: Tuesday & Friday
     time: 7:00 PM - 8:00 PM
   - name: Stretching for Rejuvenation
-    day: Monday & Friday
+    day: Tuesday & Friday
     time: 5:45 PM - 6:45 PM
   - name: Medicinal Movement
     day: Monday & Wednesday
