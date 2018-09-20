@@ -3,31 +3,34 @@ import Link from 'gatsby-link'
 import library_highlight_bg from '../../img/library_highlight_bg.jpg'
 import {
   Container,
-  Columns,
-  Column,
-  ColumnBG,
+  Columns,  
+  Image,
+  ImageContainer,
   Content,
+  ContentWrapper,
   Title,
   Text,
 } from './Highlight.styled'
 
 export const LibraryHighlight =() => (
   <Container id="library_highlight">
-    <Columns>
-      <Column>
+    <Columns>      
+      <ContentWrapper>
         <Content>     
           <Title>
             Library
           </Title>       
           <Text>
-            The Scholar’s Way library exists as database for information on our perspective and practice of medicinal, martial, and meditative arts (sciences); rooted in traditional wisdom and made accessible for contemporary students.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex 
           </Text>
           <Link to="/library">
             <button>Enter library</button>
           </Link>            
-        </Content>
-      </Column> 
-      <Column style={{ backgroundImage: `url(${library_highlight_bg})`}} className={ColumnBG}/>       
+        </Content>      
+      </ContentWrapper>
+      <ImageContainer>
+      <Image src={library_highlight_bg}/>       
+      </ImageContainer>
     </Columns>
   </Container>
 )

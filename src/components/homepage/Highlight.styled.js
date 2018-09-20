@@ -7,49 +7,64 @@ export const Container = styled('div')`
 `
 export const Columns = styled('div')`
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  ${t.mq.m} {
-    height: 50vh;
-    flex-direction: row;
-  }
-  ${t.mq.l} {
-    height: 100vh;
-  }
-`
-export const Column = styled('div')`
-  display: block;
-  padding: 0.75rem;
-  ${t.mq.m} {
-    flex-basis: 0;
-    flex-grow: 1;
-    flex-shrink: 1;
+  flex-wrap: wrap;
+  flex-direction: ${p => p.reverse ? 'column-reverse' : 'column'};  
+  width: 100%;
+  ${t.mq.x} {
+    flex-direction: row;      
   }
 `
 
-export const ColumnBG = css`
-  background-size: cover;
-  align-self: stretch;
-  height: 40vh;
-  ${t.mq.m} {
-    height: 50vh;
-  }
-  ${t.mq.l} {
-    height: 100vh;
+export const ImageContainer = styled('div')`
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  ${t.mq.x} {
+    width: 50%;
   }
 `
 
-export const Content = styled('div')`
-  padding: 50px;
-  margin-top: 20px;
+export const Image = styled('img')`    
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+`
+
+export const ContentWrapper = styled('div')`
+  width: 100%;  
+  padding: 0 50px;
   button {
     margin-top: 20px;
+  }    
+  ${t.mq.x} {
+    width: 50%;
   }
 `
+
+export const Content = styled('div')`  
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 0;
+  ${t.mq.x} {
+    min-height: 600px;
+  }
+  ${t.mq.xx} {
+    min-height: 700px;
+    margin-top: 10%;
+  }
+`
+
 export const Title = styled('h1')`
   margin-bottom: 1rem;
 `
 
 export const Text = styled('p')`
   margin-bottom: 0.5rem;
+  font-size: ${t.f(1)};
+  ${t.mq.l} {
+    font-size: ${t.f(1)};    
+  }
 `
