@@ -1,5 +1,6 @@
 import styled from 'react-emotion'
 import t from '../../theme'
+import RawContent, { HTMLContent } from '../../components/Content'
 
 export const Template = styled('div')`
   ${t.mq.l} {
@@ -7,14 +8,23 @@ export const Template = styled('div')`
   }
 `
 export const Container = styled('div')`
+  padding: 3rem 3rem;
   ${t.mq.l} {
     width: 60%;
     margin-left: 26%;
   }
 `
-export const Content = styled('div')`
-  padding: 3rem 1.5rem;
-`
+
 export const Title = styled('h1')`
   margin-bottom: 2rem;
+`
+
+export const Content = styled(HTMLContent)`
+  h2 {
+    margin-top: 60px;
+  }
+  div {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
 `

@@ -21,9 +21,9 @@ export const ClinicHighlight = () => (
             Acupunture Clinic
           </Title>       
           <Text>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex 
+          At Scholars Way Healing Center we believe that good health care should be supportive of both Physical and Emotional Well-being.  We specialize in Acupuncture, Pulse Diagnosis, Moxibustion, Herbal Tonics, Qigong, and Lifestyle Consultation to Heal, Nourish, and Balance the Body and Mind.
           </Text>
-          <Link to="/clinic/expertise">
+          <Link to="/clinic/appointment">
             <button>Appointment</button>
           </Link>            
         </Content>    

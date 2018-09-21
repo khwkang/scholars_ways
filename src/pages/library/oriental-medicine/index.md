@@ -17,7 +17,8 @@ navigation:
   panel_block:
     - name: Introduction
       url: /library/oriental-medicine
-      active: true
+      active: true      
+      published: true
     - name: Physiology
       url: /library/oriental-medicine/physiology
       active: false

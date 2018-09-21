@@ -1,7 +1,6 @@
 import styled from 'react-emotion'
-import { css } from 'emotion'
 import t from '../../theme'
-import Link from '../LinkTrack.js'
+import Link from 'gatsby-link'
 
 export const Container = styled('div')`
   position: relative;
@@ -59,9 +58,10 @@ export const StyledPanelBlockLink = styled(Link)`
   display: inline-block;
   border: none;
   font-size: ${t.f(0)};
+  color: ${p => p.published ? 'black' : 'gray'};
+  cursor: ${p => p.published ? 'pointer' : 'not-allowed'};
   width: 100%;
   &:hover {
     background-color: #f4f4f4;  
   }
 `
-

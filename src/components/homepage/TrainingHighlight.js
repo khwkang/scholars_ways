@@ -24,7 +24,7 @@ export const TrainingHighlight =() => (
             Training
           </Title>       
           <Text>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex 
+          Personal empowerment is an essential aspect of well-being. Scholar's Way provides classes in Qi Gong, Stretching for Rejuvenation, Medicinal Movement, and Kendo Basics for people looking to better understand their body; how to heal it, strengthen it, and take charge of their own well-being. 
           </Text>
           <Link to="/library">
             <button>Current Classes</button>

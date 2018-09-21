@@ -1,12 +1,13 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-export default props => {
+export default props => {  
   const { to: path, onClick: parentOnClick, ...other } = props
   const track = () => {
     analytics ? analytics.page({ path }) : null
   }
-  const handleClick = () => {
+  const handleClick = (args) => {
+    console.log("ffffffffff", args)
     track()
     parentOnClick ? parentOnClick() : null
   }

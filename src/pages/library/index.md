@@ -8,27 +8,30 @@ navigation:
     - name: Start Here
       url: /library
       active: true
+      published: true
     - name: Oriental Medicine
       url: /library/oriental-medicine
       active: false
+      published: true
     - name: Training
       url: /library/training
       active: false
+      published: true
   panel_block:
     - name: Introduction
       url: /library
       active: true
-    - name: How to Use the Library
-      url: /library/how-to-use-the-library 
-      active: false
+      published: true
     - name: What is Daoism?
-      url: /library/what-is-daoism
+      url: /library/what-is-daoism      
       active: false
+      published: false
     - name: Cosmology 
       url: /library/start-here/cosmology      
       active: false
+      published: true
 ---
 
-## Welcome message will be here in html markup 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+
+The Scholar’s Way library exists as database for information on our perspective and practice of medicinal, martial, and meditative arts; rooted in traditional wisdom and made accessible for contemporary students. The library serves as a reference for people who have been to our classes or clinic, as well as those simply interested in better understanding the process of healing and self-development.

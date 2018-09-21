@@ -21,7 +21,7 @@ export const LibraryHighlight =() => (
             Library
           </Title>       
           <Text>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex 
+          The Scholar’s Way library exists as database for information on our perspective and practice of medicinal, martial, and meditative arts; rooted in traditional wisdom and made accessible for contemporary students. The library serves as a reference for people who have been to our classes or clinic, as well as those simply interested in better understanding the process of healing and self-development.
           </Text>
           <Link to="/library">
             <button>Enter library</button>

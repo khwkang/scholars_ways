@@ -38,11 +38,13 @@ export const LibraryPageQuery = graphql`
             name
             url
             active
+            published
           }
           panel_block {
             name
             url
             active
+            published
             child {
               name
               url
