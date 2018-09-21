@@ -14,6 +14,7 @@ const AboutPage = ({ data }) => {
   )
 }
 
+
 AboutPage.propTypes = {
   data: PropTypes.object.isRequired,
 }
