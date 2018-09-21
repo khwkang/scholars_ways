@@ -4,10 +4,7 @@ import Helmet from 'react-helmet'
 import { Layout } from '../components/Layout/index.styled'
 
 const TemplateWrapper = ({ children }) => (
-  <Layout>
-    <Helmet title="Scholars Ways | Daoist Art of Cultivation" />
-    {children()}
-  </Layout>
+  <h1>Site under construction</h1>
 )
 
 TemplateWrapper.propTypes = {

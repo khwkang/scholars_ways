@@ -8,12 +8,7 @@ import 'modern-normalize'
 import '../css/global'
 
 const TemplateWrapper = ({ children }) => (
-  <Layout>
-    <Helmet title="Scholars Ways | Daoist Art of Cultivation" />
-    <Mobile />
-    <Navbar />
-    <Container>{children()}</Container>
-  </Layout>
+  <h1>Site under construction</h1>
 )
 
 TemplateWrapper.propTypes = {
