@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { Container, Content } from './index.styled'
 import { Mobile } from '../navigation/Mobile'
@@ -68,8 +67,6 @@ export const Layout = ({ children }) => (
   </Container>
 )
 
-Layout.propTypes = {
-  children: PropTypes.func,
-}
+
 
 

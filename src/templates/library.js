@@ -1,8 +1,7 @@
 import React from 'react'
 import { graphql } from "gatsby"
-import PropTypes from 'prop-types'
 import { Container, PageTitle } from '../components/general.styled.js'
-import { About } from '../components/about'
+import { About } from '../components/About'
 import { Layout } from '../components/Layout'
 
 const LibraryTemplate = ({ data }) => {
@@ -16,11 +15,6 @@ const LibraryTemplate = ({ data }) => {
       </Container>
     </Layout>
   )
-}
-
-
-LibraryTemplate.propTypes = {
-  data: PropTypes.object.isRequired,
 }
 
 export default LibraryTemplate

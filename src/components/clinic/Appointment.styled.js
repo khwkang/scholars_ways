@@ -1,5 +1,4 @@
 import styled from 'react-emotion'
-import t from '../../theme'
 
 export const Container = styled('div')`
   margin-top: 3rem;

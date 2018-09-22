@@ -8,7 +8,7 @@
   ],
   "license": "MIT",
   "main": "n/a",
-  "dependencies": {    
+  "dependencies": {
     "babel-plugin-emotion": "^9.2.8",
     "emotion": "^9.2.6",
     "emotion-server": "^9.2.6",
@@ -36,7 +36,7 @@
     "react-powerplug": "0.1.6",
     "sharp": "^0.20.5",
     "uuid": "^3.2.1",
-    "gatsby-plugin-netlify": "^2.0.0-rc.0"   
+    "gatsby-plugin-netlify": "^2.0.0-rc.0"
   },
   "scripts": {
     "build": "gatsby build",

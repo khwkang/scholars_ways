@@ -1,6 +1,5 @@
 import React from 'react'
 import { graphql } from "gatsby"
-import PropTypes from 'prop-types'
 import { Layout } from '../components/Layout'
 import { About } from '../components/About'
 import { Contact } from '../components/Contact'
@@ -22,11 +21,6 @@ const PageTemplate = ({ data }) => {
   )
 }
 
-
-PageTemplate.propTypes = {
-  data: PropTypes.object.isRequired,
-}
-
 export default PageTemplate
 
 export const query = graphql`
@@ -34,7 +28,6 @@ export const query = graphql`
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         componentKey
-        title
       }
     }
     ...About

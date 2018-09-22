@@ -1,4 +1,5 @@
 import React from 'react'
+import { graphql } from 'gatsby'
 import {Container, PageTitle} from './index.styled'
 import { get } from 'lodash'
 import {HTMLContent} from '../Content'

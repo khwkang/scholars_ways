@@ -1,7 +1,6 @@
 import styled from 'react-emotion'
 import t from '../../theme'
-import RawContent, { HTMLContent } from '../../components/Content'
-
+import {HTMLContent} from '../Content'
 export const Template = styled('div')`
   ${t.mq.l} {
     display: flex;
