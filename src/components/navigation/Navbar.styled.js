@@ -1,6 +1,6 @@
 import styled from 'react-emotion'
 import t from '../../theme'
-import Link from '../LinkTrack.js'
+import {Link} from 'gatsby'
 
 export const NavbarStyled = styled('div')`
   position: fixed;

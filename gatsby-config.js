@@ -12,20 +12,19 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-emotion',
-      options: {
-        autoLabel: true
-      },
-    },
-    {
       resolve: "gatsby-source-filesystem",
       options: {
         path: `${__dirname}/src/img`,
         name: 'images',
       },
     },
+    {
+      resolve: 'gatsby-plugin-emotion',
+      options: {
+        autoLabel: true
+      },
+    },
     'gatsby-plugin-sharp',
-    'gatsby-transformer-sharp',
     {
       resolve: 'gatsby-transformer-remark',
       options: {
@@ -51,6 +50,7 @@ module.exports = {
         trackPage: true,
       },
     },
-    'gatsby-plugin-netlify', // make sure to keep it last in the array
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-netlify'
   ],
 }

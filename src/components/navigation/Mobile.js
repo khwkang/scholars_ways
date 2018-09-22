@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from '../LinkTrack'
+import {Link} from 'gatsby'
 import logo from '../../img/sw_logo.png'
 import HamburgerMenu from 'react-hamburger-menu'
 import { Toggle } from 'react-powerplug'

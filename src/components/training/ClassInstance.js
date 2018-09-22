@@ -2,7 +2,7 @@ import React from 'react'
 import {get} from 'lodash'
 import {HTMLContent} from '../Content'
 import {Schedule} from './ClassInstance.styled'
-import Link from 'gatsby-link'
+import {Link} from 'gatsby'
 
 export const ClassInstance = ({data}) => {
 

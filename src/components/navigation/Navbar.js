@@ -1,7 +1,5 @@
 import React from 'react'
 import logo from '../../img/sw_logo.png'
-import animation from './animation.js'
-import Link from '../LinkTrack.js'
 import {
   NavbarStyled,
   NavLogo,
@@ -13,7 +11,7 @@ import {
 
 export const Navbar = () => (
   <NavbarStyled>
-    <NavLogoWrapper to="/#home_hero" onClick={animation.spinLogo}>
+    <NavLogoWrapper to="/#home_hero">
       <NavLogo id="sw_logo" src={logo} alt="scholars_way_logo" />
     </NavLogoWrapper>
     <NavLineBreak />

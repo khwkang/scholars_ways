@@ -1,18 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import { Layout, Container } from '../components/Layout/index.styled'
-import { Mobile } from '../components/navigation/Mobile'
-import { Navbar } from '../components/navigation/Navbar'
-import 'modern-normalize'
-import '../css/global'
+import { Layout } from '../components/Layout/index.styled'
 
 const TemplateWrapper = ({ children }) => (
   <Layout>
     <Helmet title="Scholars Ways | Daoist Art of Cultivation" />
-    <Mobile />
-    <Navbar />
-    <Container>{children()}</Container>
+    {children}
   </Layout>
 )
 

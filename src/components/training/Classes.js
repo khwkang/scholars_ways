@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from '../LinkTrack'
+import {Link} from 'gatsby'
 import { get } from 'lodash'
 import qigong_module from '../../img/qigong_module.jpg'
 import stretching_module from '../../img/stretching_module.jpg'

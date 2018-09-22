@@ -1,6 +1,6 @@
 import styled from 'react-emotion'
 import t from '../../theme'
-import Link from 'gatsby-link'
+import {Link} from 'gatsby'
 
 export const Container = styled('div')`
   position: relative;

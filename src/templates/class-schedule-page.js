@@ -1,4 +1,5 @@
 import React from 'react'
+import { graphql } from "gatsby"
 import PropTypes from 'prop-types'
 import {ClassSchedule} from '../components/training/ClassSchedule.js'
 import { Container, PageTitle } from '../components/general.styled.js'

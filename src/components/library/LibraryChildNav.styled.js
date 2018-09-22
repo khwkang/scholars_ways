@@ -1,7 +1,7 @@
 import styled from 'react-emotion'
 import { css } from 'emotion'
 import t from '../../theme'
-import Link from 'gatsby-link'
+import {Link} from 'gatsby'
 
 export const Container = styled('ul')`
   display: ${p => p.isOpen ? 'none': 'inline-block'};

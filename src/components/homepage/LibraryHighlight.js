@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import {Link} from 'gatsby'
 import library_highlight_bg from '../../img/library_highlight_bg.jpg'
 import {
   Container,

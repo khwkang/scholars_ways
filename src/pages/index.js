@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'react-emotion'
 import PropTypes from 'prop-types'
-import Link from 'gatsby-link'
+import {Link} from 'gatsby'
 import {Hero} from '../components/homepage/Hero'
 import {ClinicHighlight} from '../components/homepage/ClinicHighlight'
 import {TrainingHighlight} from '../components/homepage/TrainingHighlight'
@@ -15,7 +15,6 @@ export const IndexPage = () => (
     <ClinicHighlight />
     <TrainingHighlight />
     <LibraryHighlight />
-    <BackToTop />
   </Container>
 )
 export default IndexPage
@@ -23,3 +22,5 @@ export default IndexPage
 export const Container = styled('div')`
   position: absolute;
 `
+
+{/* <BackToTop /> */}

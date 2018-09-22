@@ -1,24 +1,14 @@
 import React from 'react'
-import animation from './animation.js'
 import styled from 'react-emotion'
 
 export default class BackToTop extends React.Component {
   constructor(props) {
     super(props)
   }
-
-  componentDidMount() {
-    animation.activateBackToTop()
-  }
-
-  scrollHandler = (e, target) => {
-    animation.jumpTo(target)
-  }
-
   render() {
     return (
       <BackToTopButtonContainer id="back_to_top">
-        <span onClick={e => this.scrollHandler(e, '#home_hero')}>
+        <span>
           Back to Top
         </span>
       </BackToTopButtonContainer>
