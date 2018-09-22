@@ -41,7 +41,7 @@ export const LibraryNav = data => {
                 published={section.published}                   
                 onClick={(event) => {
                   checkPublishStatus(event, section.published)
-                  section.child && toggle()
+                  if (section.child) toggle()
                 }}                   
               >
                 {section.name}

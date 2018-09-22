@@ -23,7 +23,7 @@ export const Mobile = () => (
             <TopBarLogo
               src={logo}
               alt="scholars way logo image"
-              onClick={mobileNavOn && toggleMobileNav}
+              onClick={mobileNavOn ? toggleMobileNav : undefined}
             />
           </Link>
           <TopBarText>Sholars Way</TopBarText>

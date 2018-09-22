@@ -1,32 +1,25 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import {Container, PageTitle} from './index.styled'
 import { get } from 'lodash'
 import {HTMLContent} from '../Content'
-import {Container, PageTitle} from './index.styled'
 
-export const About = ({ data, content }) => {
-  // console.log("xxxxx", content)
-  return (
+export const Contact = ({data, content}) => (  
   <Container>
     <PageTitle>{get(data, 'title')}</PageTitle>
-    <p>{get(data, 'text')}</p>
     {
       content && (
         <HTMLContent content={content} />
       )
-    }    
-  </Container> 
-  )
-}
+    }  
+  </Container>
+)
 
 export const query = graphql`
-  fragment About on Query {
+  fragment Contact on Query {
     markdownRemark(id: { eq: $id }) {
       html
-      frontmatter {
-        componentKey
-        title
-        text
+      frontmatter {    
+        title        
       } 
     }    
   }
