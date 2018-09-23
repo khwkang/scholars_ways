@@ -1,4 +1,3 @@
-const _ = require('lodash')
 const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
 
@@ -27,10 +26,10 @@ exports.createPages = ({ actions, graphql }) => {
       return Promise.reject(result.errors)
     }
     const posts = result.data.allMarkdownRemark.edges
-    posts.forEach(edge => {
-      const id = edge.node.id
+    posts.forEach(edge => {      
+      const id = edge.node.id            
       createPage({
-        path: edge.node.fields.slug === 'home' ? '/' : edge.node.fields.slug,    
+        path: edge.node.fields.slug,    
         component: path.resolve(
           `src/templates/${String(edge.node.frontmatter.templateKey)}.js`
         ),

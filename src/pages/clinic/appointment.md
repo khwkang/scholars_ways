@@ -1,5 +1,5 @@
 ---
-templateKey: 'clinic-appointment-page'
+templateKey: 'page'
 path: /clinic/appointment
 title: Appointment
 content: hellow world im content
