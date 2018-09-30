@@ -1,7 +1,8 @@
 ---
-templateKey: 'clinic-expertise-page'
-path: /clinic/expertise
+templateKey: 'page'
+path: /Clinic/Expertise
 title: Expertise
+componentKey: Expertise
 specialties: 
   - Chronic Aches
   - Acute Pain 

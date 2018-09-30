@@ -6,18 +6,9 @@ export const Container = styled('div')`
   ${t.mq.l} {
     padding: ${t.s(5)} ${t.s(6)};
   }
-  
-  h4 {
-    font-size: 1rem;
-    color: grey;
-  }
-  span {
-    display: block;
-    margin-top: 2rem;
-    color: blue;
-  }
 `
 
-export const PageTitle = styled('h1')`  
-  margin-bottom: 3.4rem;
+export const PageTitle = styled('h1')`
+  margin-bottom: 1.4rem;
 `
+

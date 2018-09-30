@@ -23,8 +23,7 @@ export const query = graphql`
   fragment About on Query {
     markdownRemark(id: { eq: $id }) {
       html
-      frontmatter {
-        componentKey
+      frontmatter {        
         title
         text
       } 
