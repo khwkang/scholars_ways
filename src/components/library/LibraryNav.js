@@ -20,9 +20,9 @@ const render = props => queryData => {
         <h1>Scholars Way</h1>
         <h2>Library</h2> 
       </Panel>
-      {Navi.map(item =>  
-        <li>{item.name}</li>        
-      )}
+        {Navi.map(item =>  
+          <li>{item.name}</li>        
+        )}
     </Container>
   )
 }
@@ -31,7 +31,7 @@ export const LibraryNav = props => (
   <StaticQuery
     query={graphql`
       query {
-        markdownRemark(id: { eq: "/Users/kangken/dev/scholars_ways/src/data/libraryNav.md absPath of file >>> MarkdownRemark" }) {          
+        markdownRemark(fileAbsolutePath: { eq: "/Users/kangken/dev/scholars_ways/src/data/library_nav.md" }) {          
           frontmatter {          
             navigation {      
               panel {        

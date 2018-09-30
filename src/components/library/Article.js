@@ -7,7 +7,7 @@ export const Article = ({ data, content }) => (
     <PageTitle>{data.title}</PageTitle>
     {content && (
       <HTMLContent content={content} />
-    )}  
+    )}
   </Container>  
 )
 

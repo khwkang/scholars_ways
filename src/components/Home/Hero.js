@@ -18,5 +18,3 @@ export const Hero = () => (
     </Content>
   </Container>
 )
-
-{/* <QuickAccessBar /> */}
