@@ -30,7 +30,7 @@ const PageTemplate = ({ data }) => {
   const ChildComponent = mapToComponent[mapTo]
 
   return (
-    <Layout>
+    <Layout context='main'>
       <ChildComponent data={get(data, 'markdownRemark.frontmatter')} content={get(data, 'markdownRemark.html')} />
     </Layout>
   )

@@ -3,20 +3,22 @@ import { graphql } from "gatsby"
 import { Container, PageTitle } from '../components/general.styled.js'
 import { About } from '../components/About'
 import { Layout } from '../components/Layout'
+import { Article } from '../components/Library/Article'
+import { get } from 'lodash'
+const mapToComponent = {
+  'Article': Article,
+}
 
 const LibraryTemplate = ({ data }) => {
-  const title = data.markdownRemark.frontmatter.title
+  const mapTo = get(data, 'markdownRemark.frontmatter.componentKey')
+  const ChildComponent = mapToComponent[mapTo]
 
   return (
-    <Layout>
-      <Container>
-        <PageTitle>{title}</PageTitle>
-        <About data={data.markdownRemark.frontmatter} />
-      </Container>
+    <Layout context='library'>
+      <ChildComponent data={get(data, 'markdownRemark.frontmatter')} content={get(data, 'markdownRemark.html')} />
     </Layout>
   )
 }
-
 export default LibraryTemplate
 
 export const LibraryTemplateQuery = graphql`
@@ -24,9 +26,9 @@ export const LibraryTemplateQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
-        title
-        text
+        componentKey
       }
     }
+    ...Article
   }
 `

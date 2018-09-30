@@ -3,6 +3,7 @@ import Helmet from 'react-helmet'
 import { Container, Content } from './index.styled'
 import { Mobile } from '../navigation/Mobile'
 import { Navbar } from '../navigation/Navbar'
+import { LibraryNav } from '../library/LibraryNav.js'
 import { injectGlobal } from 'emotion'
 import 'modern-normalize'
 import t from '../../theme'
@@ -58,11 +59,22 @@ injectGlobal`
   }
 `
 
-export const Layout = ({ children }) => (
+export const Layout = ({ context, children }) => (
   <Container>
     <Helmet title="Scholars Ways | Daoist Art of Cultivation" />
-    <Mobile />
-    <Navbar />
+    {context ==="main" && (
+      <>
+        <Mobile />    
+        <Navbar />
+      </>
+      )      
+    }
+    {context ==="library" && (
+      <>
+        <LibraryNav />
+      </>
+      )      
+    }      
     <Content>{children}</Content>
   </Container>
 )

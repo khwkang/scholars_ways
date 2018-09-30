@@ -1,4 +1,5 @@
 import React from 'react'
+import { StaticQuery, graphql } from 'gatsby'
 import { Toggle } from 'react-powerplug'
 import { LibraryChildNav } from './LibraryChildNav'
 import { get } from 'lodash'
@@ -10,51 +11,48 @@ import {
   StyledPanelBlockLink,
 } from './LibraryNav.styled'
 
-export const LibraryNav = data => {
-  const panelData = data.data.panel
-  const panelBlock = data.data.panel_block
-
-  const checkPublishStatus = (event, published) => {
-    !published && event.preventDefault()
-  }
+const render = props => queryData => {
+  console.log("xxxxqd ", queryData)
+  const Navi = get(queryData, 'markdownRemark.frontmatter.navigation.panel')
   return (
     <Container>
       <Panel>
         <h1>Scholars Way</h1>
-        <h2>Library</h2>
+        <h2>Library</h2> 
       </Panel>
-      <PanelTabs>
-        {panelData.map(chapter => (
-          <StyledPanelLink to={chapter.url} active={chapter.active}>
-            {chapter.name}
-          </StyledPanelLink>
-        ))}
-      </PanelTabs>
-      <Toggle>   
-        {({ on, toggle }) => (
-          <div>
-            {panelBlock.map(section => (          
-              <div>          
-              <StyledPanelBlockLink
-                to={section.url}
-                active={section.active}
-                published={section.published}                   
-                onClick={(event) => {
-                  checkPublishStatus(event, section.published)
-                  if (section.child) toggle()
-                }}                   
-              >
-                {section.name}
-              </StyledPanelBlockLink>
-              {
-                get(section, 'child') && <LibraryChildNav isOpen={on} items={section.child} />
-              }
-              </div>
-            ))}
-          </div>
-        )}
-      </Toggle>
-      <StyledPanelBlockLink style={{"color":"red", "fontWeight": "700"}}to="/">Back to Main Site</StyledPanelBlockLink>
+      {Navi.map(item =>  
+        <li>{item.name}</li>        
+      )}
     </Container>
   )
 }
+
+export const LibraryNav = props => (
+  <StaticQuery
+    query={graphql`
+      query {
+        markdownRemark(id: { eq: "/Users/kangken/dev/scholars_ways/src/data/libraryNav.md absPath of file >>> MarkdownRemark" }) {          
+          frontmatter {          
+            navigation {      
+              panel {        
+                name
+                url                
+                published
+                sub_menu {
+                  name
+                  url
+                  published
+                  child {
+                    name
+                    url  
+                  }
+                }
+              }               
+            }
+          }
+        }
+      }
+    `}
+    render={render(props)}
+  />
+)

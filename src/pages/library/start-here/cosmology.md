@@ -1,45 +1,9 @@
 ---
-templateKey: 'library-page'
+templateKey: 'library'
+componentKey: 'Article'
 path: /library/start-here/cosmology
 title: Daoist Cosmology Fundamentals
 description: The Scholar’s Way library exists as database for information on our perspective and practice of medicinal, martial, and meditative arts (sciences); rooted in traditional wisdom and made accessible for contemporary students.
-navigation: 
-  panel:
-    - name: Start Here
-      url: /library
-      active: true      
-    - name: Oriental Medicine
-      url: /library/oriental-medicine
-      active: false      
-    - name: Training
-      url: /library/training
-      active: false      
-  panel_block:
-    - name: Introduction
-      url: /library
-      active: false
-      published: true    
-    - name: What is Daoism?
-      url: /library/what-is-daoism
-      active: false
-      published: false
-    - name: Cosmology 
-      url: /library/start-here/cosmology      
-      active: true
-      published: true
-      child:
-       - name: Yin/Yang
-         url: /library/start-here/cosmology/#yin-yang      
-       - name: Heaven Man Earth
-         url: /library/start-here/cosmology/#heaven-man-earth
-       - name: Four Directions
-         url: /library/start-here/cosmology/#four-directions
-       - name: Five Elements
-         url: /library/start-here/cosmology/#five-elements
-       - name: Six Energies
-         url: /library/start-here/cosmology/#six-energies
-       - name: Seven Dimensions 
-         url: /library/start-here/cosmology/#seven-dimensions 
 ---
 
 <!-- ### Welcome message will be here in html markup  -->
