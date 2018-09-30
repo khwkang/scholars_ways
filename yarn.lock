@@ -629,13 +629,6 @@
     "@babel/plugin-transform-react-jsx-self" "^7.0.0"
     "@babel/plugin-transform-react-jsx-source" "^7.0.0"
 
-"@babel/runtime@7.0.0-beta.51":
-  version "7.0.0-beta.51"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.0.0-beta.51.tgz#48b8ed18307034c6620f643514650ca2ccc0165a"
-  dependencies:
-    core-js "^2.5.7"
-    regenerator-runtime "^0.11.1"
-
 "@babel/runtime@^7.0.0":
   version "7.1.2"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.1.2.tgz#81c89935f4647706fc54541145e6b4ecfef4b8e3"
@@ -5091,11 +5084,11 @@ gatsby-remark-images@^1.5.50:
     slash "^1.0.0"
     unist-util-select "^1.5.0"
 
-gatsby-source-filesystem@^next:
-  version "2.1.0-alpha.e328d33f"
-  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-2.1.0-alpha.e328d33f.tgz#cb832365caeb00c6f157aaafba960abbbd200f30"
+gatsby-source-filesystem@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-2.0.1.tgz#27aa5393a8e50fe160e65bb88b5e62f28dafa6de"
   dependencies:
-    "@babel/runtime" "7.0.0-beta.51"
+    "@babel/runtime" "^7.0.0"
     better-queue "^3.8.7"
     bluebird "^3.5.0"
     chokidar "^1.7.0"
@@ -5108,16 +5101,16 @@ gatsby-source-filesystem@^next:
     valid-url "^1.0.9"
     xstate "^3.1.0"
 
-gatsby-transformer-remark@^next:
-  version "2.2.0-alpha.80a21f04"
-  resolved "https://registry.yarnpkg.com/gatsby-transformer-remark/-/gatsby-transformer-remark-2.2.0-alpha.80a21f04.tgz#ebc4bca964e504df9b212d2301afa7c9f2ffd59e"
+gatsby-transformer-remark@^2.1.4:
+  version "2.1.4"
+  resolved "https://registry.yarnpkg.com/gatsby-transformer-remark/-/gatsby-transformer-remark-2.1.4.tgz#229722a84815023495ec2e487c4a87b162ac08b6"
   dependencies:
-    "@babel/runtime" "7.0.0-beta.51"
+    "@babel/runtime" "^7.0.0"
     bluebird "^3.5.0"
     gray-matter "^4.0.0"
     hast-util-raw "^2.0.2"
     hast-util-to-html "^3.0.0"
-    lodash "^4.17.4"
+    lodash "^4.17.10"
     mdast-util-to-hast "^3.0.0"
     mdast-util-toc "^2.0.1"
     remark "^9.0.0"
@@ -5143,7 +5136,7 @@ gatsby-transformer-sharp@^2.1.3:
     probe-image-size "^4.0.0"
     sharp "^0.20.2"
 
-gatsby@^next:
+gatsby@^2.0.12:
   version "2.0.12"
   resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.0.12.tgz#54787e80ab8aa7a4017ba498652fae125d015dea"
   dependencies:
@@ -9704,7 +9697,7 @@ react-dev-utils@^4.2.1:
     strip-ansi "3.0.1"
     text-table "0.2.0"
 
-react-dom@^16.4.1:
+react-dom@^16.5.2:
   version "16.5.2"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.5.2.tgz#b69ee47aa20bab5327b2b9d7c1fe2a30f2cfa9d7"
   dependencies:
@@ -9770,7 +9763,7 @@ react-testing-library@^4.1.7:
     dom-testing-library "^3.1.0"
     wait-for-expect "^1.0.0"
 
-react@^16.4.1:
+react@^16.5.2:
   version "16.5.2"
   resolved "https://registry.yarnpkg.com/react/-/react-16.5.2.tgz#19f6b444ed139baa45609eee6dc3d318b3895d42"
   dependencies:

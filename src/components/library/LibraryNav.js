@@ -11,18 +11,43 @@ import {
   StyledPanelBlockLink,
 } from './LibraryNav.styled'
 
-const render = props => queryData => {
-  console.log("xxxxqd ", queryData)
+const renderArticleNav = (articles) => (  
+  <>
+    {articles.map(article =>
+      <li>{article.name}</li>
+    )}
+  </>
+)
+
+const renderSectionNav = (sections) => (
+  <>
+    {sections.map(sub =>                                               
+      <>
+        <li>{sub.name}</li>                                                        
+        {sub.child && renderArticleNav(sub.child)}                                      
+      </>
+    )} 
+  </>   
+)
+const render = props => queryData => {  
   const Navi = get(queryData, 'markdownRemark.frontmatter.navigation.panel')
   return (
     <Container>
       <Panel>
         <h1>Scholars Way</h1>
         <h2>Library</h2> 
-      </Panel>
-        {Navi.map(item =>  
-          <li>{item.name}</li>        
+      </Panel>    
+      <div>
+        {Navi.map(main =>  
+          <li>{main.name}</li>                    
         )}
+      </div>
+
+      <div>
+        {Navi.map(main =>
+          renderSectionNav(main.sub_menu)                                  
+        )}
+      </div>
     </Container>
   )
 }

@@ -5,7 +5,6 @@ import {HTMLContent} from '../Content'
 import {Container, PageTitle} from './index.styled'
 
 export const About = ({ data, content }) => {
-  // console.log("xxxxx", content)
   return (
   <Container>
     <PageTitle>{get(data, 'title')}</PageTitle>

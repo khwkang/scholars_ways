@@ -24,7 +24,6 @@ export default LibraryTemplate
 export const LibraryTemplateQuery = graphql`
   query LibraryTemplate($id: String!) {
     markdownRemark(id: { eq: $id }) {
-      html
       frontmatter {
         componentKey
       }
