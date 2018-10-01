@@ -1,12 +1,12 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import { Container, Content } from './index.styled'
-import { Mobile } from '../navigation/Mobile'
-import { Navbar } from '../navigation/Navbar'
-import { LibraryNav } from '../Library/LibraryNav.js'
-import { injectGlobal } from 'emotion'
-import 'modern-normalize'
-import t from '../../theme'
+import React from "react";
+import Helmet from "react-helmet";
+import { Container, Content } from "./index.styled";
+import { Mobile } from "../navigation/Mobile";
+import { Navbar } from "../navigation/Navbar";
+import { LibraryNav } from "../Library/LibraryNav.js";
+import { injectGlobal } from "emotion";
+import "modern-normalize";
+import t from "../../theme";
 
 injectGlobal`  
   @import url('https://fonts.googleapis.com/css?family=Karla|Nanum+Myeongjo:700,800|Work+Sans:400,600');
@@ -57,28 +57,22 @@ injectGlobal`
     text-transform: uppercase;
     letter-spacing: 2px;
   }
-`
+`;
 
 export const Layout = ({ context, children }) => (
   <Container>
     <Helmet title="Scholars Ways | Daoist Art of Cultivation" />
-    {context ==="main" && (
+    {context === "main" && (
       <>
-        <Mobile />    
+        <Mobile />
         <Navbar />
       </>
-      )      
-    }
-    {context ==="library" && (
+    )}
+    {context === "library" && (
       <>
         <LibraryNav />
       </>
-      )      
-    }      
+    )}
     <Content>{children}</Content>
   </Container>
-)
-
-
-
-
+);

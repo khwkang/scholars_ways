@@ -1,15 +1,15 @@
-import React from 'react'
-import { Link } from 'gatsby'
+import React from "react";
+import { Link } from "gatsby";
 
-export default props => {  
-  const { to: path, onClick: parentOnClick, ...other } = props
+export default props => {
+  const { to: path, onClick: parentOnClick, ...other } = props;
   const track = () => {
-    analytics ? analytics.page({ path }) : null
-  }
-  const handleClick = (args) => {
-    console.log("ffffffffff", args)
-    track()
-    parentOnClick ? parentOnClick() : null
-  }
-  return <Link to={path} {...other} onClick={handleClick} />
-}
+    analytics ? analytics.page({ path }) : null;
+  };
+  const handleClick = args => {
+    console.log("ffffffffff", args);
+    track();
+    parentOnClick ? parentOnClick() : null;
+  };
+  return <Link to={path} {...other} onClick={handleClick} />;
+};

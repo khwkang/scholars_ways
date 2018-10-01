@@ -1,13 +1,13 @@
-import React from 'react'
-import logo from '../../img/sw_logo.png'
-import { QuickAccessBar } from './QuickAccessBar'
+import React from "react";
+import logo from "../../img/sw_logo.png";
+import { QuickAccessBar } from "./QuickAccessBar";
 import {
   Container,
   Content,
   HeroLogo,
   HeroTitle,
-  HeroSubTitle,
-} from './Hero.styled'
+  HeroSubTitle
+} from "./Hero.styled";
 
 export const Hero = () => (
   <Container id="home_hero">
@@ -17,4 +17,4 @@ export const Hero = () => (
       <HeroSubTitle>Healing Arts</HeroSubTitle>
     </Content>
   </Container>
-)
+);

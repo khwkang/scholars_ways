@@ -1,13 +1,13 @@
-import React from 'react'
-import logo from '../../img/sw_logo.png'
+import React from "react";
+import logo from "../../img/sw_logo.png";
 import {
   NavbarStyled,
   NavLogo,
   NavLogoWrapper,
   NavLineBreak,
   MenuLabel,
-  MenuItem,
-} from './Navbar.styled'
+  MenuItem
+} from "./Navbar.styled";
 
 export const Navbar = () => (
   <NavbarStyled>
@@ -27,7 +27,7 @@ export const Navbar = () => (
     <MenuItem to="/class">Classes</MenuItem>
     <MenuItem to="/class/schedule">Schedule</MenuItem>
     <NavLineBreak />
-    <MenuItem to="/library">Library</MenuItem>
+    <MenuItem to="/library/start-here">Library</MenuItem>
     <MenuItem to="/contact">Join Us</MenuItem>
   </NavbarStyled>
-)
+);

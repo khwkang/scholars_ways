@@ -1,22 +1,20 @@
-import React from 'react'
-import styled from 'react-emotion'
+import React from "react";
+import styled from "react-emotion";
 
 export default class BackToTop extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
   }
   render() {
     return (
       <BackToTopButtonContainer id="back_to_top">
-        <span>
-          Back to Top
-        </span>
+        <span>Back to Top</span>
       </BackToTopButtonContainer>
-    )
+    );
   }
 }
 
-const BackToTopButtonContainer = styled('div')`
+const BackToTopButtonContainer = styled("div")`
   opacity: 0;
   display: none;
   bottom: 33px;
@@ -28,4 +26,4 @@ const BackToTopButtonContainer = styled('div')`
   border-radius: 42px;
   font-weight: 500;
   cursor: pointer;
-`
+`;

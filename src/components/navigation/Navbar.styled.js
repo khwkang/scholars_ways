@@ -1,8 +1,8 @@
-import styled from 'react-emotion'
-import t from '../../theme'
-import {Link} from 'gatsby'
+import styled from "react-emotion";
+import t from "../../theme";
+import { Link } from "gatsby";
 
-export const NavbarStyled = styled('div')`
+export const NavbarStyled = styled("div")`
   position: fixed;
   background: ${t.c.nav};
   height: 100%;
@@ -27,36 +27,36 @@ export const NavbarStyled = styled('div')`
   ${t.mq.l} {
     display: block;
   }
-`
+`;
 
 export const NavLogoWrapper = styled(Link)`
   display: flex;
   justify-content: center;
   margin: 0 0 14px -30px;
-`
+`;
 
-export const NavLogo = styled('img')`
+export const NavLogo = styled("img")`
   max-height: 70px;
   width: 70px;
   margin: 15px 0 0px 0;
-`
+`;
 
-export const NavLineBreak = styled('hr')`
+export const NavLineBreak = styled("hr")`
   width: 85%;
   background-color: #313131;
   margin: 15px 0 0 0;
   border: none;
   height: 1px;
-`
+`;
 
-export const MenuLabel = styled('p')`
+export const MenuLabel = styled("p")`
   font-size: 1.1rem;
   font-weight: 500;
   letter-spacing: 1px;
   color: #707070;
   text-transform: uppercase;
-  margin-bottom:5px;
-`
+  margin-bottom: 5px;
+`;
 
 export const MenuItem = styled(Link)`
   display: block;
@@ -64,4 +64,4 @@ export const MenuItem = styled(Link)`
   font-size: 1.1rem;
   font-weight: 500;
   padding: 10px 0;
-`
+`;

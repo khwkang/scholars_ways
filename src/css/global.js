@@ -1,5 +1,5 @@
-import { injectGlobal } from 'emotion'
-import t from '../theme'
+import { injectGlobal } from "emotion";
+import t from "../theme";
 
 injectGlobal`  
   @import url('https://fonts.googleapis.com/css?family=Karla|Nanum+Myeongjo:700,800|Work+Sans:400,600');
@@ -50,7 +50,7 @@ injectGlobal`
     text-transform: uppercase;
     letter-spacing: 2px;
   }
-`
+`;
 
 // @import url('https://fonts.googleapis.com/css?family=Abhaya+Libre:400|Barlow+Condensed:700,600,400|Lato:300,400');
 // @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');

@@ -1,7 +1,7 @@
-import styled from 'react-emotion'
-import t from '../../theme'
+import styled from "react-emotion";
+import t from "../../theme";
 
-export const Container = styled('div')`
+export const Container = styled("div")`
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -9,9 +9,9 @@ export const Container = styled('div')`
   ${t.mq.l} {
     display: block;
   }
-`
+`;
 
-export const Content = styled('div')`
+export const Content = styled("div")`
   background-color: #00000033;
   padding: 26px 40px 26px 0;
   display: flex;
@@ -33,4 +33,4 @@ export const Content = styled('div')`
     background-color: #ffffff0f;
     margin: 0 8px;
   }
-`
+`;

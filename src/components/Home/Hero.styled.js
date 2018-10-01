@@ -1,23 +1,23 @@
-import styled from 'react-emotion'
-import { css } from 'emotion'
-import t from '../../theme'
-import bg from '../../img/mountain_bg.jpg'
+import styled from "react-emotion";
+import { css } from "emotion";
+import t from "../../theme";
+import bg from "../../img/mountain_bg.jpg";
 
-export const Container = styled('div')`
+export const Container = styled("div")`
   background-image: url(${bg});
   background-size: cover;
   position: relative;
   ${t.mq.l} {
     min-height: 100vh;
   }
-`
+`;
 
-export const Content = styled('div')`
+export const Content = styled("div")`
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-`
+`;
 
 export const HeroLogo = css`
   width: 6rem;
@@ -28,18 +28,18 @@ export const HeroLogo = css`
     width: 8rem;
     padding-top: 10rem;
   }
-`
+`;
 
-export const HeroTitle = styled('div')`
+export const HeroTitle = styled("div")`
   font-size: 3rem;
   color: white;
   font-family: fantasy;
   ${t.mq.l} {
     font-size: 5.5rem;
   }
-`
+`;
 
-export const HeroSubTitle = styled('div')`
+export const HeroSubTitle = styled("div")`
   color: ${t.c.white};
   font-family: Lora;
   margin-bottom: 15rem;
@@ -47,4 +47,4 @@ export const HeroSubTitle = styled('div')`
   ${t.mq.l} {
     font-size: 3.5rem;
   }
-`
+`;

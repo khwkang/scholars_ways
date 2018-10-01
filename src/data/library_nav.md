@@ -3,11 +3,11 @@ nopage: true
 navigation: 
   panel:
     - name: Start Here
-      url: /library      
+      url: /library/start-here      
       published: true
       sub_menu:
         - name: Introduction
-          url: /library      
+          url: /library/start-here     
           published: true      
         - name: What is Daoism?
           url: /library/what-is-daoism            

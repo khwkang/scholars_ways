@@ -1,26 +1,25 @@
-import styled from 'react-emotion'
-import t from '../../theme'
+import styled from "react-emotion";
+import t from "../../theme";
 
-export const Master = styled.div`
-`
+export const Master = styled.div``;
 
 export const Container = styled.div`
   padding: ${t.s(3)} ${t.s(1)};
   ${t.mq.l} {
     padding: ${t.s(5)} ${t.s(6)};
   }
-`
+`;
 
 export const Content = styled.div`
   display: flex;
   flex-wrap: wrap;
-`
+`;
 
-export const PageTitle = styled('h1')`
+export const PageTitle = styled("h1")`
   margin-bottom: 1.4rem;
-`
+`;
 
-export const Module = styled('div')`
+export const Module = styled("div")`
   position: relative;
   display: flex;
   align-items: center;
@@ -37,9 +36,9 @@ export const Module = styled('div')`
     height: 450px;
     width: 450px;
   }
-`
+`;
 
-export const Overlay = styled('div')`
+export const Overlay = styled("div")`
   position: absolute;
   width: 100%;
   height: 100%;
@@ -47,11 +46,11 @@ export const Overlay = styled('div')`
   opacity: 0.1;
   z-index: 0;
   @include transition(all, 0.5s, ease);
-`
+`;
 
-export const ModuleTitle = styled('h2')`
+export const ModuleTitle = styled("h2")`
   font-size: 2rem;
   color: white;
   font-weight: 500;
   z-index: 30;
-`
+`;

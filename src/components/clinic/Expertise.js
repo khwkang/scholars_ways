@@ -1,16 +1,22 @@
-import React from 'react'
-import { get, chunk } from 'lodash'
-import { List, ListContainer, SubTitle, Container, PageTitle } from './Expertise.styled'
+import React from "react";
+import { get, chunk } from "lodash";
+import {
+  List,
+  ListContainer,
+  SubTitle,
+  Container,
+  PageTitle
+} from "./Expertise.styled";
 
-export const Expertise = ({ data }) => {  
-  const GroupedSpecialties = chunk((get(data, 'specialties')), 3)
-  const GroupedExpertise = chunk((get(data, 'expertise')), 3)
+export const Expertise = ({ data }) => {
+  const GroupedSpecialties = chunk(get(data, "specialties"), 3);
+  const GroupedExpertise = chunk(get(data, "expertise"), 3);
   const style = {
-    marginTop: '3rem',
-  }
+    marginTop: "3rem"
+  };
   return (
     <Container>
-      <PageTitle>{get(data, 'title')}</PageTitle>
+      <PageTitle>{get(data, "title")}</PageTitle>
       <SubTitle>Common Scope of Practice</SubTitle>
       <ListContainer>
         {GroupedSpecialties.map(list => (
@@ -32,18 +38,18 @@ export const Expertise = ({ data }) => {
         ))}
       </ListContainer>
     </Container>
-  )
-}
+  );
+};
 
 export const query = graphql`
   fragment Expertise on Query {
     markdownRemark(id: { eq: $id }) {
       html
-      frontmatter {        
-        title            
+      frontmatter {
+        title
         specialties
         expertise
-      } 
-    }    
+      }
+    }
   }
-`
+`;

@@ -1,8 +1,8 @@
-import styled from 'react-emotion'
-import t from '../../theme'
-import {Link} from 'gatsby'
+import styled from "react-emotion";
+import { css } from "emotion";
+import t from "../../theme";
 
-export const Container = styled('div')`
+export const Container = styled("div")`
   position: relative;
   height: 100%;
   z-index: 30;
@@ -13,9 +13,9 @@ export const Container = styled('div')`
     width: 22%;
     position: fixed;
   }
-`
+`;
 
-export const Panel = styled('div')`
+export const Header = styled("div")`
   padding: 21px 0 0 0;
   margin: 0 auto;
   text-align: center;
@@ -31,37 +31,30 @@ export const Panel = styled('div')`
   h2 {
     margin: 0;
   }
-`
+`;
 
-export const PanelTabs = styled('div')`
+export const ChapterContainer = styled("div")`
   display: block;
   padding: 1.8rem 0 1.8rem 1em;
   font-size: 0.9em;
   font-weight: 700;
   border: none;
   background-color: #2d2d2d;
-`
+`;
 
-export const StyledPanelLink = styled(Link)`
+export const ChapterLink = css`
   font-size: 1.2rem;
   margin: 10px 0;
   padding-left: 10px;
   display: block;
   border: none;
-  color: ${p => p.active ? '#878787' : 'white'};
   text-transform: uppercase;
-`
+  color: gray;
+`;
+export const ChapterLinkActive = css`
+  color: white !important;
+`;
 
-
-export const StyledPanelBlockLink = styled(Link)`
-  padding: 0.8rem 0 0.6rem 1.5em;
-  display: inline-block;
-  border: none;
-  font-size: ${t.f(0)};
-  color: ${p => p.published ? 'black' : 'gray'};
-  cursor: ${p => p.published ? 'pointer' : 'not-allowed'};
-  width: 100%;
-  &:hover {
-    background-color: #f4f4f4;  
-  }
-`
+export const StyledList = styled("li")`
+  list-style: none;
+`;

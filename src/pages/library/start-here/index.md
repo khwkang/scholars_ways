@@ -1,7 +1,7 @@
 ---
 templateKey: 'library'
 componentKey: 'Article'
-path: /library
+path: /library/start-here
 title: Scholars Way Library
 description: The Scholar’s Way library exists as database for information on our perspective and practice of medicinal, martial, and meditative arts (sciences); rooted in traditional wisdom and made accessible for contemporary students.
 navigation: 

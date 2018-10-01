@@ -1,18 +1,18 @@
-import React from 'react'
-import {Link} from 'gatsby'
-import logo from '../../img/sw_logo.png'
-import HamburgerMenu from 'react-hamburger-menu'
-import { Toggle } from 'react-powerplug'
-import t from '../../theme'
+import React from "react";
+import { Link } from "gatsby";
+import logo from "../../img/sw_logo.png";
+import HamburgerMenu from "react-hamburger-menu";
+import { Toggle } from "react-powerplug";
+import t from "../../theme";
 import {
   Container,
   HamburgerMenuContainer,
   TopBar,
   TopBarLogo,
   TopBarText,
-  MobileNavContainer,
-} from './Mobile.styled'
-import { NavLineBreak, MenuLabel, MenuItem } from './Navbar.styled'
+  MobileNavContainer
+} from "./Mobile.styled";
+import { NavLineBreak, MenuLabel, MenuItem } from "./Navbar.styled";
 
 export const Mobile = () => (
   <Toggle>
@@ -72,4 +72,4 @@ export const Mobile = () => (
       </Container>
     )}
   </Toggle>
-)
+);

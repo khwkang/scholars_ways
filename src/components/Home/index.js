@@ -1,10 +1,9 @@
-import React from 'react'
-import styled from 'react-emotion'
-import {Hero} from './Hero'
-import {ClinicHighlight} from './ClinicHighlight'
-import {TrainingHighlight} from './TrainingHighlight'
-import {LibraryHighlight} from './LibraryHighlight';
-
+import React from "react";
+import styled from "react-emotion";
+import { Hero } from "./Hero";
+import { ClinicHighlight } from "./ClinicHighlight";
+import { TrainingHighlight } from "./TrainingHighlight";
+import { LibraryHighlight } from "./LibraryHighlight";
 
 export const HomePage = () => (
   <Container id="index_page">
@@ -13,8 +12,8 @@ export const HomePage = () => (
     <TrainingHighlight />
     <LibraryHighlight />
   </Container>
-)
+);
 
-export const Container = styled('div')`
+export const Container = styled("div")`
   position: absolute;
-`
+`;
