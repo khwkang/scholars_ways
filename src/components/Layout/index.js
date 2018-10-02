@@ -1,8 +1,8 @@
 import React from "react";
 import Helmet from "react-helmet";
 import { Container, Content } from "./index.styled";
-import { Mobile } from "../navigation/Mobile";
-import { Navbar } from "../navigation/Navbar";
+import { Mobile } from "../Navigation/Mobile";
+import { Navbar } from "../Navigation/Navbar";
 import { LibraryNav } from "../Library/LibraryNav.js";
 import { injectGlobal } from "emotion";
 import "modern-normalize";
