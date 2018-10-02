@@ -18,10 +18,10 @@ import {
 } from "./LibraryNav.styled";
 
 const getCurrentPath = () => {  
-  if (typeof window !== undefined) {
+  if (typeof window !== "undefined") {
     return window.location.pathname
   } else {
-    return "/library/start-here  "
+    return "/library/start-here"
   }
 }
 
