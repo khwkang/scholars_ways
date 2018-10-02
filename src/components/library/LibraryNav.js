@@ -43,7 +43,7 @@ const render = props => queryData => {
                       key={main.name} 
                       to={main.url} 
                       getProps={checkActive()}                                 
-                      onClick={() => value.setValue(main.url)}
+                      onClick={() => value.setValue(main.url)} 
                       active={value.value}
                     >
                       {main.name}
