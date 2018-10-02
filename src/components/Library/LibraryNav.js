@@ -17,6 +17,14 @@ import {
   StyledList
 } from "./LibraryNav.styled";
 
+const getCurrentPath = () => {  
+  if (typeof window !== undefined) {
+    return window.location.pathname
+  } else {
+    return "/library/start-here  "
+  }
+}
+
 const checkActive = () => ({ href, location: { pathname } }) => ({
   className: classnames(
     ChapterLink,
@@ -32,7 +40,7 @@ const render = props => queryData => {
         <h1>Scholars Way</h1>
         <h2>Library</h2>
       </Header>
-      <Value initial={window.location.pathname}>    
+      <Value initial={getCurrentPath()}>
         {value => (
           <Toggle initial={false}>
             {toggle => (
