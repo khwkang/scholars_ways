@@ -1,4 +1,4 @@
-import { _ } from "lodash/fp";
+import { _, isString } from "lodash/fp";
 
 export const toBoolean = value => {
   if (!value) {
@@ -21,3 +21,5 @@ export const isPathActive = (rawCurrentPath, rawPath) => {
   const path = _sanitizePath(rawPath);
   return path.length > 0 && currentPath.startsWith(path);
 };
+
+export const isInternal = s => isString(s) && /^\/(?!\/)/.test(s)

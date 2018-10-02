@@ -1,6 +1,7 @@
 import styled from "react-emotion";
 import { css } from "emotion";
 import t from "../../theme";
+import { Link } from "gatsby";
 
 export const Container = styled("div")`
   position: relative;
@@ -8,9 +9,9 @@ export const Container = styled("div")`
   z-index: 30;
   padding-left: 0;
   border-right: 1px solid #ececec;
-
+  overflow-y: scroll;
   ${t.mq.l} {
-    width: 22%;
+    width: 40%;
     position: fixed;
   }
 `;
@@ -49,12 +50,31 @@ export const ChapterLink = css`
   display: block;
   border: none;
   text-transform: uppercase;
-  color: gray;
+  color: grey;
 `;
+
+export const SectionContainer = styled.div`
+  // margin: 20px 0;
+  // display: none;  
+`;
+
 export const ChapterLinkActive = css`
-  color: white !important;
+  color: white !important;  
 `;
 
 export const StyledList = styled("li")`
   list-style: none;
+`;
+
+export const StyledPanelBlockLink = styled(Link)`
+  padding: 0.8rem 0 0.6rem 1.5em;
+  display: inline-block;
+  border: none;
+  font-size: ${t.f(0)};
+  // color: ${p => (p.published ? "black" : "gray")};
+  // cursor: ${p => (p.published ? "pointer" : "not-allowed")};
+  width: 100%;
+  &:hover {
+    background-color: #f4f4f4;  
+  }
 `;

@@ -7,17 +7,17 @@ navigation:
       published: true
       sub_menu:
         - name: Introduction
-          url: /library/start-here     
+          url: /library/start-here/     
           published: true      
         - name: What is Daoism?
-          url: /library/what-is-daoism            
+          url: /library/start-here/what-is-daoism    
           published: false
         - name: Cosmology 
           url: /library/start-here/cosmology
           published: true
           child:
           - name: Yin/Yang
-            url: /library/start-here/cosmology/#yin-yang      
+            url: /library/start-here/cosmology/#yin-yang 
           - name: Heaven Man Earth
             url: /library/start-here/cosmology/#heaven-man-earth
           - name: Four Directions
@@ -29,7 +29,7 @@ navigation:
           - name: Seven Dimensions 
             url: /library/start-here/cosmology/#seven-dimensions
     - name: Oriental Medicine
-      url: /library/oriental-medicine      
+      url: /library/oriental-medicine/      
       published: true
       sub_menu:
         - name: Introduction
@@ -57,7 +57,7 @@ navigation:
           url: /library/oriental-medicine/exercise
           published: false 
     - name: Training
-      url: /library/training      
+      url: /library/training/      
       published: true  
       sub_menu:
         - name: Introduction

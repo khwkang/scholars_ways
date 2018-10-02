@@ -1,4 +1,5 @@
 import styled from "react-emotion";
+import {css} from 'emotion'
 import { Link } from "gatsby";
 import t from "../../theme";
 
@@ -11,7 +12,7 @@ export const StyledList = styled("li")`
   list-style: none;
 `;
 
-export const StyledPanelBlockLink = styled(Link)`
+export const StyledPanelBlockLink = css`  
   padding: 0.8rem 0 0.6rem 1.5em;
   display: inline-block;
   border: none;
@@ -23,3 +24,7 @@ export const StyledPanelBlockLink = styled(Link)`
     background-color: #f4f4f4;  
   }
 `;
+
+export const ActiveSectionLink = css`
+  color: blue;
+`
