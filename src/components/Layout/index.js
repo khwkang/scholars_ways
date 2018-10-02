@@ -13,7 +13,7 @@ injectGlobal`
   * {
     box-sizing: border-box;
   }
-
+ 
   html {
     -webkit-font-smoothing: antialiased;
     font-smoothing: antialiased;
