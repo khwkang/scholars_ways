@@ -4,7 +4,7 @@ import classnames from "classnames";
 import { Link } from "../Link";
 import { Toggle, Value } from "react-powerplug";
 import { LibraryChildNav } from "./LibraryChildNav";
-import { get, startsWith } from "lodash";
+import { get } from "lodash";
 import { isPathActive } from "../../helper";
 import {
   Container,
@@ -13,17 +13,8 @@ import {
   ChapterLink,
   ChapterLinkActive,
   SectionContainer,
-  StyledPanelBlockLink,
-  StyledList
+  StyledPanelBlockLink,  
 } from "./LibraryNav.styled";
-
-const getCurrentPath = () => {  
-  if (typeof window !== "undefined") {
-    return window.location.pathname
-  } else {
-    return "/library/start-here"
-  }
-}
 
 const checkActive = () => ({ href, location: { pathname } }) => ({
   className: classnames(
@@ -33,14 +24,14 @@ const checkActive = () => ({ href, location: { pathname } }) => ({
 });
 
 const render = props => queryData => {
-  const Navi = get(queryData, "markdownRemark.frontmatter.navigation.panel");
+  const Navi = get(queryData, "markdownRemark.frontmatter.navigation.panel");  
   return (
     <Container>
       <Header>
         <h1>Scholars Way</h1>
         <h2>Library</h2>
       </Header>
-      <Value initial={getCurrentPath()}>
+      <Value initial={props.location.pathname}>
         {value => (
           <Toggle initial={false}>
             {toggle => (
@@ -58,12 +49,13 @@ const render = props => queryData => {
                     </Link>                    
                   ))}
                 </ChapterContainer> 
-                {Navi.map(main => (
+                {Navi.map((main, index) => (
                   (value.value).startsWith(main.url) && (
-                    <SectionContainer 
-                      key={main.url}                  
-                    >
-                      <LibraryChildNav value={value} sections={main.sub_menu} />
+                    <SectionContainer>
+                      <LibraryChildNav                         
+                        value={value} 
+                        sections={main.sub_menu} 
+                      />
                     </SectionContainer>          
                   )          
                 ))}                                                        

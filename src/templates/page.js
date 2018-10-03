@@ -25,15 +25,16 @@ const mapToComponent = {
   ClassInstance: ClassInstance
 };
 
-const PageTemplate = ({ data }) => {
+const PageTemplate = ({ data, location }) => {
   const mapTo = get(data, "markdownRemark.frontmatter.componentKey");
   const ChildComponent = mapToComponent[mapTo];
 
   return (
-    <Layout context="main">
+    <Layout location={location} context="main">
       <ChildComponent
         data={get(data, "markdownRemark.frontmatter")}
         content={get(data, "markdownRemark.html")}
+        location={location}
       />
     </Layout>
   );

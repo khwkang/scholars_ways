@@ -59,18 +59,18 @@ injectGlobal`
   }
 `;
 
-export const Layout = ({ context, children }) => (
+export const Layout = ({ location, context, children }) => (
   <Container>
     <Helmet title="Scholars Ways | Daoist Art of Cultivation" />
     {context === "main" && (
       <>
-        <Mobile />
-        <Navbar />
+        <Mobile location={location} />
+        <Navbar location={location} />
       </>
     )}
     {context === "library" && (
       <>
-        <LibraryNav />
+        <LibraryNav location={location}/>
       </>
     )}
     <Content>{children}</Content>
