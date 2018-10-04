@@ -1,6 +1,6 @@
 import React from "react";
 import Helmet from "react-helmet";
-import { Container, Content } from "./index.styled";
+import { Container, Content, LibraryContent } from "./index.styled";
 import { Mobile } from "../Navigation/Mobile";
 import { Navbar } from "../Navigation/Navbar";
 import { LibraryNav } from "../Library/LibraryNav.js";
@@ -68,11 +68,8 @@ export const Layout = ({ location, context, children }) => (
         <Navbar location={location} />
       </>
     )}
-    {context === "library" && (
-      <>
-        <LibraryNav location={location}/>
-      </>
-    )}
-    <Content>{children}</Content>
+    {context === "library" && (<LibraryNav location={location}/>)}
+    {context === "main" && <Content>{children}</Content>}
+    {context === "library" && <LibraryContent>{children}</LibraryContent>}    
   </Container>
 );
