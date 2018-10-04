@@ -39,7 +39,7 @@ navigation:
       sub_menu:
         - name: Introduction
           url: /library/oriental-medicine              
-          published: true
+          published: false
         - name: Physiology
           url: /library/oriental-medicine/physiology
           published: false        

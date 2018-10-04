@@ -25,7 +25,7 @@ export const StyledSectionLink = styled(Link)`
   font-size: ${t.f(0)};
   color: ${p => (p.published ? "black" : "gray")};
   cursor: ${p => (p.published ? "pointer" : "not-allowed")};
-  color: ${p => (p.isActive ? 'blue' : 'black')};
+  font-weight: ${p => (p.isActive ? '700' : '300')};
   width: 100%;
   &:hover {
     background-color: #f4f4f4;  
