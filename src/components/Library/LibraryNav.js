@@ -2,7 +2,7 @@ import React from "react";
 import { StaticQuery, graphql } from "gatsby";
 import classnames from "classnames";
 import { Link } from "../Link";
-import { Toggle, Value } from "react-powerplug";
+import { Value } from "react-powerplug";
 import { LibraryChildNav } from "./LibraryChildNav";
 import { get } from "lodash";
 import { isPathActive } from "../../helper";
@@ -32,36 +32,35 @@ const render = props => queryData => {
         <h2>Library</h2>
       </Header>
       <Value initial={props.location.pathname}>
-        {value => (
-          <Toggle initial={false}>
-            {toggle => (
-              <>
-                <ChapterContainer>
-                  {Navi.map(main => (                    
-                    <Link 
-                      key={main.name} 
-                      to={main.url} 
-                      getProps={checkActive()}                                 
-                      onClick={() => value.setValue(main.url)} 
-                      active={value.value}
-                    >
-                      {main.name}
-                    </Link>                    
-                  ))}
-                </ChapterContainer> 
-                {Navi.map((main, index) => (
-                  (value.value).startsWith(main.url) && (
-                    <SectionContainer>
-                      <LibraryChildNav                         
-                        value={value} 
-                        sections={main.sub_menu} 
-                      />
-                    </SectionContainer>          
-                  )          
-                ))}                                                        
-              </>
-            )}
-          </Toggle>
+        {value => (          
+          <>
+            <ChapterContainer>
+              {Navi.map(main => (                    
+                <Link 
+                  key={main.name} 
+                  to={main.url} 
+                  getProps={checkActive()}                                 
+                  onClick={() => value.setValue(main.url)} 
+                  active={value.value}
+                >
+                  {main.name}
+                </Link>                    
+              ))}
+            </ChapterContainer>
+            {Navi.map((main, index) => (
+              (value.value).startsWith(main.url) && (
+                <SectionContainer
+                  key={main.url + index + index.toString()}
+                >
+                  <LibraryChildNav  
+                    key={main.url + index.toString()}                       
+                    value={value.value} 
+                    sections={main.sub_menu}                                                 
+                  />
+                </SectionContainer>          
+              )          
+            ))}                                                        
+          </>       
         )}
       </Value>                    
       <StyledPanelBlockLink style={{ color: "red", fontWeight: "700" }} to="/">

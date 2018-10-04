@@ -9,25 +9,30 @@ navigation:
         - name: Introduction
           url: /library/start-here/     
           published: true      
+          child:
+            - name: Yoyoyoyoyo
+              url: "#yin-yang"
+            - name: Hahahahahaha
+              url: "#yin-yang"
         - name: What is Daoism?
           url: /library/start-here/what-is-daoism    
           published: false
         - name: Cosmology 
-          url: /library/start-here/cosmology
+          url: /library/start-here/cosmology/
           published: true
           child:
           - name: Yin/Yang
-            url: /library/start-here/cosmology/#yin-yang 
+            url: "#yin-yang"
           - name: Heaven Man Earth
-            url: /library/start-here/cosmology/#heaven-man-earth
+            url: "#heaven-man-earth"
           - name: Four Directions
-            url: /library/start-here/cosmology/#four-directions
+            url: "#four-directions"
           - name: Five Elements
-            url: /library/start-here/cosmology/#five-elements
+            url: "#five-elements"
           - name: Six Energies
-            url: /library/start-here/cosmology/#six-energies
+            url: "#six-energies"
           - name: Seven Dimensions 
-            url: /library/start-here/cosmology/#seven-dimensions
+            url: "#seven-dimensions"
     - name: Oriental Medicine
       url: /library/oriental-medicine/      
       published: true

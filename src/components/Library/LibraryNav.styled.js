@@ -4,15 +4,16 @@ import t from "../../theme";
 import { Link } from "gatsby";
 
 export const Container = styled("div")`
-  position: relative;
+  position: relative;    
   height: 100%;
   z-index: 30;
   padding-left: 0;
   border-right: 1px solid #ececec;
-  overflow-y: scroll;
+  width: 100%;    
   ${t.mq.l} {
-    width: 40%;
-    position: fixed;
+    position: fixed;  
+    width: 25%;    
+    overflow-y: scroll;
   }
 `;
 

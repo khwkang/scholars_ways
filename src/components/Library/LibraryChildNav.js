@@ -1,48 +1,87 @@
 import React from "react";
-import { Link } from "../Link";
-import classnames from "classnames";
-import { isPathActive } from "../../helper";
+import {isEmpty} from "lodash";
 import { 
-  StyledPanelBlockLink, 
-  ChildLink,
-  ActiveSectionLink 
+  StyledSectionLink,
+  ArticleContainer,
+  ArticleLink,  
 } from "./LibraryChildNav.styled";
 
-const renderArticleNav = articles => (
-  <>
-    {articles.map(article => (
-      <ChildLink 
-        key={article.name} 
-        to={article.url}
-      >
-        {article.name}
-      </ChildLink>
-    ))}
-  </>
-);
+export class LibraryChildNav extends React.Component {  
+  constructor(props) {
+    super(props)        
+    this.state = {
+      articles: [],
+      articlesIsOpen: false,
+    }
+  }
 
-const checkActive = () => ({ href, location: { pathname } }) => ({
-  className: classnames(
-    StyledPanelBlockLink,
-    isPathActive(pathname, href) && ActiveSectionLink
-  )
-});
+  toggleArticleNav = (targetUrl) => {        
+    let path = this.props.value    
+    if (path === targetUrl) {
+      this.setState(
+        {articlesIsOpen: !this.state.articlesIsOpen}
+      )
+    }   
+  }
 
-export const LibraryChildNav = ({value, sections}) => {
-  return (
-    <>
-      {sections.map(sub => (
-        <>
-          <Link 
-            key={sub.name} 
-            to={sub.url}
-            getProps={checkActive()}            
-          >
-            {sub.name}
-          </Link>
-          {sub.child && renderArticleNav(sub.child)}
-        </>
+  filterArticle = (sub) => {            
+    if (sub.child) {    
+      if (sub.url === this.props.value) {        
+        this.toggleArticleNav(sub.url)
+        sub["isPathActive"] = true          
+        this.setState({
+          articles: sub.child
+        })
+      }
+    }      
+  }
+
+  componentWillMount() {    
+    this.props.sections.map(sub =>
+      this.filterArticle(sub)                   
+    )
+  }
+
+  renderArticleNav = (articles, i) => (
+    <ArticleContainer   
+      isOpen={this.state.articlesIsOpen}
+      key={i + i.toString()}
+    >
+      {articles.map(article => (
+        <ArticleLink 
+          key={article.name} 
+          href={article.url}
+        >
+          {article.name}
+        </ArticleLink>
       ))}
-    </>
+    </ArticleContainer>
   );
-};
+
+  render() {
+    return (               
+      <>
+        {this.props.sections.map((sub, i) => (                  
+          <>
+            <StyledSectionLink 
+              published={sub.published}
+              key={sub.name + i} 
+              to={sub.url}              
+              isActive={sub.url === this.props.value}
+              onClick={(e) => {
+                this.toggleArticleNav(sub.url)
+                if (!sub.published) e.preventDefault()                
+              }}
+            >
+              {sub.name}
+            </StyledSectionLink>            
+            {
+              (sub.url === this.props.value && !isEmpty(this.state.articles)) && 
+              this.renderArticleNav(this.state.articles, i)
+            }          
+          </>
+        ))}
+      </>                 
+    ); 
+  }
+}

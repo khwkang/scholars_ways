@@ -11,7 +11,7 @@ export const NavbarStyled = styled("div")`
   overflow-y: auto;
   padding-left: 2rem;
   display: none;
-  width: ${t.s(8)};
+  width: ${t.s(8.5)};
 
   ::-webkit-scrollbar {
     width: 0.5em;
