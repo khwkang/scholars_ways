@@ -35,6 +35,7 @@ const PageTemplate = ({ data, location }) => {
         data={get(data, "markdownRemark.frontmatter")}
         content={get(data, "markdownRemark.html")}
         location={location}
+        rootData={data}
       />
     </Layout>
   );

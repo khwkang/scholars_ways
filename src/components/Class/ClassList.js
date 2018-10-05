@@ -1,6 +1,7 @@
 import React from "react";
 import { graphql } from "gatsby";
 import { get } from "lodash";
+import { Image } from '../Image'
 import qigong_module from "../../img/qigong_module.jpg";
 import stretching_module from "../../img/stretching_module.jpg";
 import medmove_module from "../../img/medmove_module.jpg";
@@ -22,14 +23,29 @@ const map_images = {
   medmove_module: medmove_module
 };
 
-export const ClassList = ({ data }) => {
+export const ClassList = ({ rootData, data }) => {  
   return (
     <Master id="class_page">
       <Container>
         <PageTitle>{get(data, "title")}</PageTitle>
+        <Image
+          alt={"hello world"}
+          fluid={rootData.imgOne.childImageSharp.fluid}
+          fadeIn={false}
+        />
+        <Image
+          alt={"hello world"}
+          fluid={rootData.imgTwo.childImageSharp.fluid}
+          fadeIn={false}
+        />
+        <Image
+          alt={"hello world"}
+          fluid={rootData.imgThree.childImageSharp.fluid}
+          fadeIn={false}
+        />
         <Content>
           {get(data, "classes").map(cls => (
-            <div>
+            <div>              
               <Link to={`/class/` + cls.link_url}>
                 <Module
                   backgroundImageSource={map_images[get(cls, "image_path")]}
@@ -52,6 +68,27 @@ ClassList.propTypes = {
 
 export const query = graphql`
   fragment ClassList on Query {
+    imgOne: file(relativePath: {eq: "qigong_module.jpg"}) {
+      childImageSharp {
+        fluid(maxWidth: 1000, quality: 90) {
+          ...GatsbyImageSharpFluid_withWebp_noBase64
+        }
+      }
+    }
+    imgTwo: file(relativePath: {eq: "stretching_module.jpg"}) {
+      childImageSharp {
+        fluid(maxWidth: 1000, quality: 90) {
+          ...GatsbyImageSharpFluid_withWebp_noBase64
+        }
+      }
+    }
+    imgThree: file(relativePath: {eq: "medmove_module.jpg"}) {
+      childImageSharp {
+        fluid(maxWidth: 1000, quality: 90) {
+          ...GatsbyImageSharpFluid_withWebp_noBase64
+        }
+      }
+    }
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
