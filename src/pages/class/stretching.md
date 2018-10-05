@@ -1,5 +1,6 @@
 ---
-templateKey: 'class-instance-page'
+templateKey: 'page'
+componentKey: ClassInstance
 path: /class/stretching
 title: Stretching class
 description: 

@@ -1,5 +1,6 @@
 ---
-templateKey: 'class-page'
+templateKey: 'page'
+componentKey: ClassList
 path: /class
 title: Scholars Way Current Classes
 classes:

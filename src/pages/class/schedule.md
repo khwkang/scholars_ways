@@ -1,5 +1,6 @@
 ---
-templateKey: 'class-schedule-page'
+templateKey: 'page'
+componentKey: ClassSchedule
 path: /class/schedule
 title: Class Schedule
 classes:

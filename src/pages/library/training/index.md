@@ -1,32 +1,9 @@
 ---
-templateKey: 'library-page'
+templateKey: 'library'
+componentKey: 'Article'
 path: /library/training
 title: Training
 description: training description here
-navigation: 
-  panel:
-    - name: Start Here
-      url: /library
-      active: false
-    - name: Oriental Medicine
-      url: /library/oriental-medicine
-      active: false
-    - name: Training
-      url: /library/training
-      active: true
-  panel_block:
-    - name: Introduction
-      url: /library/training
-      active: true
-    - name: Qigong
-      url: /library/training/qigong
-      active: false
-    - name: Swordsmanship
-      url: /library/training/swordsmanship
-      active: false
-    - name: Meditation
-      url: /library/training/meditation
-      active: false
 ---
 
 ## Introductory content for training section with cover picture

@@ -1,13 +1,24 @@
-import styled from 'react-emotion'
-import t from '../../theme'
+import styled from "react-emotion";
+import t from "../../theme";
 
-export const Layout = styled('div')`
-  height: 100vh;
-  margin-bottom: 10px;
-`
-export const Container = styled('div')`
+export const Container = styled.div`
+  height: -webkit-fill-available; 
+  margin-bottom: 10px;  
+`;
+
+export const Content = styled.div`
+  width: 100%;
   padding-right: 0;
-  ${t.mq.l} {
-    margin-left: ${t.s(8)};
+  ${t.mq.l} {    
+    margin-left: ${t.s(8.5)};    
   }
-`
+`;
+
+export const LibraryContent = styled.div`
+  width: 100%;
+  padding-right: 0;
+  ${t.mq.l} {    
+    margin-left: ${t.s(9.5)};
+    width: 70%;    
+  }
+`;

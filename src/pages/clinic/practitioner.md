@@ -1,6 +1,7 @@
 ---
-templateKey: 'clinic-practitioner-page'
+templateKey: 'page'
 path: /clinic/practitioner
+componentKey: Practitioner
 title: Practitioners
 ---
 Both, **Jonah Chin (L.Ac.)** and **JungHyun (Lina) Kim (L.Ac)** are licensed acupuncturist in Honolulu Hawaii. 
