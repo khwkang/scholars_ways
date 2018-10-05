@@ -10,10 +10,14 @@ export const Container = styled("div")`
   padding-left: 0;
   border-right: 1px solid #ececec;
   width: 100%;    
+  background-color: ${t.c.lightgrey1};
   ${t.mq.l} {
     position: fixed;  
     width: 25%;    
-    overflow-y: scroll;
+    overflow-y: scroll;    
+  }
+  ::-webkit-scrollbar {
+    width: 0em;
   }
 `;
 
@@ -51,7 +55,7 @@ export const ChapterLink = css`
   display: block;
   border: none;
   text-transform: uppercase;
-  color: grey;
+  color: ${t.c.lightgrey3};
 `;
 
 export const SectionContainer = styled.div`
@@ -79,3 +83,10 @@ export const StyledPanelBlockLink = styled(Link)`
     background-color: #f4f4f4;  
   }
 `;
+
+export const backToMain = css`
+  color: #768bcc;
+  font-weight: 700;
+  // text-transform: uppercase;
+  font-size: ${t.f(0)};
+`

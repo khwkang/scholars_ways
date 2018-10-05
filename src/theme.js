@@ -8,6 +8,9 @@ const theme = {
   colors: {
     gray: "#bebdbd",
     bodygray: "#595959",
+    lightgrey1: "#f9f9f9",
+    lightgrey2: "#f1f1f1",
+    lightgrey3: "#c5c5c5",
     black: "#000",
     white: "#fff",
     nav: "#232323"

@@ -10,10 +10,11 @@ import {
   Container,
   Header,
   ChapterContainer,
-  ChapterLink,
+  ChapterLink,  
   ChapterLinkActive,
   SectionContainer,
   StyledPanelBlockLink,  
+  backToMain,
 } from "./LibraryNav.styled";
 
 const checkActive = () => ({ href, location: { pathname } }) => ({
@@ -63,7 +64,10 @@ const render = props => queryData => {
           </>       
         )}
       </Value>                    
-      <StyledPanelBlockLink style={{ color: "red", fontWeight: "700" }} to="/">
+      <StyledPanelBlockLink 
+        className={backToMain}
+        to="/"
+      >
         Back to Main Site
       </StyledPanelBlockLink>
     </Container>

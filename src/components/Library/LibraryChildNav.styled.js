@@ -4,7 +4,7 @@ import { Link } from "gatsby";
 import t from "../../theme";
 
 export const ArticleContainer = styled.div`  
-  background-color: grey;
+  background-color: ${t.c.lightgrey2};
   display: ${p => p.isOpen ? 'block' : 'none'};
 `;
 
@@ -25,10 +25,10 @@ export const StyledSectionLink = styled(Link)`
   font-size: ${t.f(0)};
   color: ${p => (p.published ? "black" : "gray")};
   cursor: ${p => (p.published ? "pointer" : "not-allowed")};
-  font-weight: ${p => (p.isActive ? '700' : '300')};
+  font-weight: ${p => (p.isActive ? '500' : '300')};
   width: 100%;
   &:hover {
-    background-color: #f4f4f4;  
+    background-color: ${t.c.lightgrey2};  
   }
 `;
 

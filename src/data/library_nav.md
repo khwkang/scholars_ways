@@ -5,15 +5,7 @@ navigation:
     - name: Start Here
       url: /library/start-here      
       published: true
-      sub_menu:
-        - name: Introduction
-          url: /library/start-here/     
-          published: true      
-          child:
-            - name: Yoyoyoyoyo
-              url: "#yin-yang"
-            - name: Hahahahahaha
-              url: "#yin-yang"
+      sub_menu:        
         - name: What is Daoism?
           url: /library/start-here/what-is-daoism    
           published: false
@@ -37,9 +29,6 @@ navigation:
       url: /library/oriental-medicine/      
       published: true
       sub_menu:
-        - name: Introduction
-          url: /library/oriental-medicine              
-          published: false
         - name: Physiology
           url: /library/oriental-medicine/physiology
           published: false        
