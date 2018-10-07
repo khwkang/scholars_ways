@@ -22,7 +22,7 @@ injectGlobal`
   body {
     overflow-x: hidden;
     margin: 0;
-    padding: 0;
+    padding: 0;    
   }
 
   a {
@@ -33,9 +33,10 @@ injectGlobal`
   p {
     color: ${t.c.bodygray};
     font-size: ${t.f(1)};
-    font-family: 'Karla', sans-serif;
-    line-height: 30px;
+    font-family: ${t.ff.sans};
+    line-height: ${t.s(1.6)};
   }
+
   h1 {
     font-family: 'Nanum Myeongjo', sans-serif;
     font-weight: 800;
@@ -56,6 +57,7 @@ injectGlobal`
     border: none;
     text-transform: uppercase;
     letter-spacing: 2px;
+    cursor: pointer;
   }
 `;
 
