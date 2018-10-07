@@ -1,66 +1,85 @@
 import React from "react";
-import { graphql } from "gatsby";
+import { StaticQuery, graphql } from "gatsby";
 import { get } from "lodash";
 import { Image } from '../Image'
-import qigong_module from "../../img/qigong_module.jpg";
-import stretching_module from "../../img/stretching_module.jpg";
-import medmove_module from "../../img/medmove_module.jpg";
 import PropTypes from "prop-types";
 import { Link } from "gatsby";
-import {
-  Master,
+import {  
   Container,
-  Module,
-  Overlay,
-  ModuleTitle,
+  ModuleContainer,
   PageTitle,
-  Content
+  OverlayContainer,
+  Overlay,
+  ImageContainer,
 } from "./ClassList.styled";
 
-const map_images = {
-  qigong_module: qigong_module,
-  stretching_module: stretching_module,
-  medmove_module: medmove_module
-};
+export const ClassList = props => (
+  <StaticQuery
+    query={graphql`
+      query {      
+        module_qigong: file(relativePath: {eq: "module_qigong.jpg"}) {
+          childImageSharp {
+            fluid(maxWidth: 1200, quality: 90) {
+              ...GatsbyImageSharpFluid_withWebp_noBase64
+            }
+          }
+        }
+        module_medicinal_movement: file(relativePath: {eq: "module_medicinal_movement.jpg"}) {
+          childImageSharp {
+            fluid(maxWidth: 1200, quality: 90) {
+              ...GatsbyImageSharpFluid_withWebp_noBase64
+            }
+          }
+        }
+        module_kendo: file(relativePath: {eq: "module_kendo.jpg"}) {
+          childImageSharp {
+            fluid(maxWidth: 1000, quality: 90) {
+              ...GatsbyImageSharpFluid_withWebp_noBase64
+            }
+          }
+        }
+      }
+    `}
+    render={render(props)}
+  />
+)
 
-export const ClassList = ({ rootData, data }) => {  
-  return (
-    <Master id="class_page">
-      <Container>
-        <PageTitle>{get(data, "title")}</PageTitle>
-        <Image
-          alt={"hello world"}
-          fluid={rootData.imgOne.childImageSharp.fluid}
-          fadeIn={false}
-        />
-        <Image
-          alt={"hello world"}
-          fluid={rootData.imgTwo.childImageSharp.fluid}
-          fadeIn={false}
-        />
-        <Image
-          alt={"hello world"}
-          fluid={rootData.imgThree.childImageSharp.fluid}
-          fadeIn={false}
-        />
-        <Content>
-          {get(data, "classes").map(cls => (
-            <div>              
-              <Link to={`/class/` + cls.link_url}>
-                <Module
-                  backgroundImageSource={map_images[get(cls, "image_path")]}
-                >
-                  <ModuleTitle>{cls.title}</ModuleTitle>
-                  <Overlay />
-                </Module>
-              </Link>
-            </div>
-          ))}
-        </Content>
-      </Container>
-    </Master>
+const render = props => imageQueryData => {   
+  const data = props.data
+  const mappedImage = {
+    module_qigong: get(imageQueryData, "module_qigong.childImageSharp.fluid"),
+    module_medicinal_movement: get(imageQueryData, "module_medicinal_movement.childImageSharp.fluid"),
+    module_kendo: get(imageQueryData, "module_kendo.childImageSharp.fluid"),
+    module_stretching: get(imageQueryData, "module_medicinal_movement.childImageSharp.fluid")
+  }
+
+  return (  
+    <Container>
+      <PageTitle>{get(data, "title")}</PageTitle>      
+      {get(data, 'classes').map(cls => (
+        <React.Fragment key={cls.title}>
+          {cls.image_path && (
+            <Link to={cls.link_url}>
+              <ModuleContainer>
+                <ImageContainer>
+                  <Image
+                    alt={"hello world"}
+                    fluid={mappedImage[cls.image_path]}
+                    fadeIn={false}
+                  />                  
+                </ImageContainer>
+                <OverlayContainer>
+                  <h1>{cls.title}</h1>                  
+                </OverlayContainer>
+                <Overlay />
+              </ModuleContainer>
+            </Link>
+          )}                  
+        </React.Fragment>
+      ))}      
+    </Container>    
   );
-};
+}
 
 ClassList.propTypes = {
   data: PropTypes.object.isRequired
@@ -68,37 +87,13 @@ ClassList.propTypes = {
 
 export const query = graphql`
   fragment ClassList on Query {
-    imgOne: file(relativePath: {eq: "qigong_module.jpg"}) {
-      childImageSharp {
-        fluid(maxWidth: 1000, quality: 90) {
-          ...GatsbyImageSharpFluid_withWebp_noBase64
-        }
-      }
-    }
-    imgTwo: file(relativePath: {eq: "stretching_module.jpg"}) {
-      childImageSharp {
-        fluid(maxWidth: 1000, quality: 90) {
-          ...GatsbyImageSharpFluid_withWebp_noBase64
-        }
-      }
-    }
-    imgThree: file(relativePath: {eq: "medmove_module.jpg"}) {
-      childImageSharp {
-        fluid(maxWidth: 1000, quality: 90) {
-          ...GatsbyImageSharpFluid_withWebp_noBase64
-        }
-      }
-    }
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
         classes {
           title
           link_url
-          image_path
-          description
-          schedule_day
-          schedule_time
+          image_path          
         }
       }
     }
