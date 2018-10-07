@@ -6,13 +6,14 @@ const ssv = f => (...v) => v.map(f).join(" ");
 
 const theme = {
   colors: {
+    white: "#fff",
     gray: "#bebdbd",
     bodygray: "#595959",
+    darkgrey1: "#3e3e3e",
     lightgrey1: "#f9f9f9",
     lightgrey2: "#f1f1f1",
     lightgrey3: "#c5c5c5",
-    black: "#000",
-    white: "#fff",
+    black: "#000",    
     nav: "#232323"
   },
   lineHeights: {
@@ -21,15 +22,15 @@ const theme = {
     copy: 1.4
   },
   fontFamilies: {
-    sans: '"Whitney A", "Whitney B", sans-serif',
-    sansCond: '"Whitney Cond A", "Whitney Cond B", sans-serif',
-    serif: "Feijoa, serif"
+    sans: '"Karla", sans-serif',    
+    serif: 'Nanum Myeongjo, serif',
   },
   fontSize: s => ms(s / 2) + "rem",
   mediaSizes: {
     t: "20rem",
     s: "30rem",
     m: "48rem",
+    ml: "55rem",
     l: "60rem",
     x: "78rem",
     xx: "90rem"
