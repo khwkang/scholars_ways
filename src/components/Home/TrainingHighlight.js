@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import qigong_highlight_bg from "../../img/qigong_highlight_bg.jpg";
+import { Image } from '../Image'
 import {
   Container,
   Columns,
@@ -9,14 +9,15 @@ import {
   Content,
   Title,
   Text,
-  Image
 } from "./Highlight.styled";
 
-export const TrainingHighlight = () => (
+export const TrainingHighlight = ({image}) => (
   <Container id="training_highlight">
     <Columns reverse={true}>
       <ImageContainer>
-        <Image src={qigong_highlight_bg} />
+        <Image 
+          fluid={image}
+        />
       </ImageContainer>
       <ContentWrapper>
         <Content>
@@ -28,7 +29,7 @@ export const TrainingHighlight = () => (
             understand their body; how to heal it, strengthen it, and take
             charge of their own well-being.
           </Text>
-          <Link to="/library">
+          <Link to="/library/start-here">
             <button>Current Classes</button>
           </Link>
         </Content>

@@ -1,18 +1,17 @@
 import React from "react";
 import { Link } from "gatsby";
-import library_highlight_bg from "../../img/library_highlight_bg.jpg";
+import { Image } from '../Image'
 import {
   Container,
   Columns,
-  ImageContainer,
-  Image,
+  ImageContainer,  
   Content,
   ContentWrapper,
   Title,
   Text
 } from "./Highlight.styled";
 
-export const ClinicHighlight = () => (
+export const ClinicHighlight = ({image}) => (
   <Container id="clinic_highlight">
     <Columns>
       <ContentWrapper>
@@ -31,7 +30,9 @@ export const ClinicHighlight = () => (
         </Content>
       </ContentWrapper>
       <ImageContainer>
-        <Image src={library_highlight_bg} />
+        <Image 
+          fluid={image}
+        />
       </ImageContainer>
     </Columns>
   </Container>

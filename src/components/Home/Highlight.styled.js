@@ -21,12 +21,10 @@ export const ImageContainer = styled("div")`
   ${t.mq.x} {
     width: 50%;
   }
-`;
-
-export const Image = styled("img")`
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
+  .gatsby-image-wrapper {
+    width: 100%;
+    height: 100%;
+  }
 `;
 
 export const ContentWrapper = styled("div")`
@@ -66,4 +64,5 @@ export const Text = styled("p")`
   ${t.mq.l} {
     font-size: ${t.f(1)};
   }
+  line-height: ${t.s(1.6)};
 `;

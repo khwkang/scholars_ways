@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "gatsby";
+import { Image } from '../Image'
 import library_highlight_bg from "../../img/library_highlight_bg.jpg";
 import {
   Container,
-  Columns,
-  Image,
+  Columns,  
   ImageContainer,
   Content,
   ContentWrapper,
@@ -12,7 +12,7 @@ import {
   Text
 } from "./Highlight.styled";
 
-export const LibraryHighlight = () => (
+export const LibraryHighlight = ({image}) => (
   <Container id="library_highlight">
     <Columns>
       <ContentWrapper>
@@ -32,7 +32,9 @@ export const LibraryHighlight = () => (
         </Content>
       </ContentWrapper>
       <ImageContainer>
-        <Image src={library_highlight_bg} />
+        <Image 
+          fluid={image} 
+        />
       </ImageContainer>
     </Columns>
   </Container>
