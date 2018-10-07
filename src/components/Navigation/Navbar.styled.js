@@ -60,8 +60,11 @@ export const MenuLabel = styled("p")`
 
 export const MenuItem = styled(Link)`
   display: block;
-  color: #d1d1d1;
+  color: ${t.c.lightgrey2};
   font-size: 1.1rem;
   font-weight: 500;
   padding: 10px 0;
+  :hover {
+    color: ${t.c.white};
+  }
 `;

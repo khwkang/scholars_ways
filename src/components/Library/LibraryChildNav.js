@@ -52,7 +52,7 @@ export class LibraryChildNav extends React.Component {
           key={article.name} 
           href={article.url}
         >
-          {article.name}
+          - {article.name}
         </ArticleLink>
       ))}
     </ArticleContainer>
@@ -73,10 +73,10 @@ export class LibraryChildNav extends React.Component {
                 if (!sub.published) e.preventDefault()                
               }}
             >
-              {sub.name}
+             {sub.name}
             </StyledSectionLink>            
             {
-              (sub.url === this.props.value && !isEmpty(this.state.articles)) && 
+             (sub.url === this.props.value && !isEmpty(this.state.articles)) && 
               this.renderArticleNav(this.state.articles, i)
             }          
           </>

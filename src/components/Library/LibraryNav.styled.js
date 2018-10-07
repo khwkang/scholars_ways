@@ -13,7 +13,7 @@ export const Container = styled("div")`
   background-color: ${t.c.lightgrey1};
   ${t.mq.l} {
     position: fixed;  
-    width: 25%;    
+    width: ${t.s(8.5)};    
     overflow-y: scroll;    
   }
   ::-webkit-scrollbar {
@@ -22,20 +22,27 @@ export const Container = styled("div")`
 `;
 
 export const Header = styled("div")`
-  padding: 21px 0 0 0;
+  padding: ${t.s(1)} 0 ${t.s(0)} ${t.s(1.5)};
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
   font-weight: 700;
   font-size: 1.4rem;
   background-color: #2d2d2d;
   color: #fff;
   border: none;
   h1 {
-    font-family: fantasy;
-    font-size: 1.8rem;
+    font-family: ${t.ff.serif};
+    font-size: ${t.f(3)};
+    margin: ${t.s(0)} 0 0 0;
+    text-transform: uppercase;    
   }
   h2 {
+    font-family: ${t.ff.serif};
     margin: 0;
+    padding-top: 0.5rem;
+    font-size: ${t.f(0)};
+    font-weight: 900;
+    text-transform: uppercase;
   }
 `;
 
@@ -43,9 +50,10 @@ export const ChapterContainer = styled("div")`
   display: block;
   padding: 1.8rem 0 1.8rem 1em;
   font-size: 0.9em;
-  font-weight: 700;
+  font-weight: 400;
   border: none;
   background-color: #2d2d2d;
+  margin-top: -5px;
 `;
 
 export const ChapterLink = css`
@@ -56,6 +64,10 @@ export const ChapterLink = css`
   border: none;
   text-transform: uppercase;
   color: ${t.c.lightgrey3};
+  transition: color 150ms ease-in-out;
+  :hover {
+    color: white;
+  }
 `;
 
 export const SectionContainer = styled.div`

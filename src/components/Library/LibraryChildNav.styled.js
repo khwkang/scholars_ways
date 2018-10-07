@@ -3,15 +3,18 @@ import {css} from 'emotion'
 import { Link } from "gatsby";
 import t from "../../theme";
 
-export const ArticleContainer = styled.div`  
-  background-color: ${t.c.lightgrey2};
+export const ArticleContainer = styled.div`    
   display: ${p => p.isOpen ? 'block' : 'none'};
 `;
 
 export const ArticleLink = styled.a`
   display: block;
   padding: 0.8rem 0 0.6rem 1.5em;
-  color: black;
+  color: ${t.c.darkgrey1};
+  transition: color 150ms ease-in-out;
+  :hover {
+    color: black;
+  }
 `;
 
 export const StyledList = styled("li")`
@@ -25,13 +28,10 @@ export const StyledSectionLink = styled(Link)`
   font-size: ${t.f(0)};
   color: ${p => (p.published ? "black" : "gray")};
   cursor: ${p => (p.published ? "pointer" : "not-allowed")};
-  font-weight: ${p => (p.isActive ? '500' : '300')};
+  // font-weight: ${p => (p.isActive ? '500' : '300')};
   width: 100%;
+  transition: background-color 150ms ease-in-out;
   &:hover {
     background-color: ${t.c.lightgrey2};  
   }
 `;
-
-export const ActiveSectionLink = css`
-  color: blue;
-`

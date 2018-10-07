@@ -10,15 +10,16 @@ export const Content = styled.div`
   width: 100%;
   padding-right: 0;
   ${t.mq.l} {    
-    margin-left: ${t.s(8.5)};    
+    padding-left: ${t.s(8.5)};    
   }
 `;
 
 export const LibraryContent = styled.div`
   width: 100%;
   padding-right: 0;
+  
   ${t.mq.l} {    
-    margin-left: ${t.s(9.5)};
-    width: 70%;    
-  }
+    padding-left: ${t.s(9)};
+    width: auto%;    
+  }  
 `;
