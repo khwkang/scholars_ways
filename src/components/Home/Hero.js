@@ -7,6 +7,7 @@ import {
   ImageContainer,
   HeroTitle,
   HeroSubTitle,
+  SVGContainer,
   StyledLogoSVG
 } from "./Hero.styled";
 
@@ -16,7 +17,9 @@ export const Hero = ({ image }) => (
       <Image fluid={image} fadeIn={false} />
     </ImageContainer>
     <Content>
-      <StyledLogoSVG />
+      <SVGContainer>
+        <StyledLogoSVG />
+      </SVGContainer>
       <HeroTitle>Scholars Way</HeroTitle>
       <HeroSubTitle>Healing Arts</HeroSubTitle>
     </Content>

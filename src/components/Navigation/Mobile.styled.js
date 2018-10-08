@@ -5,7 +5,6 @@ import { ReactComponent as Logo } from "../../img/sw_logo.svg";
 export const MobileNavContainer = styled("div")`
   background-color: ${t.c.nav};
   position: relative;
-  height: ${t.s(4.5)};
   ${t.mq.l} {
     display: none;
   }
@@ -14,6 +13,7 @@ export const MobileNavContainer = styled("div")`
 export const TopBar = styled("div")`
   color: ${t.c.white};
   position: relative;
+  height: ${t.s(4.5)};
 `;
 
 export const HamburgerMenuContainer = styled("div")`
@@ -39,6 +39,7 @@ export const TopBarText = styled("p")`
   top: 0px;
   padding-left: 0.7rem;
   color: ${t.c.white};
+  line-height: inherit;
 `;
 export const DropdownContainer = styled("div")`
   padding-left: ${t.s(2)};

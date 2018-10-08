@@ -51,8 +51,13 @@ export const HomePage = () => (
   />
 );
 
+const Container = styled.div`
+  position: relative;
+  height: 100%;
+`;
+
 const render = () => imageQueryData => {
-  return (
+  return (    
     <Container>
       <Hero
         image={get(imageQueryData, "home_background.childImageSharp.fluid")}
@@ -79,7 +84,4 @@ const render = () => imageQueryData => {
   );
 };
 
-export const Container = styled.div`
-  position: relative;
-  height: 100%;
-`;
+

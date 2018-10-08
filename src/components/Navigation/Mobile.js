@@ -19,7 +19,7 @@ export const Mobile = () => (
       <MobileNavContainer>
         <TopBar>
           <Link to="/">
-            <StyledLogoSVG
+            <StyledLogoSVG                            
               onClick={mobileNavOn ? toggleMobileNav : undefined}
             />
           </Link>

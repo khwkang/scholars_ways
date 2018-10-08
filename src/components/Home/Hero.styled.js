@@ -5,7 +5,7 @@ import { ReactComponent as Logo } from "../../img/sw_logo.svg";
 
 export const HeroContainer = styled("div")`
   position: relative;
-  width: 100%;
+  width: 100%;  
   height: ${t.s(9)};
   ${t.mq.m} {
     height: ${t.s(10)};
@@ -39,8 +39,23 @@ export const Content = styled.div`
   justify-content: center;
 `;
 
-export const StyledLogoSVG = styled(Logo)`
-  width: ${t.s(6)};
+export const SVGContainer = styled.div`
+  height: ${t.s(4.5)}; 
+  width: ${t.s(4.5)};
+  margin-top: -${t.s(3)}; 
+  ${t.mq.m} {
+    margin-top: -${t.s(5)}; 
+    height: ${t.s(6)}; 
+    width: ${t.s(6)};
+  }
+  ${t.mq.l} {
+    margin-top: -${t.s(7)}; 
+    height: ${t.s(6)}; 
+    width: ${t.s(6)};
+  }
+`
+
+export const StyledLogoSVG = styled(Logo)`  
 `;
 
 export const HeroTitle = styled("div")`
@@ -55,7 +70,6 @@ export const HeroTitle = styled("div")`
 export const HeroSubTitle = styled("div")`
   color: ${t.c.white};
   font-family: ${t.ff.sans};
-  margin-bottom: 15rem;
   font-size: 2.2rem;
   ${t.mq.l} {
     font-size: 3.5rem;
