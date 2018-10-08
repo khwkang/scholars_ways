@@ -11,6 +11,7 @@ import { Expertise } from "../components/Clinic/Expertise";
 import { Appointment } from "../components/Clinic/Appointment";
 import { ClassSchedule } from "../components/Class/ClassSchedule";
 import { ClassList } from "../components/Class/ClassList";
+import { Kendo } from "../components/Class/Kendo";
 import { ClassInstance } from "../components/Class/ClassInstance";
 
 const mapToComponent = {
@@ -22,7 +23,8 @@ const mapToComponent = {
   Appointment: Appointment,
   ClassSchedule: ClassSchedule,
   ClassList: ClassList,
-  ClassInstance: ClassInstance
+  ClassInstance: ClassInstance,
+  Kendo: Kendo
 };
 
 const PageTemplate = ({ data, location }) => {
@@ -58,5 +60,6 @@ export const query = graphql`
     ...ClassSchedule
     ...ClassList
     ...ClassInstance
+    ...Kendo
   }
 `;

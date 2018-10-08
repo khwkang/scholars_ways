@@ -1,8 +1,8 @@
 ---
 templateKey: 'page'
-componentKey: ClassInstance
+componentKey: Kendo
 path: /class/kendo-basics
-title: Kendo Basics Class
+title: Kendo Basics
 description: 
 schedule:  
   day: Tuesday & Friday
