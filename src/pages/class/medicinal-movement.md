@@ -2,7 +2,7 @@
 templateKey: 'page'
 componentKey: ClassInstance
 path: /class/medmove
-title: Medicinal Movement Class
+title: Medicinal Movement
 description: 
 schedule:
   day: Monday & Wednesday

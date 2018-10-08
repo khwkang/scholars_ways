@@ -2,7 +2,7 @@
 templateKey: 'page'
 componentKey: ClassInstance
 path: /class/qigong
-title: Qigong class
+title: Qigong
 description:
 schedule:  
   day: Tuesday & Friday
