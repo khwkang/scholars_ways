@@ -62,7 +62,7 @@ injectGlobal`
 `;
 
 export const Layout = ({ location, context, children }) => (
-  <Container>
+  <>
     <Helmet title="Scholars Ways | Daoist Art of Cultivation" />
     {context === "main" && (
       <>
@@ -73,5 +73,5 @@ export const Layout = ({ location, context, children }) => (
     {context === "library" && (<LibraryNav location={location}/>)}
     {context === "main" && <Content>{children}</Content>}
     {context === "library" && <LibraryContent>{children}</LibraryContent>}    
-  </Container>
+  </>
 );

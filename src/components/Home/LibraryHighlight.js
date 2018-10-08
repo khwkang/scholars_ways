@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
 import { Image } from '../Image'
-import library_highlight_bg from "../../img/library_highlight_bg.jpg";
 import {
   Container,
   Columns,  
@@ -26,7 +25,7 @@ export const LibraryHighlight = ({image}) => (
             to our classes or clinic, as well as those simply interested in
             better understanding the process of healing and self-development.
           </Text>
-          <Link to="/library">
+          <Link to="/library/start-here">
             <button>Enter library</button>
           </Link>
         </Content>

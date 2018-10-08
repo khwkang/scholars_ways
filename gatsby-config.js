@@ -3,7 +3,7 @@ module.exports = {
     title: "Scholars Way Daoist Healing Art"
   },
   plugins: [
-    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-react-helmet",    
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -57,6 +57,7 @@ module.exports = {
         trackPage: true
       }
     },
+    'gatsby-plugin-svgr',
     "gatsby-transformer-sharp",
     "gatsby-plugin-netlify"
   ]

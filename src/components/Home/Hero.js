@@ -1,19 +1,28 @@
 import React from "react";
-import logo from "../../img/sw_logo.png";
+
+import { Image } from '../Image'
 import {
-  Container,
+  HeroContainer,
   Content,
-  HeroLogo,
-  HeroTitle,
-  HeroSubTitle
+  ImageContainer,
+  HeroTitle,  
+  HeroSubTitle,
+  StyledLogoSVG,
 } from "./Hero.styled";
 
-export const Hero = () => (
-  <Container id="home_hero">
+export const Hero = ({image}) => (
+  <HeroContainer>    
+    <ImageContainer>
+      <Image 
+        fluid={image}
+        fadeIn={false}
+      />
+    </ImageContainer>      
     <Content>
-      <img src={logo} alt="" className={HeroLogo} />
+      <StyledLogoSVG />
       <HeroTitle>Scholars Way</HeroTitle>
       <HeroSubTitle>Healing Arts</HeroSubTitle>
-    </Content>
-  </Container>
-);
+    </Content>    
+  </HeroContainer>
+)
+

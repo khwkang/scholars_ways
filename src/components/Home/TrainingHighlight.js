@@ -29,7 +29,7 @@ export const TrainingHighlight = ({image}) => (
             understand their body; how to heal it, strengthen it, and take
             charge of their own well-being.
           </Text>
-          <Link to="/library/start-here">
+          <Link to="/class">
             <button>Current Classes</button>
           </Link>
         </Content>

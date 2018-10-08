@@ -1,28 +1,25 @@
 import React from "react";
 import { Link } from "gatsby";
-import logo from "../../img/sw_logo.png";
 import HamburgerMenu from "react-hamburger-menu";
 import { Toggle } from "react-powerplug";
 import t from "../../theme";
 import {
-  Container,
+  MobileNavContainer,
   HamburgerMenuContainer,
   TopBar,
-  TopBarLogo,
+  StyledLogoSVG,
   TopBarText,
-  MobileNavContainer
+  DropdownContainer
 } from "./Mobile.styled";
 import { NavLineBreak, MenuLabel, MenuItem } from "./Navbar.styled";
 
 export const Mobile = () => (
   <Toggle>
     {({ on: mobileNavOn, toggle: toggleMobileNav }) => (
-      <Container>
+      <MobileNavContainer>
         <TopBar>
           <Link to="/">
-            <TopBarLogo
-              src={logo}
-              alt="scholars way logo image"
+            <StyledLogoSVG                            
               onClick={mobileNavOn ? toggleMobileNav : undefined}
             />
           </Link>
@@ -38,7 +35,7 @@ export const Mobile = () => (
             />
           </HamburgerMenuContainer>
         </TopBar>
-        <MobileNavContainer isOpen={mobileNavOn}>
+        <DropdownContainer isOpen={mobileNavOn}>
           <NavLineBreak />
           <MenuLabel>Clinic</MenuLabel>
           <MenuItem to="/clinic/practitioner" onClick={toggleMobileNav}>
@@ -68,8 +65,8 @@ export const Mobile = () => (
           <MenuItem to="/contact" onClick={toggleMobileNav}>
             Join Us
           </MenuItem>
-        </MobileNavContainer>
-      </Container>
+        </DropdownContainer>
+      </MobileNavContainer>
     )}
   </Toggle>
 );

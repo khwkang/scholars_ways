@@ -10,7 +10,14 @@ import { get } from "lodash";
 export const HomePage = () => (
   <StaticQuery
     query={graphql`
-      query {      
+      query {    
+        home_background: file(relativePath: {eq: "mountain_bg.jpg"}) {
+          childImageSharp {
+            fluid(maxWidth: 2000, quality: 90) {
+              ...GatsbyImageSharpFluid_withWebp_noBase64
+            }
+          }
+        }  
         home_clinic_highlight: file(relativePath: {eq: "home_clinic_highlight.jpg"}) {
           childImageSharp {
             fluid(maxWidth: 900, quality: 90) {
@@ -41,8 +48,10 @@ export const HomePage = () => (
 const render = () => imageQueryData => {   
   
   return (
-    <Container id="index_page">
-      <Hero />
+    <Container>
+      <Hero 
+        image={get(imageQueryData, "home_background.childImageSharp.fluid")}
+      />
       <ClinicHighlight 
         image={get(imageQueryData, "home_clinic_highlight.childImageSharp.fluid")}
       />
@@ -56,6 +65,7 @@ const render = () => imageQueryData => {
   )
 }
 
-export const Container = styled("div")`
-  position: absolute;
+export const Container = styled.div`
+  position: relative;
+  height: 100%;
 `;

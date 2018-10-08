@@ -1,8 +1,8 @@
 import React from "react";
-import logo from "../../img/sw_logo.png";
+// import logo from "../../img/sw_logo.png";
 import {
   NavbarStyled,
-  NavLogo,
+  StyledLogoSVG,
   NavLogoWrapper,
   NavLineBreak,
   MenuLabel,
@@ -12,7 +12,7 @@ import {
 export const Navbar = () => (
   <NavbarStyled>
     <NavLogoWrapper to="/#home_hero">
-      <NavLogo id="sw_logo" src={logo} alt="scholars_way_logo" />
+      <StyledLogoSVG />
     </NavLogoWrapper>
     <NavLineBreak />
     <MenuLabel>Sholars Ways</MenuLabel>

@@ -1,6 +1,7 @@
 import styled from "react-emotion";
 import t from "../../theme";
 import { Link } from "gatsby";
+import { ReactComponent as Logo } from "../../img/sw_logo.svg";
 
 export const NavbarStyled = styled("div")`
   position: fixed;
@@ -35,11 +36,11 @@ export const NavLogoWrapper = styled(Link)`
   margin: 0 0 14px -30px;
 `;
 
-export const NavLogo = styled("img")`
-  max-height: 70px;
-  width: 70px;
-  margin: 15px 0 0px 0;
-`;
+export const StyledLogoSVG = styled(Logo)`
+  width: ${t.s(4.5)};
+  height: 100%;
+  padding: ${t.s(1)} 0 ${t.s(0)} 0;
+`
 
 export const NavLineBreak = styled("hr")`
   width: 85%;
