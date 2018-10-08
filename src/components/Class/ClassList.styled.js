@@ -20,21 +20,21 @@ export const ModuleContainer = styled.div`
   margin: ${t.s(2)} 0;
   :hover {
     // filter: grayscale(0%);
-  }  
-`
+  }
+`;
 
 export const ImageContainer = styled.div`
   height: 100%;
-  width: 100%;  
+  width: 100%;
   .gatsby-image-wrapper {
     height: 100%;
-    width: 100%;  
+    width: 100%;
   }
-`
+`;
 
 export const OverlayContainer = styled.div`
   position: absolute;
-  top: 0;  
+  top: 0;
   width: 100%;
   height: 100%;
   display: flex;
@@ -46,14 +46,14 @@ export const OverlayContainer = styled.div`
     display: block;
     color: white;
     font-family: ${t.ff.sans};
-    font-size: ${t.f(8)};    
+    font-size: ${t.f(8)};
   }
-`
+`;
 
 export const Overlay = styled.div`
   background-color: black;
   position: absolute;
-  top: 0;  
+  top: 0;
   width: 100%;
   height: 100%;
   transition: opacity 200ms ease-in-out;
@@ -61,4 +61,4 @@ export const Overlay = styled.div`
   ${ModuleContainer}:hover & {
     opacity: 0;
   }
-`
+`;

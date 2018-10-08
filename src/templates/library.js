@@ -13,10 +13,10 @@ const LibraryTemplate = ({ data, location }) => {
 
   return (
     <Layout location={location} context="library">
-      <ChildComponent        
+      <ChildComponent
         data={get(data, "markdownRemark.frontmatter")}
         content={get(data, "markdownRemark.html")}
-        location={location}        
+        location={location}
       />
     </Layout>
   );

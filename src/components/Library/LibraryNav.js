@@ -10,22 +10,22 @@ import {
   Container,
   Header,
   ChapterContainer,
-  ChapterLink,  
+  ChapterLink,
   ChapterLinkActive,
   SectionContainer,
-  StyledPanelBlockLink,  
-  backToMain,
+  StyledPanelBlockLink,
+  backToMain
 } from "./LibraryNav.styled";
 
 const checkActive = () => ({ href, location: { pathname } }) => ({
   className: classnames(
     ChapterLink,
     isPathActive(pathname, href) && ChapterLinkActive
-  ),
+  )
 });
 
 const render = props => queryData => {
-  const Navi = get(queryData, "markdownRemark.frontmatter.navigation.panel");  
+  const Navi = get(queryData, "markdownRemark.frontmatter.navigation.panel");
   return (
     <Container>
       <Header>
@@ -33,41 +33,37 @@ const render = props => queryData => {
         <h2>Library</h2>
       </Header>
       <Value initial={props.location.pathname}>
-        {value => (          
+        {value => (
           <>
             <ChapterContainer>
-              {Navi.map(main => (                    
-                <Link 
-                  key={main.name} 
-                  to={main.url} 
-                  getProps={checkActive()}                                 
-                  onClick={() => value.setValue(main.url)} 
+              {Navi.map(main => (
+                <Link
+                  key={main.name}
+                  to={main.url}
+                  getProps={checkActive()}
+                  onClick={() => value.setValue(main.url)}
                   active={value.value}
                 >
                   {main.name}
-                </Link>                    
+                </Link>
               ))}
             </ChapterContainer>
-            {Navi.map((main, index) => (
-              (value.value).startsWith(main.url) && (
-                <SectionContainer
-                  key={main.url + index + index.toString()}
-                >
-                  <LibraryChildNav  
-                    key={main.url + index.toString()}                       
-                    value={value.value} 
-                    sections={main.sub_menu}                                                 
-                  />
-                </SectionContainer>          
-              )          
-            ))}                                                        
-          </>       
+            {Navi.map(
+              (main, index) =>
+                value.value.startsWith(main.url) && (
+                  <SectionContainer key={main.url + index + index.toString()}>
+                    <LibraryChildNav
+                      key={main.url + index.toString()}
+                      value={value.value}
+                      sections={main.sub_menu}
+                    />
+                  </SectionContainer>
+                )
+            )}
+          </>
         )}
-      </Value>                    
-      <StyledPanelBlockLink 
-        className={backToMain}
-        to="/"
-      >
+      </Value>
+      <StyledPanelBlockLink className={backToMain} to="/">
         Back to Main Site
       </StyledPanelBlockLink>
     </Container>
@@ -79,9 +75,7 @@ export const LibraryNav = props => (
     query={graphql`
       query {
         markdownRemark(
-          fileAbsolutePath: {
-            regex: "/src/data/library_nav.md/"
-          }
+          fileAbsolutePath: { regex: "/src/data/library_nav.md/" }
         ) {
           frontmatter {
             navigation {
@@ -90,7 +84,7 @@ export const LibraryNav = props => (
                 url
                 published
                 sub_menu {
-                  name                  
+                  name
                   url
                   published
                   child {

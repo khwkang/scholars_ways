@@ -30,7 +30,7 @@ export const HamburgerMenuContainer = styled("div")`
 export const StyledLogoSVG = styled(Logo)`
   width: ${t.s(4)};
   padding: ${t.s(0)} 0 0 ${t.s(0)};
-`
+`;
 
 export const TopBarText = styled("p")`
   display: inline-block;

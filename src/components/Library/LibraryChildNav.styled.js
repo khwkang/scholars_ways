@@ -1,10 +1,10 @@
 import styled from "react-emotion";
-import {css} from 'emotion'
+import { css } from "emotion";
 import { Link } from "gatsby";
 import t from "../../theme";
 
-export const ArticleContainer = styled.div`    
-  display: ${p => p.isOpen ? 'block' : 'none'};
+export const ArticleContainer = styled.div`
+  display: ${p => (p.isOpen ? "block" : "none")};
 `;
 
 export const ArticleLink = styled.a`
@@ -28,7 +28,7 @@ export const StyledSectionLink = styled(Link)`
   font-size: ${t.f(0)};
   color: ${p => (p.published ? "black" : "gray")};
   cursor: ${p => (p.published ? "pointer" : "not-allowed")};
-  // font-weight: ${p => (p.isActive ? '500' : '300')};
+  // font-weight: ${p => (p.isActive ? "500" : "300")};
   width: 100%;
   transition: background-color 150ms ease-in-out;
   &:hover {

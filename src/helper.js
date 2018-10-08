@@ -22,4 +22,4 @@ export const isPathActive = (rawCurrentPath, rawPath) => {
   return path.length > 0 && currentPath.startsWith(path);
 };
 
-export const isInternal = s => isString(s) && /^\/(?!\/)/.test(s)
+export const isInternal = s => isString(s) && /^\/(?!\/)/.test(s);

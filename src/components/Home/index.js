@@ -1,5 +1,5 @@
 import React from "react";
-import { StaticQuery} from "gatsby";
+import { StaticQuery } from "gatsby";
 import styled from "react-emotion";
 import { Hero } from "./Hero";
 import { ClinicHighlight } from "./ClinicHighlight";
@@ -10,29 +10,35 @@ import { get } from "lodash";
 export const HomePage = () => (
   <StaticQuery
     query={graphql`
-      query {    
-        home_background: file(relativePath: {eq: "mountain_bg.jpg"}) {
+      query {
+        home_background: file(relativePath: { eq: "mountain_bg.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 2000, quality: 90) {
               ...GatsbyImageSharpFluid_withWebp_noBase64
             }
           }
-        }  
-        home_clinic_highlight: file(relativePath: {eq: "home_clinic_highlight.jpg"}) {
+        }
+        home_clinic_highlight: file(
+          relativePath: { eq: "home_clinic_highlight.jpg" }
+        ) {
           childImageSharp {
             fluid(maxWidth: 900, quality: 90) {
               ...GatsbyImageSharpFluid_withWebp_noBase64
             }
           }
         }
-        home_training_highlight: file(relativePath: {eq: "home_training_highlight.jpg"}) {
+        home_training_highlight: file(
+          relativePath: { eq: "home_training_highlight.jpg" }
+        ) {
           childImageSharp {
             fluid(maxWidth: 900, quality: 90) {
               ...GatsbyImageSharpFluid_withWebp_noBase64
             }
           }
         }
-        home_library_highlight: file(relativePath: {eq: "home_library_highlight.jpg"}) {
+        home_library_highlight: file(
+          relativePath: { eq: "home_library_highlight.jpg" }
+        ) {
           childImageSharp {
             fluid(maxWidth: 900, quality: 90) {
               ...GatsbyImageSharpFluid_withWebp_noBase64
@@ -43,27 +49,35 @@ export const HomePage = () => (
     `}
     render={render()}
   />
-)
+);
 
-const render = () => imageQueryData => {   
-  
+const render = () => imageQueryData => {
   return (
     <Container>
-      <Hero 
+      <Hero
         image={get(imageQueryData, "home_background.childImageSharp.fluid")}
       />
-      <ClinicHighlight 
-        image={get(imageQueryData, "home_clinic_highlight.childImageSharp.fluid")}
+      <ClinicHighlight
+        image={get(
+          imageQueryData,
+          "home_clinic_highlight.childImageSharp.fluid"
+        )}
       />
-      <TrainingHighlight 
-        image={get(imageQueryData, "home_training_highlight.childImageSharp.fluid")}
+      <TrainingHighlight
+        image={get(
+          imageQueryData,
+          "home_training_highlight.childImageSharp.fluid"
+        )}
       />
-      <LibraryHighlight 
-        image={get(imageQueryData, "home_library_highlight.childImageSharp.fluid")}
+      <LibraryHighlight
+        image={get(
+          imageQueryData,
+          "home_library_highlight.childImageSharp.fluid"
+        )}
       />
     </Container>
-  )
-}
+  );
+};
 
 export const Container = styled.div`
   position: relative;

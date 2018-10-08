@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import { Image } from '../Image'
+import { Image } from "../Image";
 import {
   Container,
   Columns,
@@ -8,16 +8,14 @@ import {
   ContentWrapper,
   Content,
   Title,
-  Text,
+  Text
 } from "./Highlight.styled";
 
-export const TrainingHighlight = ({image}) => (
+export const TrainingHighlight = ({ image }) => (
   <Container id="training_highlight">
     <Columns reverse={true}>
       <ImageContainer>
-        <Image 
-          fluid={image}
-        />
+        <Image fluid={image} />
       </ImageContainer>
       <ContentWrapper>
         <Content>

@@ -70,8 +70,8 @@ export const Layout = ({ location, context, children }) => (
         <Navbar location={location} />
       </>
     )}
-    {context === "library" && (<LibraryNav location={location}/>)}
+    {context === "library" && <LibraryNav location={location} />}
     {context === "main" && <Content>{children}</Content>}
-    {context === "library" && <LibraryContent>{children}</LibraryContent>}    
+    {context === "library" && <LibraryContent>{children}</LibraryContent>}
   </>
 );

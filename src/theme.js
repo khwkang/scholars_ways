@@ -13,7 +13,7 @@ const theme = {
     lightgrey1: "#f9f9f9",
     lightgrey2: "#f1f1f1",
     lightgrey3: "#c5c5c5",
-    black: "#000",    
+    black: "#000",
     nav: "#232323"
   },
   lineHeights: {
@@ -22,8 +22,8 @@ const theme = {
     copy: 1.4
   },
   fontFamilies: {
-    sans: '"Karla", sans-serif',    
-    serif: 'Nanum Myeongjo, serif',
+    sans: '"Karla", sans-serif',
+    serif: "Nanum Myeongjo, serif"
   },
   fontSize: s => ms(s / 2) + "rem",
   mediaSizes: {

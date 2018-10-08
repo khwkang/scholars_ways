@@ -1,9 +1,9 @@
-import React from 'react'
-import GatsbyImage from 'gatsby-image'
+import React from "react";
+import GatsbyImage from "gatsby-image";
 
 export const Image = ({
-  objectFit = 'cover',
-  objectPosition = '50% 50%',
+  objectFit = "cover",
+  objectPosition = "50% 50%",
   ...props
 }) => (
   <GatsbyImage
@@ -12,7 +12,7 @@ export const Image = ({
       ...props.imgStyle,
       objectFit,
       objectPosition,
-      fontFamily: `"object-fit: ${objectFit}; object-position: ${objectPosition}"`,
+      fontFamily: `"object-fit: ${objectFit}; object-position: ${objectPosition}"`
     }}
   />
-)
+);

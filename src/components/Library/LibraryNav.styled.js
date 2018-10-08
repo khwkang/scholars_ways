@@ -4,17 +4,17 @@ import t from "../../theme";
 import { Link } from "gatsby";
 
 export const Container = styled("div")`
-  position: relative;    
+  position: relative;
   height: 100%;
   z-index: 30;
   padding-left: 0;
   border-right: 1px solid #ececec;
-  width: 100%;    
+  width: 100%;
   background-color: ${t.c.lightgrey1};
   ${t.mq.l} {
-    position: fixed;  
-    width: ${t.s(8.5)};    
-    overflow-y: scroll;    
+    position: fixed;
+    width: ${t.s(8.5)};
+    overflow-y: scroll;
   }
   ::-webkit-scrollbar {
     width: 0em;
@@ -34,7 +34,7 @@ export const Header = styled("div")`
     font-family: ${t.ff.serif};
     font-size: ${t.f(3)};
     margin: ${t.s(0)} 0 0 0;
-    text-transform: uppercase;    
+    text-transform: uppercase;
   }
   h2 {
     font-family: ${t.ff.serif};
@@ -72,11 +72,11 @@ export const ChapterLink = css`
 
 export const SectionContainer = styled.div`
   // margin: 20px 0;
-  // display: none;  
+  // display: none;
 `;
 
 export const ChapterLinkActive = css`
-  color: white !important;  
+  color: white !important;
 `;
 
 export const StyledList = styled("li")`
@@ -101,4 +101,4 @@ export const backToMain = css`
   font-weight: 700;
   // text-transform: uppercase;
   font-size: ${t.f(0)};
-`
+`;

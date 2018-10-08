@@ -40,7 +40,7 @@ export const StyledLogoSVG = styled(Logo)`
   width: ${t.s(4.5)};
   height: 100%;
   padding: ${t.s(1)} 0 ${t.s(0)} 0;
-`
+`;
 
 export const NavLineBreak = styled("hr")`
   width: 85%;

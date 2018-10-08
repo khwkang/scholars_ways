@@ -1,8 +1,8 @@
-import React from 'react'
-import { Link as GatsbyLink } from 'gatsby'
-import { isInternal } from '../helper'
+import React from "react";
+import { Link as GatsbyLink } from "gatsby";
+import { isInternal } from "../helper";
 
-if (typeof window !== 'undefined') window.__navigatingToLink = false
+if (typeof window !== "undefined") window.__navigatingToLink = false;
 
 export const Link = ({
   to,
@@ -15,8 +15,8 @@ export const Link = ({
     <GatsbyLink
       to={to}
       onClick={() => {
-        onClick()
-        window.__navigatingToLink = true
+        onClick();
+        window.__navigatingToLink = true;
       }}
       getProps={getProps}
       {...props}
@@ -27,4 +27,4 @@ export const Link = ({
     <a href={to} {...props}>
       {children}
     </a>
-  )
+  );

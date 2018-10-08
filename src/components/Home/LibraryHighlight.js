@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "gatsby";
-import { Image } from '../Image'
+import { Image } from "../Image";
 import {
   Container,
-  Columns,  
+  Columns,
   ImageContainer,
   Content,
   ContentWrapper,
@@ -11,7 +11,7 @@ import {
   Text
 } from "./Highlight.styled";
 
-export const LibraryHighlight = ({image}) => (
+export const LibraryHighlight = ({ image }) => (
   <Container id="library_highlight">
     <Columns>
       <ContentWrapper>
@@ -31,9 +31,7 @@ export const LibraryHighlight = ({image}) => (
         </Content>
       </ContentWrapper>
       <ImageContainer>
-        <Image 
-          fluid={image} 
-        />
+        <Image fluid={image} />
       </ImageContainer>
     </Columns>
   </Container>

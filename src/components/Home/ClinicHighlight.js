@@ -1,17 +1,17 @@
 import React from "react";
 import { Link } from "gatsby";
-import { Image } from '../Image'
+import { Image } from "../Image";
 import {
   Container,
   Columns,
-  ImageContainer,  
+  ImageContainer,
   Content,
   ContentWrapper,
   Title,
   Text
 } from "./Highlight.styled";
 
-export const ClinicHighlight = ({image}) => (
+export const ClinicHighlight = ({ image }) => (
   <Container id="clinic_highlight">
     <Columns>
       <ContentWrapper>
@@ -30,9 +30,7 @@ export const ClinicHighlight = ({image}) => (
         </Content>
       </ContentWrapper>
       <ImageContainer>
-        <Image 
-          fluid={image}
-        />
+        <Image fluid={image} />
       </ImageContainer>
     </Columns>
   </Container>
