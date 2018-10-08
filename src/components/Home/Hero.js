@@ -1,5 +1,4 @@
 import React from "react";
-
 import { Image } from "../Image";
 import {
   HeroContainer,
@@ -8,8 +7,8 @@ import {
   HeroTitle,
   HeroSubTitle,
   SVGContainer,
-  StyledLogoSVG
 } from "./Hero.styled";
+import { ReactComponent as Logo } from "../../img/sw_logo.svg";
 
 export const Hero = ({ image }) => (
   <HeroContainer>
@@ -18,7 +17,7 @@ export const Hero = ({ image }) => (
     </ImageContainer>
     <Content>
       <SVGContainer>
-        <StyledLogoSVG />
+        <Logo />
       </SVGContainer>
       <HeroTitle>Scholars Way</HeroTitle>
       <HeroSubTitle>Healing Arts</HeroSubTitle>

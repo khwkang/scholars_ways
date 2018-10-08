@@ -1,18 +1,22 @@
 import React from "react";
 import {
   NavbarStyled,
+  SVGContainer,
   StyledLogoSVG,
-  NavLogoWrapper,
+  StyledLink,
   NavLineBreak,
   MenuLabel,
   MenuItem
 } from "./Navbar.styled";
+import { ReactComponent as Logo } from "../../img/sw_logo.svg";
 
 export const Navbar = () => (
   <NavbarStyled>
-    <NavLogoWrapper to="/#home_hero">
-      <StyledLogoSVG />
-    </NavLogoWrapper>
+    <StyledLink to="/#home_hero">
+      <SVGContainer>
+        <Logo />
+      </SVGContainer>
+    </StyledLink>
     <NavLineBreak />
     <MenuLabel>Sholars Ways</MenuLabel>
     <MenuItem to="/about">About</MenuItem>

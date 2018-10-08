@@ -1,7 +1,6 @@
 import styled from "react-emotion";
 import t from "../../theme";
 import { Link } from "gatsby";
-import { ReactComponent as Logo } from "../../img/sw_logo.svg";
 
 export const NavbarStyled = styled("div")`
   position: fixed;
@@ -10,9 +9,9 @@ export const NavbarStyled = styled("div")`
   overflow: scroll;
   overflow-x: hidden;
   overflow-y: auto;
-  padding-left: 2rem;
+  padding-left: ${t.s(2)};
   display: none;
-  width: ${t.s(8.5)};
+  width: ${t.s(8)};
 
   ::-webkit-scrollbar {
     width: 0.5em;
@@ -30,17 +29,18 @@ export const NavbarStyled = styled("div")`
   }
 `;
 
-export const NavLogoWrapper = styled(Link)`
-  display: flex;
-  justify-content: center;
-  margin: 0 0 14px -30px;
+export const StyledLink = styled(Link)`
+  display: flex;  
+  align-items: center;
+  justify-content: center;  
+  margin-left: -${t.s(2)};
+  margin-top: ${t.s(0)};
 `;
 
-export const StyledLogoSVG = styled(Logo)`
+export const SVGContainer = styled.div`
   width: ${t.s(4.5)};
-  height: 100%;
-  padding: ${t.s(1)} 0 ${t.s(0)} 0;
-`;
+  height: ${t.s(4.5)};
+`
 
 export const NavLineBreak = styled("hr")`
   width: 85%;

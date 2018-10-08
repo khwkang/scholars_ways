@@ -1,7 +1,5 @@
 import styled from "react-emotion";
-import { css } from "emotion";
 import t from "../../theme";
-import { ReactComponent as Logo } from "../../img/sw_logo.svg";
 
 export const HeroContainer = styled("div")`
   position: relative;
@@ -55,15 +53,15 @@ export const SVGContainer = styled.div`
   }
 `
 
-export const StyledLogoSVG = styled(Logo)`  
-`;
-
 export const HeroTitle = styled("div")`
   font-size: 3rem;
+  text-transform: uppercase;
   color: white;
-  font-family: ${t.ff.sans};
+  font-family: ${t.ff.serif};
+  padding: ${t.s(2)};
+  font-size: ${t.f(5)};
   ${t.mq.l} {
-    font-size: 5.5rem;
+    font-size: ${t.f(8.5)};
   }
 `;
 
