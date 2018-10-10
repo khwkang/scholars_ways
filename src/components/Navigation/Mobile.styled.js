@@ -1,6 +1,6 @@
 import styled from "react-emotion";
 import t from "../../theme";
-import { ReactComponent as Logo } from "../../img/sw_logo.svg";
+import { ReactComponent as Logo } from "../../img/sw_logo_2.svg";
 
 export const MobileNavContainer = styled("div")`
   background-color: ${t.c.nav};

@@ -8,7 +8,7 @@ import {
   HeroSubTitle,
   SVGContainer,
 } from "./Hero.styled";
-import { ReactComponent as Logo } from "../../img/sw_logo.svg";
+import { ReactComponent as Logo } from "../../img/sw_logo_2.svg";
 
 export const Hero = ({ image }) => (
   <HeroContainer>

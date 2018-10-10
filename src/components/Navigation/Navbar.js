@@ -8,7 +8,7 @@ import {
   MenuLabel,
   MenuItem
 } from "./Navbar.styled";
-import { ReactComponent as Logo } from "../../img/sw_logo.svg";
+import { ReactComponent as Logo } from "../../img/sw_logo_2.svg";
 
 export const Navbar = () => (
   <NavbarStyled>
