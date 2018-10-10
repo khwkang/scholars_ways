@@ -9,18 +9,24 @@ export const Container = styled.div`
 `;
 
 export const PageTitle = styled("h1")`
-  margin-bottom: 1.4rem;
+  margin-bottom: ${t.s(3)};
+  font-size: ${t.f(4.5)};
+  ${t.mq.l} {
+    font-size: ${t.f(5)};
+  }
 `;
 
 export const ModuleContainer = styled.div`
   position: relative;
-  height: 500px;
-  // filter: grayscale(100%);
+  height: ${t.s(8)};
   transition: filter 200ms ease-in-out;
   margin: ${t.s(2)} 0;
-  :hover {
-    // filter: grayscale(0%);
+  ${t.mq.m} {
+    height: ${t.s(9)};
   }
+  ${t.mq.l} {
+    height: ${t.s(10)};
+  }  
 `;
 
 export const ImageContainer = styled.div`
@@ -46,7 +52,16 @@ export const OverlayContainer = styled.div`
     display: block;
     color: white;
     font-family: ${t.ff.sans};
-    font-size: ${t.f(8)};
+    font-size: ${t.f(5)};
+    ${t.mq.t} {
+      font-size: ${t.f(2.5)};
+    }
+    ${t.mq.s} {
+      font-size: ${t.f(6)};
+    }
+    ${t.mq.l} {
+      font-size: ${t.f(8)};
+    }        
   }
 `;
 

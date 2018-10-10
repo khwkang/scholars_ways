@@ -83,6 +83,7 @@ const render = (props) => imageQueryData => {
           <Image
             key={"kendoclass" + index}
             fluid={img}
+            fadeIn={false}
           />        
         ))}
       </Carousel>

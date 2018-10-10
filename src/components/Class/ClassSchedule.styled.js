@@ -9,5 +9,9 @@ export const Container = styled("div")`
 `;
 
 export const PageTitle = styled("h1")`
-  margin-bottom: 1.4rem;
+  margin-bottom: ${t.s(3)};
+  font-size: ${t.f(4.5)};
+  ${t.mq.l} {
+    font-size: ${t.f(5)};
+  }
 `;
