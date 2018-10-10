@@ -1,6 +1,6 @@
 ---
 templateKey: 'page'
-componentKey: ClassInstance
+componentKey: Qigong
 path: /class/qigong
 title: Qigong
 description:
