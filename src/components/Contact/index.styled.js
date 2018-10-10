@@ -9,5 +9,13 @@ export const Container = styled("div")`
 `;
 
 export const PageTitle = styled("h1")`
-  margin-bottom: 2.5rem;
+  margin-bottom: ${t.s(3)};
+  font-size: ${t.f(4.5)};
+  ${t.mq.l} {
+    font-size: ${t.f(5)};
+  }
 `;
+
+export const MapContainer = styled.div`
+  height: 60vh;
+`
