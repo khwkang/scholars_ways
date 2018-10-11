@@ -1,6 +1,6 @@
 ---
 templateKey: 'page'
-componentKey: ClassInstance
+componentKey: MedMove
 path: /class/medmove
 title: Medicinal Movement
 description: 
