@@ -1,18 +1,25 @@
 import React from "react";
-import { Container, PageTitle } from "./Appointment.styled";
+import { Container, Content, PageTitle, MapContainer } from "./Appointment.styled";
+import { GoogleMapComponent } from "./GoogleMap"
 export const Appointment = ({ data }) => (
   <Container>
-    <PageTitle>{data.title}</PageTitle>
-    <h3>By Phone</h3>
-    <p>{data.phone}</p>
-    <h3>By Email</h3>
-    <p>{data.email}</p>
-    <h3>Address</h3>
-    <h4>Scholars Way</h4>
-    <p>{data.primaryAddress}</p>
-    <h4>Still and Moving Center</h4>
-    <p>{data.secondaryAddress}</p>
-    <span>**we currently accept new patients by phone only | Mahalo</span>
+    <Content>
+      <PageTitle>{data.title}</PageTitle>
+      <h3>By Phone</h3>
+      <p>{data.phone}</p>
+      <h3>By Email</h3>
+      <p>{data.email}</p>
+      <h3>Clinic Address</h3>      
+      <p>{data.primary_address}</p>
+      <span>* For new patients, please call for appointment. Mahalo.</span>
+    </Content>
+    <GoogleMapComponent 
+      isMarkerShown
+      containerElement={<MapContainer />}
+      googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3&key=${process.env.GATSBY_GOOGLE_API_KEY}&libraries=geometry`}
+      loadingElement={<div style={{ height: `100%` }} />}            
+      mapElement={<div style={{ height: `100%` }} />}
+    />
   </Container>
 );
 
