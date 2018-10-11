@@ -31,7 +31,10 @@ export const LibraryHighlight = ({ image }) => (
         </Content>
       </ContentWrapper>
       <ImageContainer>
-        <Image fluid={image} />
+        <Image 
+          fluid={image} 
+          fadeIn={false}
+        />
       </ImageContainer>
     </Columns>
   </Container>

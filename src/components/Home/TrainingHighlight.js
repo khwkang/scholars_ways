@@ -15,7 +15,10 @@ export const TrainingHighlight = ({ image }) => (
   <Container id="training_highlight">
     <Columns reverse={true}>
       <ImageContainer>
-        <Image fluid={image} />
+        <Image 
+          fluid={image} 
+          fadeIn={false}
+        />
       </ImageContainer>
       <ContentWrapper>
         <Content>
