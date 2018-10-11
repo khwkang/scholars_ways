@@ -10,7 +10,7 @@ export const medMoveImage = graphql`
   fragment medMoveImage on File {
     childImageSharp {
       fluid(maxWidth: 1500, quality: 90) {
-        ...GatsbyImageSharpFluid
+        ...GatsbyImageSharpFluid_withWebp_noBase64
       }
     }
   }

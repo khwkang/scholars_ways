@@ -4,7 +4,7 @@ import t from "../../theme";
 export const Container = styled("div")`
   padding: ${t.s(3)} ${t.s(1)};
   ${t.mq.l} {
-    padding: ${t.s(5)} ${t.s(6)};
+    padding: ${t.s(5)} ${t.s(6)} ${t.s(1)} ${t.s(6)};
   }
 `;
 
