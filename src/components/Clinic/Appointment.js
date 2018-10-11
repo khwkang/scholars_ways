@@ -19,7 +19,7 @@ export const Appointment = ({ data }) => (
       googleMapURL={`https://maps.googleapis.com/maps/api/js?key=${process.env.GATSBY_GOOGLE_API_KEY}&libraries=geometry`}
       loadingElement={<div style={{ height: `100%` }} />}            
       mapElement={<div style={{ height: `100%` }} />}
-    />
+    /> 
   </Container>
 );
 
