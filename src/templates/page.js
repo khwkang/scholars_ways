@@ -13,6 +13,7 @@ import { ClassSchedule } from "../components/Class/ClassSchedule";
 import { ClassList } from "../components/Class/ClassList";
 import { Kendo } from "../components/Class/Kendo";
 import { Qigong } from "../components/Class/Qigong";
+import { MedMove } from "../components/Class/MedMove";
 import { ClassInstance } from "../components/Class/ClassInstance";
 
 const mapToComponent = {
@@ -27,6 +28,7 @@ const mapToComponent = {
   ClassInstance: ClassInstance,
   Kendo: Kendo,
   Qigong: Qigong,
+  MedMove: MedMove,
 };
 
 const PageTemplate = ({ data, location }) => {
@@ -64,5 +66,6 @@ export const query = graphql`
     ...ClassInstance
     ...Kendo
     ...Qigong
+    ...MedMove
   }
 `;

@@ -2,7 +2,7 @@ import { injectGlobal } from "emotion";
 import t from "../theme";
 
 injectGlobal`  
-  @import url('https://fonts.googleapis.com/css?family=Karla|Nanum+Myeongjo:700,800|Work+Sans:400,600');
+  @import url('https://fonts.googleapis.com/css?family=Karla:400,700|Nanum+Myeongjo:700,800|PT+Serif:400,700');
   * {
     box-sizing: border-box;
   }
@@ -26,11 +26,11 @@ injectGlobal`
   p {
     color: ${t.c.bodygray};
     font-size: ${t.f(1)};
-    font-family: 'Karla', sans-serif;
+    font-family: ${t.ff.sans};
     line-height: 30px;
   }
   h1 {
-    font-family: 'Nanum Myeongjo', sans-serif;
+    font-family: ${t.ff.serif};
     font-weight: 800;
     font-size: ${t.f(5)};
   }

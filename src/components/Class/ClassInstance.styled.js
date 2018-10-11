@@ -6,6 +6,20 @@ export const Container = styled.div`
   ${t.mq.l} {
     padding: ${t.s(5)} ${t.s(6)};
   }
+  div {
+    h3 {
+      font-family: ${t.ff.sans};
+      font-size: ${t.f(2.5)};
+      margin: ${t.s(2)} 0 ${t.s(0)} 0;
+      color: ${t.c.darkgrey1};      
+    }
+    ul {
+      li {
+        padding: 5px 0;
+        margin-left: -${t.s(0)};
+      }
+    }
+  }
 `;
 
 export const PageTitle = styled("h1")`

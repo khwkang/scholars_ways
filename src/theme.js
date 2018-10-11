@@ -23,7 +23,8 @@ const theme = {
   },
   fontFamilies: {
     sans: '"Karla", sans-serif',
-    serif: "Nanum Myeongjo, serif"
+    serif: '"PT Serif", serif',
+    serif2: "Nanum Myeongjo, serif"
   },
   fontSize: s => ms(s / 2) + "rem",
   mediaSizes: {

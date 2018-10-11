@@ -38,7 +38,7 @@ injectGlobal`
   }
 
   h1 {
-    font-family: 'Nanum Myeongjo', sans-serif;
+    font-family: ${t.ff.serif};
     font-weight: 800;
     font-size: ${t.f(5)};
   }
