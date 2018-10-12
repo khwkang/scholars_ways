@@ -34,7 +34,7 @@ export class LibraryChildNav extends React.Component {
     }
   };
 
-  componentWillMount() {
+  componentDidMount() {
     this.props.sections.map(sub => this.filterArticle(sub));
   }
 

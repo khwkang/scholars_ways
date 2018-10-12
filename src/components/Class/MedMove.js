@@ -3,7 +3,7 @@ import { get, forOwn } from "lodash";
 import { HTMLContent } from "../Content";
 import { Image } from "../Image";
 import { Container, PageTitle, Schedule } from "./ClassInstance.styled";
-import { StaticQuery, Link } from "gatsby";
+import { StaticQuery, Link, graphql } from "gatsby";
 import {Carousel} from '../Carousel'
 
 export const medMoveImage = graphql`

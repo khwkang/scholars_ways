@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, PageTitle } from "./Article.styled";
 import { HTMLContent } from "../Content";
+import { graphql } from 'gatsby'
 
 export const Article = ({ data, content }) => (
   <Container>

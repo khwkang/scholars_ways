@@ -1,4 +1,5 @@
 import React from "react";
+import { graphql } from 'gatsby'
 import { get } from "lodash";
 import { Container, PageTitle } from "./ClassSchedule.styled";
 

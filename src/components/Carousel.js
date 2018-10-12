@@ -9,10 +9,6 @@ import LeftArrow from '../img/arrows-left.png'
 import RightArrow from '../img/arrows-right.png'
 
 export class Carousel extends React.Component {
-  constructor(props) {
-    super(props)
-  }
-
   componentDidMount() {
     setTimeout(() => {
       window.dispatchEvent(new Event('resize'))

@@ -1,9 +1,8 @@
 import React from "react";
-import { StaticQuery, graphql } from "gatsby";
+import { StaticQuery, graphql, Link } from "gatsby";
 import { get } from "lodash";
 import { Image } from "../Image";
 import PropTypes from "prop-types";
-import { Link } from "gatsby";
 import {
   Container,
   ModuleContainer,

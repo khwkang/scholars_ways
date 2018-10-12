@@ -1,4 +1,5 @@
 import React from "react";
+import { graphql } from 'gatsby'
 import { Container, Content, PageTitle, MapContainer } from "./Appointment.styled";
 import { GoogleMapComponent } from "./GoogleMap"
 export const Appointment = ({ data }) => (

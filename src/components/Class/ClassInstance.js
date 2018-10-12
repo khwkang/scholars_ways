@@ -2,7 +2,7 @@ import React from "react";
 import { get } from "lodash";
 import { HTMLContent } from "../Content";
 import { Container, PageTitle, Schedule } from "./ClassInstance.styled";
-import { Link } from "gatsby";
+import { Link, graphql } from "gatsby";
 
 export const ClassInstance = ({ data, content }) => (
   <Container>

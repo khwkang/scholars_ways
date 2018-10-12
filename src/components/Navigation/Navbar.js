@@ -1,8 +1,7 @@
 import React from "react";
 import {
   NavbarStyled,
-  SVGContainer,
-  StyledLogoSVG,
+  SVGContainer,  
   StyledLink,
   NavLineBreak,
   MenuLabel,

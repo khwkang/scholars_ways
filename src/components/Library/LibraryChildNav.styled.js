@@ -1,5 +1,4 @@
 import styled from "react-emotion";
-import { css } from "emotion";
 import { Link } from "gatsby";
 import t from "../../theme";
 
