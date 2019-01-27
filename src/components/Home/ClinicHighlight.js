@@ -18,7 +18,7 @@ export const ClinicHighlight = ({ image }) => (
         <Content>
           <Title>Acupunture Clinic</Title>
           <Text>
-            At Scholars Way Healing Center health care
+            At Scholars Way Healing Arts health care
             is supportive of both Physical and Emotional Well-being. We
             specialize in Acupuncture, Pulse Diagnosis, Moxibustion, Herbal
             Medicine, Physical Trainings, and Lifestyle Consultation to Heal and Nourish.
