@@ -73,7 +73,7 @@ const render = () => imageQueryData => {
           imageQueryData,
           "home_training_highlight.childImageSharp.fluid"
         )}
-      />
+      />      
       <LibraryHighlight
         image={get(
           imageQueryData,

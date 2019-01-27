@@ -18,11 +18,10 @@ export const ClinicHighlight = ({ image }) => (
         <Content>
           <Title>Acupunture Clinic</Title>
           <Text>
-            At Scholars Way Healing Center we believe that good health care
-            should be supportive of both Physical and Emotional Well-being. We
+            At Scholars Way Healing Center health care
+            is supportive of both Physical and Emotional Well-being. We
             specialize in Acupuncture, Pulse Diagnosis, Moxibustion, Herbal
-            Tonics, Qigong, and Lifestyle Consultation to Heal, Nourish, and
-            Balance the Body and Mind.
+            Medicine, Physical Trainings, and Lifestyle Consultation to Heal and Nourish.
           </Text>
           <Link to="/clinic/appointment">
             <button>Appointment</button>

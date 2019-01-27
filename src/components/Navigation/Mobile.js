@@ -59,9 +59,9 @@ export const Mobile = () => (
           <MenuItem to="/about" onClick={toggleMobileNav}>
             About
           </MenuItem>
-          <MenuItem to="/library/start-here" onClick={toggleMobileNav}>
+          {/* <MenuItem to="/library/start-here" onClick={toggleMobileNav}>
             Library
-          </MenuItem>
+          </MenuItem> */}
           <MenuItem to="/contact" onClick={toggleMobileNav}>
             Join Us
           </MenuItem>

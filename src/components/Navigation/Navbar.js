@@ -29,7 +29,7 @@ export const Navbar = () => (
     <MenuItem to="/class">Classes</MenuItem>
     <MenuItem to="/class/schedule">Schedule</MenuItem>
     <NavLineBreak />
-    <MenuItem to="/library/start-here">Library</MenuItem>
+    {/* <MenuItem to="/library/start-here">Library</MenuItem> */}
     <MenuItem to="/contact">Join Us</MenuItem>
   </NavbarStyled>
 );

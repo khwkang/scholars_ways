@@ -18,12 +18,13 @@ export const LibraryHighlight = ({ image }) => (
         <Content>
           <Title>Library</Title>
           <Text>
-            The Scholar’s Way library exists as database for information on our
-            perspective and practice of medicinal, martial, and meditative arts;
-            rooted in traditional wisdom and made accessible for contemporary
-            students. The library serves as a reference for people who have been
-            to our classes or clinic, as well as those simply interested in
-            better understanding the process of healing and self-development.
+            The Scholar’s Way library exists as reference on our
+            perspective and practice of medicinal, meditative, and movement arts;
+            inspired by traditional wisdom and made accessible for contemporary
+            students. The library is useful for people who have been
+            to our clinic or classes (Kobang Qigong, Medicinal movement, Stretching for Rejuvenation, 
+            Kendo for Health, and Meditation) as well as those interested in
+            better understanding healing and self-evolution.
           </Text>
           <Link to="/library/start-here">
             <button>Enter library</button>

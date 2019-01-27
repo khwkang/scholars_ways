@@ -25,10 +25,10 @@ export const TrainingHighlight = ({ image }) => (
           <Title>Training</Title>
           <Text>
             Personal empowerment is an essential aspect of well-being. Scholar's
-            Way provides classes in Qi Gong, Stretching for Rejuvenation,
-            Medicinal Movement, and Kendo Basics for people looking to better
-            understand their body; how to heal it, strengthen it, and take
-            charge of their own well-being.
+            Way provides classes in Qi Gong KoBang (Old Way), Stretching for Rejuvenation,
+            Medicinal Movement, and Kendo for Health for people looking to better
+            understand one's body; how to heal, strengthen, and take
+            charge of one's own well-being. BE YOUR OWN HEALER. 
           </Text>
           <Link to="/class">
             <button>Current Classes</button>
