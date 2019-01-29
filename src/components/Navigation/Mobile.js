@@ -39,7 +39,7 @@ export const Mobile = () => (
           <NavLineBreak />
           <MenuLabel>Clinic</MenuLabel>
           <MenuItem to="/clinic/practitioner" onClick={toggleMobileNav}>
-            Practitioners
+            Acupuncturists
           </MenuItem>
           <MenuItem to="/clinic/expertise" onClick={toggleMobileNav}>
             Expertise
@@ -63,7 +63,7 @@ export const Mobile = () => (
             Library
           </MenuItem> */}
           <MenuItem to="/contact" onClick={toggleMobileNav}>
-            Join Us
+            Contact Us
           </MenuItem>
         </DropdownContainer>
       </MobileNavContainer>

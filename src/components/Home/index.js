@@ -4,7 +4,7 @@ import styled from "react-emotion";
 import { Hero } from "./Hero";
 import { ClinicHighlight } from "./ClinicHighlight";
 import { TrainingHighlight } from "./TrainingHighlight";
-import { LibraryHighlight } from "./LibraryHighlight";
+// import { LibraryHighlight } from "./LibraryHighlight";
 import { get } from "lodash";
 
 export const HomePage = () => (
@@ -35,16 +35,7 @@ export const HomePage = () => (
               ...GatsbyImageSharpFluid_withWebp_noBase64
             }
           }
-        }
-        home_library_highlight: file(
-          relativePath: { eq: "home_library_highlight.jpg" }
-        ) {
-          childImageSharp {
-            fluid(maxWidth: 900, quality: 90) {
-              ...GatsbyImageSharpFluid_withWebp_noBase64
-            }
-          }
-        }
+        }        
       }
     `}
     render={render()}
@@ -74,12 +65,12 @@ const render = () => imageQueryData => {
           "home_training_highlight.childImageSharp.fluid"
         )}
       />      
-      <LibraryHighlight
+      {/* <LibraryHighlight
         image={get(
           imageQueryData,
           "home_library_highlight.childImageSharp.fluid"
         )}
-      />
+      /> */}
     </Container>
   );
 };

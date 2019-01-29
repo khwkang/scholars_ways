@@ -15,3 +15,9 @@ export const PageTitle = styled("h1")`
     font-size: ${t.f(5)};
   }
 `;
+
+export const ImageContainer = styled.div`
+
+  width: 70%;
+  margin: 2rem auto 0;
+`;

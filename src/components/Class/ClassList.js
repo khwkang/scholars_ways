@@ -32,7 +32,7 @@ export const ClassList = props => (
             }
           }
         }
-        module_kendo: file(relativePath: { eq: "module_kendo.jpg" }) {
+        module_kendo: file(relativePath: { eq: "class/kendo/class_kendo2.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 1000, quality: 90) {
               ...GatsbyImageSharpFluid_withWebp_noBase64

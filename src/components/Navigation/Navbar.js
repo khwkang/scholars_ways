@@ -21,7 +21,7 @@ export const Navbar = () => (
     <MenuItem to="/about">About</MenuItem>
     <NavLineBreak />
     <MenuLabel>Clinic</MenuLabel>
-    <MenuItem to="/clinic/practitioner">Practitioners</MenuItem>
+    <MenuItem to="/clinic/practitioner">Acupuncturists</MenuItem>
     <MenuItem to="/clinic/expertise">Expertise</MenuItem>
     <MenuItem to="/clinic/appointment">Appointment</MenuItem>
     <NavLineBreak />
@@ -30,6 +30,6 @@ export const Navbar = () => (
     <MenuItem to="/class/schedule">Schedule</MenuItem>
     <NavLineBreak />
     {/* <MenuItem to="/library/start-here">Library</MenuItem> */}
-    <MenuItem to="/contact">Join Us</MenuItem>
+    <MenuItem to="/contact">Contact Us</MenuItem>
   </NavbarStyled>
 );

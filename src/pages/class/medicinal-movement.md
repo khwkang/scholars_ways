@@ -5,7 +5,7 @@ path: /class/medmove
 title: Medicinal Movement
 description: 
 schedule:
-  day: Monday & Wednesday
+  day: Wednesday
   time: 9:15 AM - 10:15 AM
 ---
 <p>Become healthier and feel younger with Medicinal Movement! Life itself is Energy. Everything around us is Energy. The future medicine is Qi (Energy). Free all your joints from stiffness, control your breath and calm your mind to help the flow of Energy to every part of your body. If KoBang Qigong feels too rigorous, please explore this more accessible form of qigong. Rejuvenate yourself!</p>
