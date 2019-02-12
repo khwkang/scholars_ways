@@ -1,11 +1,11 @@
 ---
-templateKey: 'page'
+templateKey: "page"
 componentKey: ClassInstance
 path: /class/stretching
 title: Stretching class
-description: 
+? description
 schedule:
-  day: Tuesday & Friday
+  day: Monday & Friday
   time: 5:45 PM - 6:45 PM
 ---
 

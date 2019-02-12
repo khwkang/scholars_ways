@@ -1,11 +1,11 @@
 ---
-templateKey: 'page'
+templateKey: "page"
 componentKey: Qigong
 path: /class/qigong
 title: Qigong
-description:
-schedule:  
-  day: Tuesday & Friday
+? description
+schedule:
+  day: Mondau & Friday
   time: 7:00 PM - 8:00 PM
 ---
 

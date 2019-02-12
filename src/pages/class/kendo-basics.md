@@ -1,12 +1,12 @@
 ---
-templateKey: 'page'
+templateKey: "page"
 componentKey: Kendo
 path: /class/kendo-basics
 title: Kendo Basics
-description: 
-schedule:  
-  day: Tuesday & Friday
-  time: 7:00 PM - 8:00 PM
+? description
+schedule:
+  day: Tuesday & Thursday
+  time: 8:00 PM - 9:00 PM
 ---
 
 <p>

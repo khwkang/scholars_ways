@@ -1,13 +1,14 @@
 ---
-templateKey: 'page'
+templateKey: "page"
 componentKey: Meditation
 path: /class/meditation
 title: Meditation
-description: 
+? description
 schedule:
-  day: Tuesday
+  day: Monday
   time: 8:15 PM - 9:00 PM
 ---
+
 <p>Meditation Class</p>
 
 <h3>Learn and benefit from:</h3>
