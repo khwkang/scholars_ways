@@ -5,7 +5,7 @@ path: /class/stretching
 title: Stretching class
 ? description
 schedule:
-  day: Monday & Friday
+  day: Friday
   time: 5:45 PM - 6:45 PM
 ---
 

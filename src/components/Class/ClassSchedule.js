@@ -1,5 +1,5 @@
 import React from "react";
-import { graphql } from 'gatsby'
+import { graphql } from "gatsby";
 import { get } from "lodash";
 import { Container, PageTitle } from "./ClassSchedule.styled";
 
@@ -13,9 +13,11 @@ export const ClassSchedule = ({ data }) => (
         <p>{cls.time}</p>
       </div>
     ))}
-    <h3>All classes are held at Still and Moving Center</h3>
-    <p>Address:</p>
-    <p>1024 Queen St, Honolulu, HI 96814 </p>
+    <div style={{ marginTop: "5rem" }}>
+      <h3>All classes are held at Still and Moving Center</h3>
+      <p>Address:</p>
+      <p>1024 Queen St, Honolulu, HI 96814 </p>
+    </div>
   </Container>
 );
 

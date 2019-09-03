@@ -5,7 +5,7 @@ path: /class/qigong
 title: Qigong
 ? description
 schedule:
-  day: Mondau & Friday
+  day: Monday & Friday
   time: 7:00 PM - 8:00 PM
 ---
 

@@ -8,15 +8,6 @@ classes:
     day: Monday & Friday
     time: 7:00 PM - 8:00 PM
   - name: Stretching for Rejuvenation
-    day: Monday & Friday
+    day: Friday
     time: 5:45 PM - 6:45 PM
-  - name: Medicinal Movement
-    day: Wednesday
-    time: 9:15 AM - 10:15 AM
-  - name: Kendo Basics for Health
-    day: Tuesday & Thursday
-    time: 8:00 PM - 9:00PM
-  - name: Meditation
-    day: Monday
-    time: 8:15 PM - 9:00PM
 ---
